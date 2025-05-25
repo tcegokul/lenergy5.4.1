@@ -1,0 +1,41 @@
+idf_component_register(
+  SRCS
+    "backgrounds.c"
+    "battery_monitor.c"
+    "buzzer.c"
+    "config_menu.c"
+    "espnow_sync.c"
+    "font8x8_basic.c"
+    "font8x8_basic_ascii_data.c"
+    "gps_parser.c"
+    "hadiths.c"
+    "icons.c"
+    "image_manager.c"
+    "lang.c"
+    "main.cpp"
+    "vl53l0x_api_debug.c"
+    "input_manager.c"
+    "qibla_display.c"
+    "prayer.c"
+    "st7701s.c"
+    "st7701s_display.c"
+    "vl53l0x_sensor.c"
+    "vl53l0x_api.cpp"
+    "vl53l0x_api_calibration.cpp"
+    "vl53l0x_api_core.cpp"
+    "vl53l0x_api_ranging.cpp"
+    "vl53l0x_api_strings.cpp"
+    "vl53l0x_i2c.cpp"
+    "vl53l0x_platform.cpp"
+    "vl53l0x_tuning.cpp"
+	"vl53l0x_extra_stubs.c"
+  INCLUDE_DIRS "."
+  REQUIRES
+    nvs_flash
+    driver
+    esp_adc
+    esp_event
+    freertos
+    esp_lcd 
+    esp_timer
+)

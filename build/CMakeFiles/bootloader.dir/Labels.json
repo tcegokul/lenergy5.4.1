@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
