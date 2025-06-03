@@ -10,7 +10,6 @@
 extern "C" {
 #endif
 
-
 void buzzer_init(gpio_num_t gpio);
 void buzzer_beep();
 void buzzer_play_completion();

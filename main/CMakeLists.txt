@@ -12,6 +12,10 @@ idf_component_register(
     "icons.c"
     "image_manager.c"
     "lang.c"
+	"LVGL_Driver/LVGL_Driver.c"
+	"LVGL_UI/LVGL_Example.c"
+  "LCD_Driver/ST7701S.c"
+  "EXIO/TCA9554PWR.c"
     "main.cpp"
     "vl53l0x_api_debug.c"
     "input_manager.c"
@@ -29,7 +33,12 @@ idf_component_register(
     "vl53l0x_platform.cpp"
     "vl53l0x_tuning.cpp"
 	"vl53l0x_extra_stubs.c"
-  INCLUDE_DIRS "."
+  INCLUDE_DIRS 
+          "."
+          "LVGL_Driver"
+          "LVGL_UI"
+          "LCD_Driver"
+          "EXIO"
   REQUIRES
     nvs_flash
     driver
@@ -38,4 +47,5 @@ idf_component_register(
     freertos
     esp_lcd 
     esp_timer
+    lvgl
 )

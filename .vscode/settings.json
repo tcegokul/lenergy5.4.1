@@ -9,5 +9,12 @@
     "idf.toolsPathWin": "e:\\Espressif_5.4.1\\Espressif\\tools",
     "idf.customExtraVars": {
         "IDF_TARGET": "esp32s3"
+    },
+    "files.associations": {
+        "esp_timer.h": "c",
+        "buzzer.h": "c",
+        "st7701s.h": "c",
+        "lvgl_driver.h": "c",
+        "esp_err.h": "c"
     }
 }

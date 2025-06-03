@@ -8,6 +8,12 @@
 #include "driver/gpio.h"
 #include "nvs_flash.h"
 
+
+
+#include "LVGL_Example.h"
+
+#include "LVGL_Driver.h"  // ✅ Nécessaire pour LVGL
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -167,6 +173,10 @@ extern "C" void app_main() {
     gpio_set_direction(BUTTON_ACTION, GPIO_MODE_INPUT);
     gpio_set_pull_mode(BUTTON_ACTION, GPIO_PULLUP_ONLY);
 
+   // LCD_Init();
+    LVGL_Init();
+    Lvgl_Example1();
+    
     while (1) {
         // Détection sujood
         // Détection sujood

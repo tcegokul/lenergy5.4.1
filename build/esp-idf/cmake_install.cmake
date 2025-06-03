@@ -554,6 +554,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/esp-idf/lvgl/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/esp-idf/espressif__cmake_utilities/cmake_install.cmake")
 endif()
 

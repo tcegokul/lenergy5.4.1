@@ -18,7 +18,7 @@ set(HEAD_HASH)
 file(READ "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/build/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
 
 string(STRIP "${HEAD_CONTENTS}" HEAD_CONTENTS)
-set(GIT_DIR "E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/.git")
+set(GIT_DIR "E:/freelance_clients/lenergy2023/lenergy_5.4.1/lenergy_5.4.1/lenergy_5.4.1/lenergy5.4.1/.git")
 # handle git-worktree
 if(EXISTS "${GIT_DIR}/commondir")
 	file(READ "${GIT_DIR}/commondir" GIT_DIR_NEW LIMIT 1024)
