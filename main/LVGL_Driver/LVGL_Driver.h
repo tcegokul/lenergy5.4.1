@@ -1,5 +1,9 @@
 #pragma once
 
+#include "esp_lcd_panel_ops.h"    // for esp_lcd_panel_draw_bitmap
+//#include "esp_lcd_touch.h"        // for touch read & coordinates
+
+
 #include "esp_err.h"
 #include "esp_log.h"
 #include "esp_timer.h"
