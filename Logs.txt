@@ -1,0 +1,182 @@
+PS D:\SDK\esp32\CED_LCD\lenergy_5.4.1\lenergy> $env:IDF_PATH = 'D:\Program\Code\esp32\esp\v5.4.1\esp-idf';
+PS D:\SDK\esp32\CED_LCD\lenergy_5.4.1\lenergy>  & 'D:\Program\Code\esp32\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe' 'D:\Program\Code\esp32\esp\v5.4.1\esp-idf\tools\idf_monitor.py' -p COM6 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --make '''D:\Program\Code\esp32\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe'' ''D:\Program\Code\esp32\esp\v5.4.1\esp-idf\tools\idf.py''' --target esp32s3 'd:\SDK\esp32\CED_LCD\lenergy_5.4.1\lenergy\build\lenergy.elf'
+--- Warning: GDB cannot open serial ports accessed as COMx
+--- Using \\.\COM6 instead...
+--- esp-idf-monitor 1.6.2 on \\.\COM6 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+I (218) esp_image: segment 1: paddr=000e89e8 vaddr=3fc9b500 sizeESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037b366
+--- 0x4037b366: esp_cpu_wait_for_intr at D:/Program/Code/esp32/esp/v5.4.1/esp-idf/components/esp_hw_support/cpu.c:64
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x170c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xec4
+load:0x403cb700,len:0x318c
+entry 0x403c8950
+I (26) boot: ESP-IDF v5.4.1 2nd stage bootloader
+I (27) boot: compile time May 11 2025 21:56:26
+I (27) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (30) boot: efuse block revision: v1.3
+I (33) qio_mode: Enabling default flash chip QIO
+I (38) boot.esp32s3: Boot SPI Speed : 80MHz
+I (41) boot.esp32s3: SPI Mode       : QIO
+I (45) boot.esp32s3: SPI Flash Size : 8MB
+I (49) boot: Enabling RNG early entropy source...
+I (53) boot: Partition Table:
+I (56) boot: ## Label            Usage          Type ST Offset   Length
+I (62) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (69) boot:  1 otadata          OTA data         01 00 0000f000 00002000
+I (75) boot:  2 factory          factory app      00 00 00020000 00200000
+I (82) boot: End of partition table
+I (85) boot: Defaulting to factory image
+I (89) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=c89c0h (821696) map
+I (218) esp_image: segment 1: paddr=000e89e8 vaddr=3fc9b500 size=04f90h ( 20368) load
+I (222) esp_image: segment 2: paddr=000ed980 vaddr=40374000 size=02698h (  9880) load
+I (224) esp_image: segment 3: paddr=000f0020 vaddr=42000020 size=918a8h (596136) map
+I (318) esp_image: segment 4: paddr=001818d0 vaddr=40376698 size=14e40h ( 85568) load
+I (335) esp_image: segment 5: paddr=00196718 vaddr=600fe100 size=0001ch (    28) load
+I (344) boot: Loaded app from partition at offset 0x20000
+I (344) boot: Disabling RNG early entropy source...
+I (354) cpu_start: Multicore app
+I (363) cpu_start: Pro cpu start user code
+I (363) cpu_start: cpu freq: 160000000 Hz
+I (363) app_init: Application information:
+I (363) app_init: Project name:     lenergy
+I (367) app_init: App version:      1
+I (370) app_init: Compile time:     May 11 2025 21:55:36
+I (375) app_init: ELF file SHA256:  808f1afb7...
+I (380) app_init: ESP-IDF:          v5.4.1
+I (384) efuse_init: Min chip rev:     v0.0
+I (387) efuse_init: Max chip rev:     v0.99
+I (391) efuse_init: Chip rev:         v0.2
+I (395) heap_init: Initializing. RAM available for dynamic allocation:
+I (402) heap_init: At 3FCA4228 len 000454E8 (277 KiB): RAM
+I (407) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (412) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (417) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM
+I (423) spi_flash: detected chip: gd
+I (426) spi_flash: flash io: qio
+W (429) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (438) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (445) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (452) main_task: Started on CPU0
+I (462) main_task: Calling app_main()
+E (472) lcd_panel.rgb: esp_lcd_new_rgb_panel(253): invalid parameter
+E (472) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (472) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (472) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (482) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (492) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (492) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (502) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (502) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (512) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (522) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (522) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (532) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (532) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (542) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (542) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (552) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (562) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (562) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (572) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (572) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (582) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (582) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (592) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (602) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (602) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (612) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (612) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (622) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (632) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (632) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (642) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (642) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (652) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (652) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (662) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (672) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (672) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (682) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (682) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (692) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (702) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (702) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+I (712) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+I (722) pp: pp rom version: e7ae62f
+I (722) net80211: net80211 rom version: e7ae62f
+I (732) wifi:wifi driver task: 3fcb01ec, prio:23, stack:6656, core=0
+I (732) wifi:wifi firmware version: 79fa3f41ba
+I (732) wifi:wifi certification version: v7.0
+I (742) wifi:config NVS flash: enabled
+I (742) wifi:config nano formatting: disabled
+I (742) wifi:Init data frame dynamic rx buffer num: 32
+I (752) wifi:Init static rx mgmt buffer num: 5
+I (752) wifi:Init management short buffer num: 32
+I (762) wifi:Init dynamic tx buffer num: 32
+I (762) wifi:Init static tx FG buffer num: 2
+I (772) wifi:Init static rx buffer size: 1600
+I (772) wifi:Init static rx buffer num: 10
+I (772) wifi:Init dynamic rx buffer num: 32
+I (782) wifi_init: rx ba win: 6
+I (782) wifi_init: accept mbox: 6
+I (782) wifi_init: tcpip mbox: 32
+I (792) wifi_init: udp mbox: 6
+I (792) wifi_init: tcp mbox: 6
+I (792) wifi_init: tcp tx win: 5760
+I (802) wifi_init: tcp rx win: 5760
+I (802) wifi_init: tcp mss: 1440
+I (802) wifi_init: WiFi IRAM OP enabled
+I (802) wifi_init: WiFi RX IRAM OP enabled
+I (812) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11
+I (852) wifi:mode : sta (d8:3b:da:6d:cc:a0)
+I (852) wifi:enable tsf
+I (852) ESPNOW: espnow [version: 2.0] init
+I (852) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0
+I (862) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (862) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0
+--- Error: ClearCommError failed (PermissionError(13, '璁惧涓嶈瘑鍒鍛戒护銆?', None, 22))
+--- Waiting for the device to reconnect.
+I (318) esp_image: segment 4: paddr=001818d0 vaddr=40376698 sizeE (717) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (727) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+E (727) i2c: i2c_master_cmd_begin(1537): i2c driver not installed
+I (737) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (747) pp: pp rom version: e7ae62f
+I (747) net80211: net80211 rom version: e7ae62f
+I (757) wifi:wifi driver task: 3fcb01ec, prio:23, stack:6656, core=0
+I (757) wifi:wifi firmware version: 79fa3f41ba
+I (757) wifi:wifi certification version: v7.0
+I (767) wifi:config NVS flash: enabled
+I (767) wifi:config nano formatting: disabled
+I (767) wifi:Init data frame dynamic rx buffer num: 32
+I (777) wifi:Init static rx mgmt buffer num: 5
+I (777) wifi:Init management short buffer num: 32
+I (787) wifi:Init dynamic tx buffer num: 32
+I (787) wifi:Init static tx FG buffer num: 2
+I (797) wifi:Init static rx buffer size: 1600
+I (797) wifi:Init static rx buffer num: 10
+I (797) wifi:Init dynamic rx buffer num: 32
+I (807) wifi_init: rx ba win: 6
+I (807) wifi_init: accept mbox: 6
+I (807) wifi_init: tcpip mbox: 32
+I (817) wifi_init: udp mbox: 6
+I (817) wifi_init: tcp mbox: 6
+I (817) wifi_init: tcp tx win: 5760
+I (827) wifi_init: tcp rx win: 5760
+I (827) wifi_init: tcp mss: 1440
+I (827) wifi_init: WiFi IRAM OP enabled
+I (827) wifi_init: WiFi RX IRAM OP enabled
+I (837) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11
+I (877) wifi:mode : sta (d8:3b:da:6d:cc:a0)
+I (877) wifi:enable tsf
+I (877) ESPNOW: espnow [version: 2.0] init
+I (877) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0
+I (887) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (897) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0
