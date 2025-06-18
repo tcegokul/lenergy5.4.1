@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/CMakeFiles/bootloader
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/CMakeFiles/bootloader.rule
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/CMakeFiles/bootloader-complete.rule
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
