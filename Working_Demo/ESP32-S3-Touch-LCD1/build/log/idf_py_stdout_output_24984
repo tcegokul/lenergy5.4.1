@@ -1,0 +1,779 @@
+[1/15] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\MyDrive\ESP32-S3-Touch-LCD1\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader/bootloader.bin"
+
+Bootloader binary size 0x57c0 bytes. 0x2840 bytes (31%) free.
+
+
+[2/15] No install step for 'bootloader'
+[3/15] Completed 'bootloader'
+[4/15] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_ranging.cpp.obj
+[5/15] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_i2c.cpp.obj
+[6/15] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_platform.cpp.obj
+[7/15] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_calibration.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_calibration.cpp.obj //LOG_FUNCTION_START
+ccache C:\Espres//LOG_FUNCTION_STARTsp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe -DESP_PLATFORM -DIDF_VER=\"v5.4.1-dirty\" -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/MyDrive/ESP32-S3-Touch-LCD1/build/config -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/EXIO -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LCD_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Touch_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Touch_Driver/esp_lcd_touch -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LVGL_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/I2C_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/PCF85063 -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/QMI8658 -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/SD_Card -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LVGL_UI -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Wireless -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Buzzer -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/BAT_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x -IC:/MyDrive/ESP32-S3-Touch-LCD1/main -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/dma/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/ldo/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/debug_probe/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/port/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/port/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/heap/tlsf -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3/register -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/deprecated_include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/sys -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_bootloader_format/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/efuse/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_mm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_security/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_spi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ana_cmpr/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_i2s/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdspi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_dac/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_rmt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_tsens/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_i2c/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ledc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_parlio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/touch_sensor/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_vfs_console/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_coex/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/include/local -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/wifi_apps/nan_app/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/include/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/osi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/api/include/api -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/btc/profile/esp/blufi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/btc/profile/esp/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/hci_log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/ble_log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/host/bluedroid/api/include/api -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/porting/ext/tinycrypt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/console -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_isp/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_cam/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_cam/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_jpeg/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ppa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_https_server/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/rgb/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/crypto/srp6a -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/proto-c -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/idf_test/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/nvs_sec_provider/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/rt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/touch_element/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/usb/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wifi_provisioning/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=C:/MyDrive/ESP32-S3-Touch-LCD1=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.4.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu++2b -fno-exceptions -fno-rtti -fuse-cxa-atexit -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_calibration.cpp.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\VI53I0x\vl53l0x_api_calibration.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_calibration.cpp.obj -c C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_calibration.cpp
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_calibration.cpp: In function 'VL53L0X_Error VL53L0X_set_offset_calibration_data_micro_meter(VL53L0X_DEV, int32_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_calibration.cpp:291:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  291 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_calibration.cpp:315:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  315 |         //LOG_FUNCTION_END(Status);
+      |         ^~~~~~~~~~~~~~~~
+[8/15] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_strings.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_strings.cpp.obj//LOG_FUNCTION_START
+ccache C:\Es//LOG_FUNCTION_STARTsa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe -DESP_PLATFORM -DIDF_VER=\"v5.4.1-dirty\" -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/MyDrive/ESP32-S3-Touch-LCD1/build/config -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/EXIO -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LCD_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Touch_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Touch_Driver/esp_lcd_touch -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LVGL_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/I2C_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/PCF85063 -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/QMI8658 -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/SD_Card -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LVGL_UI -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Wireless -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Buzzer -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/BAT_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x -IC:/MyDrive/ESP32-S3-Touch-LCD1/main -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/dma/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/ldo/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/debug_probe/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/port/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/port/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/heap/tlsf -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3/register -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/deprecated_include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/sys -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_bootloader_format/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/efuse/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_mm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_security/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_spi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ana_cmpr/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_i2s/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdspi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_dac/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_rmt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_tsens/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_i2c/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ledc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_parlio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/touch_sensor/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_vfs_console/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_coex/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/include/local -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/wifi_apps/nan_app/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/include/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/osi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/api/include/api -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/btc/profile/esp/blufi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/btc/profile/esp/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/hci_log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/ble_log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/host/bluedroid/api/include/api -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/porting/ext/tinycrypt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/console -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_isp/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_cam/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_cam/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_jpeg/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ppa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_https_server/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/rgb/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/crypto/srp6a -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/proto-c -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/idf_test/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/nvs_sec_provider/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/rt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/touch_element/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/usb/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wifi_provisioning/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=C:/MyDrive/ESP32-S3-Touch-LCD1=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.4.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu++2b -fno-exceptions -fno-rtti -fuse-cxa-atexit -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_strings.cpp.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\VI53I0x\vl53l0x_api_strings.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_strings.cpp.obj -c C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp: In function 'VL53L0X_Error VL53L0X_get_pal_error_string(VL53L0X_Error, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp:31:5: error: 'LOG_FUNCTION_START' was not declared in this scope
+   31 |     LOG_FUNCTION_START("");
+      |     ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp:45:5: error: '//LOG_FUNCTION_END' was not declared in this scope
+   45 |     //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |     //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp: In function 'VL53L0X_Error VL53L0X_get_pal_state_string(VL53L0X_State, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp:53:5: error: 'LOG_FUNCTION_START' was not declared in this scope
+   53 |     LOG_FUNCTION_START("");
+      |     ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp:67:5: error: '//LOG_FUNCTION_END' was not declared in this scope
+   67 |     //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |     //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp: In function 'VL53L0X_Error VL53L0X_get_sequence_steps_info(VL53L0X_SequenceStepId, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp:75:5: error: 'LOG_FUNCTION_START' was not declared in this scope
+   75 |     LOG_FUNCTION_START("");
+      |     ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp:89:5: error: '//LOG_FUNCTION_END' was not declared in this scope
+   89 |     //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |     //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp: In function 'VL53L0X_Error VL53L0X_get_limit_check_info(VL53L0X_DEV, uint16_t, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp:97:5: error: 'LOG_FUNCTION_START' was not declared in this scope
+   97 |     LOG_FUNCTION_START("");
+      |     ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_strings.cpp:111:5: error: '//LOG_FUNCTION_END' was not declared in this scope
+  111 |     //LOG_FUNCTION_END(Status);
+      |     ^~~~~~~~~~~~~~~~
+[9/15] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_core.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_core.cpp.obj 
+ccache C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe -DESP_PLATFORM -DIDF_VER=\"v5.4.1-dirty\" -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/MyDrive/ESP32-S3-Touch-LCD1/build/config -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/EXIO -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LCD_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Touch_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Touch_Driver/esp_lcd_touch -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LVGL_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/I2C_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/PCF85063 -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/QMI8658 -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/SD_Card -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LVGL_UI -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Wireless -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Buzzer -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/BAT_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x -IC:/MyDrive/ESP32-S3-Touch-LCD1/main -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/dma/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/ldo/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/debug_probe/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/port/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/port/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/heap/tlsf -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3/register -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/deprecated_include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/sys -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_bootloader_format/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/efuse/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_mm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_security/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_spi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ana_cmpr/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_i2s/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdspi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_dac/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_rmt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_tsens/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_i2c/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ledc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_parlio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/touch_sensor/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_vfs_console/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_coex/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/include/local -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/wifi_apps/nan_app/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/include/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/osi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/api/include/api -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/btc/profile/esp/blufi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/btc/profile/esp/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/hci_log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/ble_log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/host/bluedroid/api/include/api -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/porting/ext/tinycrypt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/console -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_isp/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_cam/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_cam/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_jpeg/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ppa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_https_server/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/rgb/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/crypto/srp6a -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/proto-c -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/idf_test/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/nvs_sec_provider/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/rt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/touch_element/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/usb/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wifi_provisioning/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=C:/MyDrive/ESP32-S3-Touch-LCD1=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.4.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu++2b -fno-exceptions -fno-rtti -fuse-cxa-atexit -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_core.cpp.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\VI53I0x\vl53l0x_api_core.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api_core.cpp.obj -c C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp
+In file included from C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:10:
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_platform_log.h:47:9: warning: "VL53L0X_LOG_ENABLE" redefined
+   47 | #define VL53L0X_LOG_ENABLE
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:2:9: note: this is the location of the previous definition
+    2 | #define VL53L0X_LOG_ENABLE 0//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'VL53L0X_Error VL53L0X_measurement_poll_for_completion(VL53L0X_DEV)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:65:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+   65 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:86:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+   86 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'VL53L0X_Error VL53L0X_device_read_strobe(VL53L0X_DEV)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:188:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  188 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:212:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  212 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'VL53L0X_Error VL53L0X_get_info_from_device(VL53L0X_DEV, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:242:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  242 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:480:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  480 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'uint32_t VL53L0X_calc_macro_period_ps(VL53L0X_DEV, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:492:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  492 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:503:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  503 |         //LOG_FUNCTION_END("");//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'VL53L0X_Error VL53L0X_set_measurement_timing_budget_micro_seconds(VL53L0X_DEV, uint32_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1139:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1139 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1181:25: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1181 |                         //LOG_FUNCTION_END(Status);
+      |                         ^~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1215:17: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1215 |                 //LOG_FUNCTION_END(Status);
+      |                 ^~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1261:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1261 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'VL53L0X_Error VL53L0X_load_tuning_settings(VL53L0X_DEV, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1280:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1280 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1348:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1348 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'VL53L0X_Error VL53L0X_get_total_signal_rate(VL53L0X_DEV, VL53L0X_RangingMeasurementData_t*, FixPoint1616_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1395:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1395 |         LOG_FUNCTION_START("");//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'VL53L0X_Error VL53L0X_calc_dmax(VL53L0X_DEV, FixPoint1616_t, uint32_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1450:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1450 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1489:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1489 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'VL53L0X_Error VL53L0X_calc_sigma_estimate(VL53L0X_DEV, VL53L0X_RangingMeasurementData_t*, FixPoint1616_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1553:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1553 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1631:17: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1631 |                 //LOG_FUNCTION_END(Status);
+      |                 ^~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1813:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1813 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp: In function 'VL53L0X_Error VL53L0X_get_pal_range_status(VL53L0X_DEV, uint8_t, FixPoint1616_t, uint16_t, VL53L0X_RangingMeasurementData_t*, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:1844:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1844 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api_core.cpp:2045:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2045 |         //LOG_FUNCTION_END(Status);
+      |         ^~~~~~~~~~~~~~~~
+[10/15] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api.cpp.obj//LOG_FUNCTION_START
+ccache C:\Espres//LOG_FUNCTION_STARTsp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe -DESP_PLATFORM -DIDF_VER=\"v5.4.1-dirty\" -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/MyDrive/ESP32-S3-Touch-LCD1/build/config -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/EXIO -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LCD_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Touch_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Touch_Driver/esp_lcd_touch -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LVGL_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/I2C_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/PCF85063 -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/QMI8658 -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/SD_Card -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/LVGL_UI -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Wireless -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/Buzzer -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/BAT_Driver -IC:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x -IC:/MyDrive/ESP32-S3-Touch-LCD1/main -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/config/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/include/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/dma/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/ldo/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/debug_probe/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/port/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/port/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/heap/tlsf -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/soc/esp32s3/register -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_rom/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/deprecated_include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/sys -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src -IC:/MyDrive/ESP32-S3-Touch-LCD1/managed_components -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gpio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_bootloader_format/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/efuse/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_mm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_security/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_spi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ana_cmpr/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_i2s/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdspi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_dac/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_rmt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_tsens/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_sdm/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_i2c/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ledc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_parlio/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/driver/touch_sensor/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_phy/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_vfs_console/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_coex/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/include/local -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/wifi_apps/nan_app/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/include/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/osi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/api/include/api -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/btc/profile/esp/blufi/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/btc/profile/esp/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/hci_log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/common/ble_log/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/host/bluedroid/api/include/api -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/bt/porting/ext/tinycrypt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/console -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_isp/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_cam/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_cam/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_jpeg/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_ppa/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_https_server/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_lcd/rgb/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/include/crypto/srp6a -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/protocomm/proto-c -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/idf_test/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/nvs_sec_provider/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/rt/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/touch_element/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/usb/include -IC:/Espressif/frameworks/esp-idf-v5.4.1/components/wifi_provisioning/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -Og -fno-shrink-wrap -fmacro-prefix-map=C:/MyDrive/ESP32-S3-Touch-LCD1=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.4.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu++2b -fno-exceptions -fno-rtti -fuse-cxa-atexit -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api.cpp.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\VI53I0x\vl53l0x_api.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/VI53I0x/vl53l0x_api.cpp.obj -c C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetVersion(VL53L0X_Version_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:53:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+   53 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:61:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+   61 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetPalSpecVersion(VL53L0X_Version_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:69:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+   69 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:77:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+   77 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetProductRevision(VL53L0X_DEV, uint8_t*, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:87:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+   87 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:94:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+   94 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetDeviceInfo(VL53L0X_DEV, VL53L0X_DeviceInfo_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:104:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  104 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:108:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  108 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetDeviceErrorStatus(VL53L0X_DEV, VL53L0X_DeviceError*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:118:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  118 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:125:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  125 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetDeviceErrorString(VL53L0X_DeviceError, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:135:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  135 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:139:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  139 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetRangeStatusString(uint8_t, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:148:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  148 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:153:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  153 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetPalErrorString(VL53L0X_Error, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:162:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  162 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:166:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  166 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetPalStateString(VL53L0X_State, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:175:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  175 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:179:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  179 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetPalState(VL53L0X_DEV, VL53L0X_State*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:187:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  187 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:191:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  191 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetPowerMode(VL53L0X_DEV, VL53L0X_PowerModes)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:200:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  200 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:228:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  228 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetPowerMode(VL53L0X_DEV, VL53L0X_PowerModes*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:238:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  238 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:253:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  253 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetLinearityCorrectiveGain(VL53L0X_DEV, int16_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:286:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  286 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:301:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  301 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetLinearityCorrectiveGain(VL53L0X_DEV, uint16_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:310:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  310 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:314:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  314 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetGroupParamHold(VL53L0X_DEV, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:322:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  322 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:326:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  326 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetUpperLimitMilliMeter(VL53L0X_DEV, uint16_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:335:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  335 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:339:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  339 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetDeviceAddress(VL53L0X_DEV, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:351:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  351 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:356:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  356 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_DataInit(VL53L0X_DEV)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:367:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  367 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:528:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  528 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetTuningSettingBuffer(VL53L0X_DEV, uint8_t*, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:537:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  537 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:555:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  555 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetTuningSettingBuffer(VL53L0X_DEV, uint8_t**, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:564:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  564 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:570:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  570 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_StaticInit(VL53L0X_DEV)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:592:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  592 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:755:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  755 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_WaitDeviceBooted(VL53L0X_DEV)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:763:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  763 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:767:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  767 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_ResetDevice(VL53L0X_DEV)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:776:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  776 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:811:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  811 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetDeviceParameters(VL53L0X_DEV, const VL53L0X_DeviceParameters_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:823:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  823 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:864:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  864 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetDeviceParameters(VL53L0X_DEV, VL53L0X_DeviceParameters_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:874:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  874 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:936:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  936 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetDeviceMode(VL53L0X_DEV, VL53L0X_DeviceModes)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:945:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  945 |         LOG_FUNCTION_START("%d", (int)DeviceMode);
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:961:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  961 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetDeviceMode(VL53L0X_DEV, VL53L0X_DeviceModes*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:970:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  970 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:974:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  974 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetRangeFractionEnable(VL53L0X_DEV, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:982:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  982 |         LOG_FUNCTION_START("%d", (int)Enable);
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:989:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+  989 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetFractionEnable(VL53L0X_DEV, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:997:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+  997 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1004:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1004 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetHistogramMode(VL53L0X_DEV, VL53L0X_HistogramModes)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1013:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1013 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1017:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1017 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetHistogramMode(VL53L0X_DEV, VL53L0X_HistogramModes*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1026:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1026 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1030:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1030 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetMeasurementTimingBudgetMicroSeconds(VL53L0X_DEV, uint32_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1039:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1039 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1044:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1044 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetMeasurementTimingBudgetMicroSeconds(VL53L0X_DEV, uint32_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1054:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1054 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1059:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1059 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetVcselPulsePeriod(VL53L0X_DEV, VL53L0X_VcselPeriod, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1068:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1068 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1073:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1073 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetSequenceStepEnable(VL53L0X_DEV, VL53L0X_SequenceStepId, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1097:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1097 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1174:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1174 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error sequence_step_enabled(VL53L0X_DEV, VL53L0X_SequenceStepId, uint8_t, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1185:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1185 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1207:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1207 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetSequenceStepEnable(VL53L0X_DEV, VL53L0X_SequenceStepId, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1217:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1217 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1227:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1227 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetSequenceStepEnables(VL53L0X_DEV, VL53L0X_SchedulerSequenceSteps_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1237:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1237 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1268:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1268 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetNumberOfSequenceSteps(VL53L0X_DEV, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1277:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1277 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1281:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1281 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetSequenceStepsInfo(VL53L0X_SequenceStepId, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1291:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1291 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1297:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1297 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetSequenceStepTimeout(VL53L0X_DEV, VL53L0X_SequenceStepId, FixPoint1616_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1312:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1312 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1351:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1351 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetSequenceStepTimeout(VL53L0X_DEV, VL53L0X_SequenceStepId, FixPoint1616_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1363:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1363 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1373:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1373 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetInterMeasurementPeriodMilliSeconds(VL53L0X_DEV, uint32_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1384:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1384 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1409:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1409 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetInterMeasurementPeriodMilliSeconds(VL53L0X_DEV, uint32_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1420:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1420 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1441:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1441 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetXTalkCompensationEnable(VL53L0X_DEV, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1452:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1452 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1479:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1479 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetXTalkCompensationEnable(VL53L0X_DEV, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1489:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1489 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1494:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1494 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetXTalkCompensationRateMegaCps(VL53L0X_DEV, FixPoint1616_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1506:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1506 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1533:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1533 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetXTalkCompensationRateMegaCps(VL53L0X_DEV, FixPoint1616_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1544:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1544 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1566:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1566 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetNumberOfLimitCheck(uint16_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1602:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1602 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1606:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1606 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetLimitCheckInfo(VL53L0X_DEV, uint16_t, char*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1615:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1615 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1620:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1620 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetLimitCheckStatus(VL53L0X_DEV, uint16_t, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1631:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1631 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1644:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1644 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetLimitCheckEnable(VL53L0X_DEV, uint16_t, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1658:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1658 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1748:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1748 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetLimitCheckEnable(VL53L0X_DEV, uint16_t, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1759:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1759 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1770:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1770 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetLimitCheckValue(VL53L0X_DEV, uint16_t, FixPoint1616_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1780:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1780 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1847:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1847 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetLimitCheckValue(VL53L0X_DEV, uint16_t, FixPoint1616_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1859:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1859 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1938:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 1938 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetLimitCheckCurrent(VL53L0X_DEV, uint16_t, FixPoint1616_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:1950:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 1950 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2010:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2010 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetWrapAroundCheckEnable(VL53L0X_DEV, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2025:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2025 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2046:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2046 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetWrapAroundCheckEnable(VL53L0X_DEV, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2056:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2056 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2071:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2071 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_PerformSingleMeasurement(VL53L0X_DEV)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2083:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2083 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2106:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2106 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_PerformSingleHistogramMeasurement(VL53L0X_DEV, VL53L0X_HistogramMeasurementData_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2115:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2115 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2119:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2119 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_PerformRefCalibration(VL53L0X_DEV, uint8_t*, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2129:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2129 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2134:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2134 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_PerformXTalkMeasurement(VL53L0X_DEV, uint32_t, FixPoint1616_t*, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2144:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2144 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2148:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2148 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_PerformXTalkCalibration(VL53L0X_DEV, FixPoint1616_t, FixPoint1616_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2158:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2158 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2163:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2163 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_PerformOffsetCalibration(VL53L0X_DEV, FixPoint1616_t, int32_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2172:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2172 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2177:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2177 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_CheckAndLoadInterruptSettings(VL53L0X_DEV, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2189:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2189 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2252:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2252 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_StartMeasurement(VL53L0X_DEV)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2265:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2265 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2337:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2337 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_StopMeasurement(VL53L0X_DEV)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2345:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2345 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2365:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2365 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetMeasurementDataReady(VL53L0X_DEV, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2377:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2377 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2401:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2401 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_WaitDeviceReadyForNewMeasurement(VL53L0X_DEV, uint32_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2410:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2410 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2414:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2414 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetRangingMeasurementData(VL53L0X_DEV, VL53L0X_RangingMeasurementData_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2437:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2437 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2577:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2577 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetMeasurementRefSignal(VL53L0X_DEV, FixPoint1616_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2587:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2587 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2597:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2597 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetHistogramMeasurementData(VL53L0X_DEV, VL53L0X_HistogramMeasurementData_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2607:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2607 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2609:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2609 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_PerformSingleRangingMeasurement(VL53L0X_DEV, VL53L0X_RangingMeasurementData_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2618:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2618 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2638:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2638 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetNumberOfROIZones(VL53L0X_DEV, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2647:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2647 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2653:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2653 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetNumberOfROIZones(VL53L0X_DEV, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2662:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2662 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2666:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2666 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetMaxNumberOfROIZones(VL53L0X_DEV, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2675:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2675 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2679:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2679 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetGpioConfig(VL53L0X_DEV, uint8_t, VL53L0X_DeviceModes, VL53L0X_GpioFunctionality, VL53L0X_InterruptPolarity)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2692:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2692 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2776:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2776 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetGpioConfig(VL53L0X_DEV, uint8_t, VL53L0X_DeviceModes*, VL53L0X_GpioFunctionality*, VL53L0X_InterruptPolarity*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2789:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2789 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2848:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2848 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetInterruptThresholds(VL53L0X_DEV, VL53L0X_DeviceModes, FixPoint1616_t, FixPoint1616_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2859:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2859 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2874:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2874 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetInterruptThresholds(VL53L0X_DEV, VL53L0X_DeviceModes, FixPoint1616_t*, FixPoint1616_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2885:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2885 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2902:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2902 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetStopCompletedStatus(VL53L0X_DEV, uint32_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2912:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2912 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2935:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2935 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_ClearInterruptMask(VL53L0X_DEV, uint32_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2947:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2947 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2967:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2967 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetInterruptMaskStatus(VL53L0X_DEV, uint32_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2977:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2977 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2986:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2986 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_EnableInterruptMask(VL53L0X_DEV, uint32_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2995:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 2995 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:2999:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 2999 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetSpadAmbientDamperThreshold(VL53L0X_DEV, uint16_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3012:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 3012 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3018:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 3018 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetSpadAmbientDamperThreshold(VL53L0X_DEV, uint16_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3027:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 3027 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3033:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 3033 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetSpadAmbientDamperFactor(VL53L0X_DEV, uint16_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3043:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 3043 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3051:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 3051 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetSpadAmbientDamperFactor(VL53L0X_DEV, uint16_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3061:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 3061 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3068:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 3068 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_SetReferenceSpads(VL53L0X_DEV, uint32_t, uint8_t)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3083:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 3083 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3087:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 3087 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_GetReferenceSpads(VL53L0X_DEV, uint32_t*, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3097:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 3097 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3101:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 3101 |         //LOG_FUNCTION_END(Status);//LOG_FUNCTION_START
+      |         //LOG_FUNCTION_START
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp: In function 'VL53L0X_Error VL53L0X_PerformRefSpadManagement(VL53L0X_DEV, uint32_t*, uint8_t*)':
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3111:9: error: 'LOG_FUNCTION_START' was not declared in this scope
+ 3111 |         LOG_FUNCTION_START("");
+      |         ^~~~~~~~~~~~~~~~~~
+C:/MyDrive/ESP32-S3-Touch-LCD1/main/VI53I0x/vl53l0x_api.cpp:3116:9: error: '//LOG_FUNCTION_END' was not declared in this scope
+ 3116 |         //LOG_FUNCTION_END(Status);
+      |         ^~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

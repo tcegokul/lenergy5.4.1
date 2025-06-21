@@ -1,0 +1,2 @@
+source C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader/gdbinit/symbols
+source C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader/gdbinit/connect
