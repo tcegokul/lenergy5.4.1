@@ -1,0 +1,4588 @@
+[0;32mI (110) esp_image: segment 1: paddr=0002c5d8 vaddr=3fc98300 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200c312
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x170c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xec4
+load:0x403cb700,len:0x318c
+entry 0x403c8950
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 21 2025 16:49:45[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (42) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (76) boot:  2 flash_test       Unknown data     01 81 00310000 00084000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=1c5b0h (116144) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002c5d8 vaddr=3fc98300 size=037b4h ( 14260) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002fd94 vaddr=40374000 size=00284h (   644) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=52f78h (339832) map[0m
+[0;32mI (172) esp_image: segment 4: paddr=00082fa0 vaddr=40374284 size=13fb4h ( 81844) load[0m
+[0;32mI (188) esp_image: segment 5: paddr=00096f5c vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (196) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (196) boot: Disabling RNG early entropy source...[0m
+[0;32mI (206) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (206) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (207) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (209) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (213) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (217) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (221) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (226) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (231) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (236) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (241) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (246) MSPI Timing: PSRAM timing tuning index: 4[0m
+[0;32mI (249) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (253) esp_psram: Speed: 80MHz[0m
+[0;32mI (266) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (296) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (296) cpu_start: Multicore app[0m
+[0;32mI (696) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (704) cpu_start: Pro cpu start user code[0m
+[0;32mI (704) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (704) app_init: Application information:[0m
+[0;32mI (705) app_init: Project name:     ESP32-S3-Touch-LCD-2.1[0m
+[0;32mI (709) app_init: App version:      3650bb1-dirty[0m
+[0;32mI (714) app_init: Compile time:     Jun 21 2025 14:47:07[0m
+[0;32mI (719) app_init: ELF file SHA256:  87d158c38...[0m
+[0;32mI (723) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (728) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (731) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (735) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (739) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (745) heap_init: At 3FC9CB78 len 0004CB98 (306 KiB): RAM[0m
+[0;32mI (751) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (756) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (761) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (766) esp_psram: Adding pool of 7680K of PSRAM memory to heap allocator[0m
+[0;32mI (773) spi_flash: detected chip: gd[0m
+[0;32mI (776) spi_flash: flash io: qio[0m
+[0;33mW (779) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (789) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (795) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (802) coexist: coex firmware version: e727207[0m
+[0;32mI (806) coexist: coexist rom version e7ae62f[0m
+[0;32mI (810) main_task: Started on CPU0[0m
+[0;32mI (820) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (820) main_task: Calling app_main()[0m
+[0;32mI (820) TCA9535: Detected IO expander device at 0x40, name is: TCA9535[0m
+[0;32mI (930) tca9535: State: 1[0m
+[0;32mI (930) i2c_scan: Found device at 0x20[0m
+[0;32mI (930) i2c_scan: Found device at 0x29[0m
+[0;32mI (940) i2c_scan: Found device at 0x68[0m
+[0;32mI (1120) GPS: No GPS Fix[0m
+[0;32mI (1120) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1230) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1690) LCD: Install RGB LCD panel driver[0m
+[0;32mI (1710) LCD: Register event callbacks[0m
+[0;32mI (1710) LCD: Initialize RGB LCD panel[0m
+[0;32mI (1710) LVGL: Initialize LVGL library[0m
+[0;32mI (1720) LVGL: Use frame buffers as LVGL draw buffers[0m
+[0;32mI (1780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (1930) LVGL: Register display driver to LVGL[0m
+[0;32mI (1980) LVGL: Install LVGL tick timer[0m
+[0;32mI (2020) LVGL: Register display indev to LVGL[0m
+[0;32mI (2030) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (2780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (2940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (3780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (3940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (4780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (4940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (5780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (5940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (6780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (6940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (7780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (7940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (8780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (8940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (9780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (9940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (10780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (10940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (11780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (11940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (12780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (12940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (13780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (13940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (14780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (14940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (15780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (15940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (16780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (16940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (17780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (17940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (18780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (18940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (19780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (19940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (20780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (20940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (21780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (21940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (22780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (22940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (23780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (23940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (24780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (24940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (25780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (25940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (26780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (26940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (27780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (27940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (28780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (28940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (29780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (29940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (30780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (30940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (31780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (31940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (32780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (32940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (33780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (33940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (34780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (34940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (35780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (35940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (36780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (36940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (37780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (37940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (38780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (38940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (39780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (39940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (40780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (40940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (41780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (41940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (42780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (42940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (43780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (43940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (44780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (44940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (45780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (45940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (46780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (46940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (47780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (47940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (48780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (48940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (49780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (49940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (50780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (50940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (51780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (51940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (52780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (52940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (53780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (53940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (54780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (54940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (55780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (55940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (56780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (56940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (57780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (57940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (58780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (58940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (59780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (59940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (60780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (60940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (61780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (61940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (62780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (62940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (63780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (63940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (64780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (64940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (65780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (65940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (66780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (66940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (67780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (67940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (68780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (68940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (69780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (69940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (70780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (70940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (71780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (71940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (72780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (72940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (73780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (73940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (74780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (74940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (75780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (75940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (76780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (76940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (77780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (77940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (78780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (78940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (79780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (79940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (80780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (80940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (81780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (81940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (82780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (82940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (83780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (83940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (84780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (84940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (85780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (85940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (86780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (86940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (87780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (87940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (88780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (88940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (89780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (89940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (90780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (90940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (91780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (91940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (92780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (92940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (93780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (93940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (94780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (94940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (95780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (95950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,10*7C
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (96780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (96950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,10*7C
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (97780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (97950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,10*7C
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (98780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (98950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,10*7C
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (99780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (99950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,13*7F
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (100780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (100950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,13*7F
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (101780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (101950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,18*74
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (102780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (102950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,03*7E
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (103780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (103950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,03*7E
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (104780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (104960) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,03*7E
+$BDGSV,1,1,01,06,,,20*6D
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (105780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (105960) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,11*7D
+$BDGSV,1,1,01,06,,,20*6D
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (106780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (106960) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,11*7D
+$BDGSV,1,1,01,06,,,20*6D
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (107780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (107960) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,11*7D
+$BDGSV,1,1,01,06,,,20*6D
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (108780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (108960) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,11*7D
+$BDGSV,1,1,01,06,,,20*6D
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (109780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (109950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,01,06,,,20*6D
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (110780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (110940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (111780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (111940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (112780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (112950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,01,06,,,20*6D
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (113780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (113950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,01,06,,,20*6D
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (114780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (114950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,01,06,,,20*6D
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (115780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (115950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,01,06,,,19*67
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (116780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (116940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (117780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (117940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (118780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (118940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (119780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (119940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (120780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (120940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (121780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (121940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (122780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (122940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (123780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (123940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (124780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (124940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (125780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (125940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (126780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (126940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (127780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (127940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (128780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (128940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (129780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (129940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (130780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (130940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (131780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (131940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (132780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (132940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (133780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (133940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (134780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (134940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (135780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (135940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (136780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (136940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (137780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (137940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (138780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (138940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (139780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (139940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (140780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (140940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (141780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (141940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (142780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (142940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (143780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (143940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (144780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (144940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (145780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (145940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (146780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (146940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (147780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (147940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (148780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (148940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (149780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (149940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (150780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (150940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (151780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (151940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (152780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (152940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (153780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (153940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (154780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (154940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (155780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (155940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (156780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (156940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (157780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (157940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (158780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (158940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (159780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (159940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (160780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (160940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (161780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (161940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (162780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (162940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (163780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (163940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (164780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (164940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (165780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (165940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (166780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (166940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (167780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (167940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (168780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (168940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (169780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (169940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (170780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (170940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (171780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (171940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (172780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (172940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (173780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (173940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (174780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (174940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (175780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (175940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (176780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (176940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (177780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (177940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (178780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (178940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (179780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (179940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (180780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (180940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (181780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (181940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (182780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (182940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (183780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (183940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (184780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (184940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (185780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (185940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (186780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (186940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (187780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (187940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (188780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (188940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (189780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (189940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (190780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (190940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (191780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (191940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (192780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (192940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (193780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (193940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (194780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (194940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (195780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (195940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (196780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (196940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (197780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (197940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (198780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (198940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (199780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (199940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (200780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (200940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (201780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (201940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (202780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (202940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (203780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (203940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (204780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (204940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (205780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (205940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (206780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (206940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (207780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (207940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (208780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (208940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (209780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (209940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (210780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (210940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (211780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (211940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (212780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (212940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (213780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (213940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (214780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (214940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (215780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (215940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (216780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (216940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (217780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (217940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (218780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (218940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (219780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (219940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (220780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (220940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (221780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (221940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (222780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (222940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (223780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (223940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (224780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (224940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (225780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (225940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (226780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (226940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (227780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (227940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (228780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (228940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (229780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (229940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (230780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (230940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (231780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (231940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (232780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (232940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (233780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (233940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (234780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (234940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (235780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (235940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (236780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (236940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (237780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (237940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (238780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (238940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (239780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (239940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (240780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (240940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (241780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (241940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (242780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (242940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (243780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (243940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (244780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (244940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (245780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (245940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (246780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (246940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (247780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (247940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (248780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (248940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (249780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (249940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (250780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (250940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (251780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (251940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (252780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (252940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (253780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (253940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (254780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (254940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (255780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (255940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (256780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (256940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (257780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (257940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (258780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (258940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (259780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (259940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (260780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (260940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (261780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (261940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (262780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (262940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (263780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (263940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (264780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (264940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (265780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (265940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (266780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (266940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (267780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (267940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (268780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (268940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (269780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (269940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (270780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (270940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (271780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (271940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (272780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (272940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (273780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (273940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (274780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (274940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (275780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (275940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (276780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (276940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (277780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (277940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (278780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (278940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (279780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (279940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (280780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (280940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (281780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (281940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (282780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (282940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (283780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (283940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (284780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (284940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (285780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (285940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (286780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (286940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (287780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (287940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (288780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (288940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (289780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (289940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (290780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (290940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (291780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (291940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (292780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (292940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (293780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (293940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (294780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (294940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (295780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (295940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (296780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (296940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (297780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (297940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (298780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (298940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (299780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (299940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (300780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (300940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (301780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (301940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (302780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (302940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (303780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (303940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (304780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (304940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (305780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (305940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (306780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (306940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (307780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (307940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (308780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (308940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (309780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (309940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (310780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (310940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (311780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (311940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (312780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (312940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (313780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (313940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (314780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (314940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (315780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (315940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (316780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (316940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (317780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (317940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (318780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (318940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (319780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (319940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (320780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (320950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,22*7D
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (321780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (321950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,03*7E
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (322780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (322940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (323780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (323940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (324780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (324940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (325780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (325940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (326780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (326950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,03*7E
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (327780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (327950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,03*7E
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (328780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (328950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,03*7E
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (329780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (329950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,11*7D
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (330780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (330950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,21*7E
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (331780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (331950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,21*7E
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (332780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (332950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,10*7C
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (333780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (333950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,10*7C
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (334780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (334950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,10*7C
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (335780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (335950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,13*7F
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (336780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (336950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,13*7F
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (337780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (337950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,13*7F
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (338780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (338950) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,01,05,,,09*74
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (339780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (339940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (340780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (340940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (341780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (341940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (342780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (342940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (343780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (343940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (344780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (344940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (345780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (345940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (346780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (346940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (347780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (347940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (348780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (348940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (349780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (349940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (350780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (350940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (351780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (351940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (352780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (352940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (353780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (353940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (354780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (354940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (355780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (355940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (356780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (356940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (357780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (357940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (358780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (358940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (359780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (359940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (360780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (360940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (361780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (361940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (362780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (362940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (363780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (363940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (364780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (364940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (365780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (365940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (366780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (366940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (367780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (367940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (368780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (368940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (369780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (369940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (370780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (370940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (371780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (371940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (372780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (372940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (373780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (373940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (374780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.
+[0;32mI (374940) GPS: Raw: 5,25.5,25.5*13[0m
+$GPGSV,1,1,00*79
+$BDGSV,1,1,00*68
+$GNRMC,,V,,,,,,,,,,N*4D
+$GNVTG,,,,,,,,,N*2E
+$GNZDA,,,,,,*56
+$GPTXT,01,01,01,ANTENNA OPEN*25
+
+[0;32mI (375780) GPS: Raw: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+$GNGLL,,,,,,V,N*7A
+$GPGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5*02
+$BDGSA,A,1,,,,,,,,,,,,,25.

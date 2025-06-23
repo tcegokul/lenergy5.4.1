@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "counter.h": "c",
+        "juloos.h": "c",
+        "ruku.h": "c",
+        "sujood.h": "c",
+        "qiyam_icon.h": "c",
+        "lvgl_counterpage.h": "c"
+    }
+}

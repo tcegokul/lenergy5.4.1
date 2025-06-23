@@ -1,0 +1,389 @@
+[0;32mI (110) esp_image: segment 1: paddr=0002bf78 vaddr=3fc98000 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200ac30
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x170c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xec4
+load:0x403cb700,len:0x318c
+entry 0x403c8950
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 21 2025 16:49:45[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (42) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (76) boot:  2 flash_test       Unknown data     01 81 00310000 00084000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=1bf50h (114512) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0002bf78 vaddr=3fc98000 size=037a4h ( 14244) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0002f724 vaddr=40374000 size=008f4h (  2292) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=4fb1ch (326428) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=0007fb44 vaddr=403748f4 size=136fch ( 79612) load[0m
+[0;32mI (185) esp_image: segment 5: paddr=00093248 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (204) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (204) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (206) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (210) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (214) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (219) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (224) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (228) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (233) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (238) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (243) MSPI Timing: PSRAM timing tuning index: 4[0m
+[0;32mI (247) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (250) esp_psram: Speed: 80MHz[0m
+[0;32mI (263) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (288) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (288) cpu_start: Multicore app[0m
+[0;32mI (691) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (700) cpu_start: Pro cpu start user code[0m
+[0;32mI (700) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (700) app_init: Application information:[0m
+[0;32mI (700) app_init: Project name:     ESP32-S3-Touch-LCD-2.1[0m
+[0;32mI (705) app_init: App version:      3650bb1-dirty[0m
+[0;32mI (709) app_init: Compile time:     Jun 21 2025 14:47:07[0m
+[0;32mI (714) app_init: ELF file SHA256:  20093e920...[0m
+[0;32mI (719) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (723) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (727) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (731) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (735) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (741) heap_init: At 3FC9C888 len 0004CE88 (307 KiB): RAM[0m
+[0;32mI (746) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (751) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (757) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (762) esp_psram: Adding pool of 7744K of PSRAM memory to heap allocator[0m
+[0;32mI (769) spi_flash: detected chip: gd[0m
+[0;32mI (772) spi_flash: flash io: qio[0m
+[0;33mW (775) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (785) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (791) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (797) coexist: coex firmware version: e727207[0m
+[0;32mI (802) coexist: coexist rom version e7ae62f[0m
+[0;32mI (806) main_task: Started on CPU0[0m
+[0;32mI (816) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (816) main_task: Calling app_main()[0m
+[0;32mI (816) TCA9535: Detected IO expander device at 0x40, name is: TCA9535[0m
+[0;32mI (926) tca9535: State: 1[0m
+[0;32mI (926) i2c_scan: Found device at 0x20[0m
+[0;32mI (926) i2c_scan: Found device at 0x29[0m
+[0;32mI (936) i2c_scan: Found device at 0x68[0m
+[0;32mI (1086) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1196) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1656) LCD: Install RGB LCD panel driver[0m
+[0;32mI (1676) LCD: Register event callbacks[0m
+[0;32mI (1676) LCD: Initialize RGB LCD panel[0m
+[0;32mI (1676) LVGL: Initialize LVGL library[0m
+[0;32mI (1676) LVGL: Use frame buffers as LVGL draw buffers[0m
+[0;32mI (1686) LVGL: Register display driver to LVGL[0m
+[0;32mI (1686) LVGL: Install LVGL tick timer[0m
+[0;32mI (1696) LVGL: Register display indev to LVGL[0m
+[0;32mI (2096) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (2096) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (2436) DEBUG: Distance: 2628 mm, Status: 0[0m
+[0;32mI (2436) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (2786) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (2786) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (3136) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (3136) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (3486) DEBUG: Distance: 2619 mm, Status: 0[0m
+[0;32mI (3486) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (3836) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (3836) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (4186) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (4186) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (4536) DEBUG: Distance: 2598 mm, Status: 0[0m
+[0;32mI (4536) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (4886) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (4886) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (5256) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (5256) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (5586) DEBUG: Distance: 8190 mm, Status: 0[0m
+[0;32mI (5586) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (5936) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (5936) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (6286) DEBUG: Distance: 2631 mm, Status: 0[0m
+[0;32mI (6286) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (6636) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (6636) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (6986) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (6986) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (7336) DEBUG: Distance: 2590 mm, Status: 0[0m
+[0;32mI (7336) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (7686) DEBUG: Distance: 350 mm, Status: 0[0m
+[0;32mI (7686) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (8036) DEBUG: Distance: 373 mm, Status: 0[0m
+[0;32mI (8036) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (8386) DEBUG: Distance: 374 mm, Status: 0[0m
+[0;32mI (8386) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (8756) DEBUG: Distance: 375 mm, Status: 0[0m
+[0;32mI (8756) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (9086) DEBUG: Distance: 363 mm, Status: 0[0m
+[0;32mI (9086) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (9436) DEBUG: Distance: 368 mm, Status: 0[0m
+[0;32mI (9436) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (9786) DEBUG: Distance: 365 mm, Status: 0[0m
+[0;32mI (9786) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (10136) DEBUG: Distance: 394 mm, Status: 0[0m
+[0;32mI (10136) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (10486) DEBUG: Distance: 369 mm, Status: 0[0m
+[0;32mI (10486) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (10836) DEBUG: Distance: 367 mm, Status: 0[0m
+[0;32mI (10836) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (11186) DEBUG: Distance: 354 mm, Status: 0[0m
+[0;32mI (11186) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (11536) DEBUG: Distance: 373 mm, Status: 0[0m
+[0;32mI (11536) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (11886) DEBUG: Distance: 382 mm, Status: 0[0m
+[0;32mI (11886) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (12256) DEBUG: Distance: 288 mm, Status: 0[0m
+[0;33mW (12256) UNKNOWN: Distance 288 mm didn't match any posture range[0m
+[0;32mI (12586) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (12586) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (12936) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (12936) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (13286) DEBUG: Distance: 38 mm, Status: 0[0m
+[0;33mW (13286) UNKNOWN: Distance 38 mm didn't match any posture range[0m
+[0;32mI (13636) DEBUG: Distance: 87 mm, Status: 0[0m
+[0;32mI (13636) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (13986) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (13986) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (14336) DEBUG: Distance: 55 mm, Status: 0[0m
+[0;32mI (14336) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (14686) DEBUG: Distance: 198 mm, Status: 0[0m
+[0;33mW (14686) UNKNOWN: Distance 198 mm didn't match any posture range[0m
+[0;32mI (15036) DEBUG: Distance: 401 mm, Status: 0[0m
+[0;32mI (15036) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (15386) DEBUG: Distance: 394 mm, Status: 0[0m
+[0;32mI (15386) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (15756) DEBUG: Distance: 405 mm, Status: 0[0m
+[0;32mI (15756) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (16086) DEBUG: Distance: 386 mm, Status: 0[0m
+[0;32mI (16086) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (16436) DEBUG: Distance: 385 mm, Status: 0[0m
+[0;32mI (16436) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (16786) DEBUG: Distance: 375 mm, Status: 0[0m
+[0;32mI (16786) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (17136) DEBUG: Distance: 327 mm, Status: 0[0m
+[0;32mI (17136) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (17486) DEBUG: Distance: 336 mm, Status: 0[0m
+[0;32mI (17486) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (17836) DEBUG: Distance: 256 mm, Status: 0[0m
+[0;33mW (17836) UNKNOWN: Distance 256 mm didn't match any posture range[0m
+[0;32mI (18186) DEBUG: Distance: 2598 mm, Status: 0[0m
+[0;32mI (18186) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (18536) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (18536) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (18886) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (18886) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (19256) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (19256) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (19586) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (19586) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (19936) DEBUG: Distance: 8190 mm, Status: 0[0m
+[0;32mI (19936) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (20286) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (20286) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (20636) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (20636) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (20986) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (20986) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (21336) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (21336) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (21686) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (21686) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (22036) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (22036) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (22386) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (22386) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (22756) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (22756) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (23086) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (23086) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (23436) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (23436) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (23786) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (23786) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (24136) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (24136) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (24486) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (24486) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (24836) DEBUG: Distance: 2625 mm, Status: 0[0m
+[0;32mI (24836) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (25186) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (25186) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (25536) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (25536) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (25886) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (25886) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (26256) DEBUG: Distance: 2616 mm, Status: 0[0m
+[0;32mI (26256) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (26586) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (26586) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (26936) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (26936) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (27286) DEBUG: Distance: 2598 mm, Status: 0[0m
+[0;32mI (27286) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (27636) DEBUG: Distance: 2629 mm, Status: 0[0m
+[0;32mI (27636) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (27986) DEBUG: Distance: 2617 mm, Status: 0[0m
+[0;32mI (27986) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (28336) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (28336) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (28686) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (28686) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (29036) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (29036) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (29386) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (29386) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (29756) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (29756) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (30086) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (30086) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (30436) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (30436) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (30786) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (30786) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (31136) DEBUG: Distance: 2531 mm, Status: 0[0m
+[0;32mI (31136) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (31486) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (31486) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (31836) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (31836) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (32186) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (32186) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (32536) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (32536) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (32886) DEBUG: Distance: 2595 mm, Status: 0[0m
+[0;32mI (32886) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (33256) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (33256) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (33586) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (33586) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (33936) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (33936) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (34286) DEBUG: Distance: 2627 mm, Status: 0[0m
+[0;32mI (34286) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (34636) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (34636) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (34986) DEBUG: Distance: 2612 mm, Status: 0[0m
+[0;32mI (34986) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (35336) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (35336) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (35686) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (35686) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (36036) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (36036) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (36386) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (36386) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (36756) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (36756) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (37086) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (37086) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (37436) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (37436) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (37786) DEBUG: Distance: 2574 mm, Status: 0[0m
+[0;32mI (37786) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (38136) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (38136) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (38486) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (38486) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (38836) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (38836) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (39186) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (39186) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (39536) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (39536) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (39886) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (39886) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (40256) DEBUG: Distance: 202 mm, Status: 0[0m
+[0;33mW (40256) UNKNOWN: Distance 202 mm didn't match any posture range[0m
+[0;32mI (40586) DEBUG: Distance: 278 mm, Status: 0[0m
+[0;33mW (40586) UNKNOWN: Distance 278 mm didn't match any posture range[0m
+[0;32mI (40936) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (40936) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (41286) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (41286) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (41636) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (41636) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (41986) DEBUG: Distance: 2617 mm, Status: 0[0m
+[0;32mI (41986) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (42336) DEBUG: Distance: 2615 mm, Status: 0[0m
+[0;32mI (42336) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (42686) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (42686) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (43036) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (43036) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (43386) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (43386) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (43756) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (43756) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (44086) DEBUG: Distance: 2593 mm, Status: 0[0m
+[0;32mI (44086) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (44436) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (44436) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (44786) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (44786) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (45136) DEBUG: Distance: 8190 mm, Status: 0[0m
+[0;32mI (45136) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (45486) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (45486) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (45836) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (45836) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (46186) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (46186) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (46536) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (46536) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (46886) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (46886) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (47256) DEBUG: Distance: 546 mm, Status: 0[0m
+[0;32mI (47256) POSTURE: Detected posture: Ruku[0m
+[0;32mI (47256) PRAYER: Transitioned from Qiyam to Ruku[0m
+[0;32mI (47586) DEBUG: Distance: 523 mm, Status: 0[0m
+[0;32mI (47586) POSTURE: Detected posture: Ruku[0m
+[0;32mI (47936) DEBUG: Distance: 563 mm, Status: 0[0m
+[0;32mI (47936) POSTURE: Detected posture: Ruku[0m
+[0;32mI (48286) DEBUG: Distance: 619 mm, Status: 0[0m
+[0;32mI (48286) POSTURE: Detected posture: Ruku[0m
+[0;32mI (48636) DEBUG: Distance: 623 mm, Status: 0[0m
+[0;32mI (48636) POSTURE: Detected posture: Ruku[0m
+[0;32mI (48986) DEBUG: Distance: 597 mm, Status: 0[0m
+[0;32mI (48986) POSTURE: Detected posture: Ruku[0m
+[0;32mI (49336) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (49336) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (49336) PRAYER: Transitioned from Ruku to Qiyam[0m
+[0;32mI (49686) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (49686) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (50036) DEBUG: Distance: 2642 mm, Status: 0[0m
+[0;32mI (50036) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (50386) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (50386) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (50756) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (50756) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (51086) DEBUG: Distance: 2591 mm, Status: 0[0m
+[0;32mI (51086) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (51436) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (51436) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (51786) DEBUG: Distance: 2625 mm, Status: 0[0m
+[0;32mI (51786) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (52136) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (52136) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (52486) DEBUG: Distance: 0 mm, Status: 0[0m
+[0;32mI (52486) POSTURE: Detected posture: Qiyam[0m
+[0;32mI (52836) DEBUG: Distance: 2631 mm, Status: 0[0m
+[0;32mI (52836) POSTURE: Detected posture: Qiyam[0m

@@ -19,6 +19,16 @@ idf_component_register(
                               "VI53I0x/vl53l0x_extra_stubs.c"
                               "VI53I0x/vl53l0x_api_debug.c"
 
+                              "GPS/gps_parser.c"
+                              "GPS/qibla_display.c"
+                              "LVGL_UI/LVGL_CounterPage.c"
+                              "counter.c"
+
+                               "LVGL_UI/assets/ruku.c"
+                               "LVGL_UI/assets/sujood.c"
+                               "LVGL_UI/assets/juloos.c"
+                               "LVGL_UI/assets/Qiyam.c"
+
 
                               "PCF85063/PCF85063.c"
                               "QMI8658/QMI8658.c"
@@ -41,9 +51,11 @@ idf_component_register(
                                      "./QMI8658"
                                      "./SD_Card"
                                      "./LVGL_UI"
+                                     "./LVGL_UI/assets"
                                      "./Wireless"
                                      "./Buzzer"
                                      "./BAT_Driver"
                                      "./VI53I0x"
+                                     "./GPS"
                                      "."
                         )

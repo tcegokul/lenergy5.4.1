@@ -1,0 +1,36 @@
+info: INFO: Symbol LV_USE_DEMO_WIDGETS defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:22
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:986
+info: INFO: Symbol LV_DEMO_WIDGETS_SLIDESHOW defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:26
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:989
+info: INFO: Symbol LV_USE_DEMO_KEYPAD_AND_ENCODER defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:994
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:31
+info: INFO: Symbol LV_USE_DEMO_BENCHMARK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:998
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:35
+info: INFO: Symbol LV_USE_DEMO_STRESS defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:39
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:1002
+info: INFO: Symbol LV_USE_DEMO_MUSIC defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:43
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:1006
+info: INFO: Symbol LV_FONT_MONTSERRAT_12 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:462
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:48
+info: INFO: Symbol LV_FONT_MONTSERRAT_14 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:52
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:464
+info: INFO: Symbol LV_FONT_MONTSERRAT_16 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:467
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:56
+info: INFO: Symbol BT_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\bt\Kconfig:3
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:62
+info: INFO: Symbol BT_BLE_50_FEATURES_SUPPORTED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:66
+    E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\bt\host\bluedroid\Kconfig.in:1227
+info: INFO: Symbol BT_BLE_42_FEATURES_SUPPORTED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\bt\host\bluedroid\Kconfig.in:1237
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:70
