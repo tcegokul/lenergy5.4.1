@@ -1,4 +1,4 @@
-# Install script for directory: C:/MyDrive/ESP32-S3-Touch-LCD1/main
+# Install script for directory: E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "E:/Espressif_5.4.1/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump.exe")
 endif()
 

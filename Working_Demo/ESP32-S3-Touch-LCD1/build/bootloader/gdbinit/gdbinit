@@ -1,2 +1,2 @@
-source C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader/gdbinit/symbols
-source C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader/gdbinit/connect
+source E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader/gdbinit/symbols
+source E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader/gdbinit/connect

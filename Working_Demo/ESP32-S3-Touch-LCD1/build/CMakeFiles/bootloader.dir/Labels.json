@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/CMakeFiles/bootloader"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/CMakeFiles/bootloader.rule"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

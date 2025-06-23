@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION 3.5)
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader/subproject")
+if(NOT EXISTS "E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader/subproject")
+  file(MAKE_DIRECTORY "E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader"
-  "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix"
-  "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/tmp"
-  "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src"
-  "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp"
+  "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader"
+  "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix"
+  "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/tmp"
+  "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp"
+  "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src"
+  "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

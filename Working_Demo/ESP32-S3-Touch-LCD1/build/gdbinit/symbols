@@ -3,7 +3,7 @@ define target hookpost-remote
 set confirm off
   # if $_streq((char *) 0x3ff194ad, "Mar  1 2021")
   if (*(int*) 0x3ff194ad) == 0x2072614d && (*(int*) 0x3ff194b1) == 0x32203120 && (*(int*) 0x3ff194b5) == 0x313230
-    add-symbol-file C:/Espressif/tools/esp-rom-elfs/20241011/esp32s3_rev0_rom.elf
+    add-symbol-file E:/Espressif_5.4.1/Espressif/tools/esp-rom-elfs/20241011/esp32s3_rev0_rom.elf
   else
     echo Warning: Unknown esp32s3 ROM revision.\n
   end
@@ -13,8 +13,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file C:/MyDrive/ESP32-S3-Touch-LCD1/build/bootloader/bootloader.elf
+    add-symbol-file E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file C:/MyDrive/ESP32-S3-Touch-LCD1/build/ESP32-S3-Touch-LCD-2.1.elf
+file E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/ESP32-S3-Touch-LCD-2.1.elf

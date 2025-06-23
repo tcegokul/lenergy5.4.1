@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: C:\MyDrive\ESP32-S3-Touch-LCD1\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 
