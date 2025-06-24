@@ -1,0 +1,638 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200a715: s_test_psram at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_psram/esp_psram.c:479
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42014bfc: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 2)
+--- 0x42015599: lv_obj_set_local_style_prop at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:260
+--- 0x42015a43: lv_obj_set_style_bg_color at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:176
+--- 0x4200dc54: update_rakah_blocks at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:146 (discriminator 1)
+--- 0x4200dc69: update_prayer_ui at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:186
+--- 0x4200aec2: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:220
+--- 0x4204d927: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x4037ea81: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x42014bff: get_local_style at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:478 (discriminator 1)
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40375ed9: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m
+Traceback (most recent call last):
+  File "E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

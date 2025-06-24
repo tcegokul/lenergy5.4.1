@@ -177,7 +177,7 @@ void app_main(void)
     LCD_Init();
     LVGL_Init();
 /********************* Demo *********************/
-    Lvgl_Example1();
+   // Lvgl_Example1();
 
     //Lvgl_Example1_close();
     //show_start_screen();
@@ -185,6 +185,10 @@ void app_main(void)
     lv_obj_t *counter_screen = lv_obj_create(NULL);
     counter_page_create(counter_screen);
     lv_scr_load(counter_screen);
+
+//     lv_obj_t *label_test = lv_label_create(lv_scr_act());
+// lv_label_set_text(label_test, "Test123");
+// lv_obj_align(label_test, LV_ALIGN_CENTER, 0, 0);
 
 
       my_timer = xTimerCreate("MyTimer", pdMS_TO_TICKS(1000), pdTRUE, NULL, my_timer_callback);
@@ -212,8 +216,8 @@ void app_main(void)
 
 
             
-             process_prayer_state(distance, status);
-             update_prayer_ui(rakah_counter, current_state);
+              process_prayer_state(distance, status);
+              update_prayer_ui(rakah_counter, current_state);
 
             
 

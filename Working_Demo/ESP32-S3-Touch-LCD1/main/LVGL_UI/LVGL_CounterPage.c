@@ -2,109 +2,133 @@
 #include <stdio.h>
 
 #include "lvgl.h"
-
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
-
-
-#include "assets/Qiyam.h"   // Posture icons
+#include "assets/Qiyam.h"
 #include "assets/ruku.h"
 #include "assets/sujood.h"
 #include "assets/juloos.h"
 
-lv_obj_t *label_rakah;
-lv_obj_t *label_state;
-static lv_obj_t *img_posture_icon;
-static lv_obj_t *start_screen;
+#include "assets/time_icon.h"
+#include "assets/battery_icon.h"  
 
-void show_start_screen(void)
+// #include "assets/random_icon.h"  // Battery icon if needed
+
+static lv_obj_t *label_rakah;
+static lv_obj_t *label_time;
+static lv_obj_t *img_battery;
+static lv_obj_t *img_posture_icon; // The single posture icon below rakah
+
+#define MAX_RAKAH 4
+static lv_obj_t *rakah_blocks[MAX_RAKAH];
+
+// typedef enum {
+//     STATE_QIYAM,
+//     STATE_RUKU,
+//     STATE_SUJOOD,
+//     STATE_JULOOS
+// } prayer_state_t;
+
+void create_rakah_progress(lv_obj_t *parent)
 {
-    start_screen = lv_obj_create(NULL); // Create a new screen
-    lv_obj_set_style_bg_color(start_screen, lv_color_black(), LV_PART_MAIN);
+    for (int i = 0; i < MAX_RAKAH; i++)
+    {
+        rakah_blocks[i] = lv_obj_create(parent);
+        lv_obj_set_size(rakah_blocks[i], 15, 15);
+        lv_obj_set_style_radius(rakah_blocks[i], 3, 0);
+        lv_obj_set_style_border_width(rakah_blocks[i], 0, 0);
+        lv_obj_set_style_bg_color(rakah_blocks[i], lv_color_hex(0x444444), 0); 
+        lv_obj_align(rakah_blocks[i], LV_ALIGN_BOTTOM_MID, (i - 1.5) * 20, -10);
+    }
+}
 
-    // Label: "Ready for prayer"
-    lv_obj_t *label1 = lv_label_create(start_screen);
-    lv_label_set_text(label1, "Ready for prayer");
-    lv_obj_set_style_text_color(label1, lv_color_white(), 0);
-    lv_obj_set_style_text_font(label1, &lv_font_montserrat_16, 0);
-    lv_obj_align(label1, LV_ALIGN_CENTER, 0, -20);
-
-    // Label: "Calibrating the sensor..."
-    lv_obj_t *label2 = lv_label_create(start_screen);
-    lv_label_set_text(label2, "Calibrating the sensor...");
-    lv_obj_set_style_text_color(label2, lv_color_white(), 0);
-    lv_obj_set_style_text_font(label2, &lv_font_montserrat_14, 0);
-    lv_obj_align(label2, LV_ALIGN_CENTER, 0, 20);
-
-    lv_scr_load(start_screen);
-
-    // // Create a timer to switch to main UI after 3 seconds
-    // lv_timer_t *timer = lv_timer_create_delayed([](lv_timer_t *t){
-    //     lv_obj_t *main_screen = lv_obj_create(NULL);
-    //     counter_page_create(main_screen);
-    //     lv_scr_load(main_screen);
-    //     lv_timer_del(t);
-    // }, 3000, NULL);
-
-   vTaskDelay(pdMS_TO_TICKS(3000));
+void update_rakah_blocks(uint8_t completed_rakah)
+{
+    for (int i = 0; i < MAX_RAKAH; i++)
+    {
+        if (i < completed_rakah)
+            lv_obj_set_style_bg_color(rakah_blocks[i], lv_color_white(), 0);
+        else
+            lv_obj_set_style_bg_color(rakah_blocks[i], lv_color_hex(0x444444), 0);
+    }
 }
 
 void counter_page_create(lv_obj_t *parent)
 {
-    // Set background to black
     lv_obj_set_style_bg_color(parent, lv_color_black(), LV_PART_MAIN);
 
-    // Rak‘ah label
+    // Smaller Time Label
+    // label_time = lv_label_create(parent);
+    // lv_label_set_text(label_time, "04:32");
+    // lv_obj_set_style_text_color(label_time, lv_color_white(), 0);
+    // lv_obj_set_style_text_font(label_time, &lv_font_montserrat_12, 0);
+    // lv_obj_align(label_time, LV_ALIGN_TOP_LEFT, 5, 5);
+
+//     img_time = lv_img_create(parent);
+// lv_img_set_src(img_time, &time_icon);  // Set your time image source
+// lv_obj_align(img_time, LV_ALIGN_TOP_LEFT, 5, 5);
+// lv_obj_set_size(img_time, 15, 15);  // Adjust as needed
+
+    // Battery Icon
+    // img_battery = lv_img_create(parent);
+    // lv_img_set_src(img_battery, &battery_icon);
+    // lv_obj_align(img_battery, LV_ALIGN_TOP_RIGHT, -5, 5);
+    // lv_obj_set_size(img_battery, 15, 10); 
+
+    img_battery = lv_label_create(parent);
+lv_label_set_text(img_battery, LV_SYMBOL_BATTERY_FULL);
+lv_obj_set_style_text_color(img_battery, lv_color_white(), 0);
+lv_obj_set_style_text_font(img_battery, &lv_font_montserrat_28, 0); // Adjust size as needed
+lv_obj_align(img_battery, LV_ALIGN_TOP_RIGHT, -5, 5);
+     
+
+    // Rak'ah Label
     label_rakah = lv_label_create(parent);
-    lv_obj_align(label_rakah, LV_ALIGN_TOP_MID, 0, 10);
-    lv_label_set_text(label_rakah, "Rak‘ah: 0");
-   // lv_obj_set_style_text_font(label_rakah, &lv_font_montserrat_14, 0);
-    lv_obj_set_style_text_color(label_rakah, lv_color_hex(0xFFFF99), 0);
+    lv_label_set_text(label_rakah, "rak'ah 0");
+    lv_obj_set_style_text_color(label_rakah, lv_color_white(), 0);
+    lv_obj_set_style_text_font(label_rakah, &lv_font_montserrat_28, 0);
+    lv_obj_align(label_rakah, LV_ALIGN_CENTER, 0, -100); // Center higher to give space for icon
+   
 
-    // Prayer state label
-    label_state = lv_label_create(parent);
-    lv_obj_align(label_state, LV_ALIGN_TOP_MID, 0, 50);
-    lv_label_set_text(label_state, "State: Qiyam");
-    //lv_obj_set_style_text_font(label_state, &lv_font_montserrat_14, 0);
-    lv_obj_set_style_text_color(label_state, lv_color_hex(0xFFFF99), 0);
-
-    // Posture icon image
+    // Posture Icon Below Rak'ah
     img_posture_icon = lv_img_create(parent);
-    lv_obj_align(img_posture_icon, LV_ALIGN_CENTER, 0, 50);  // push icon slightly down
-    //lv_obj_set_size(img_posture_icon, 96, 96);               // manually set icon size
-    lv_img_set_src(img_posture_icon, &Qiyam); 
-    //lv_img_set_zoom(img_posture_icon, 512);               // default
+    lv_img_set_src(img_posture_icon, &Qiyam);  // Default state
+    lv_obj_align(img_posture_icon, LV_ALIGN_CENTER, 0, 50); 
+
+    // Rakah Progress Blocks
+    create_rakah_progress(parent);
 }
 
 void update_prayer_ui(uint8_t rakah, prayer_state_t state)
 {
-    static const char* state_names[] = {
-        "Qiyam", "Ruku", "Sujood 1", "Jullos", "Sujood 2"
-    };
-
-    char buf[32];
-
-    snprintf(buf, sizeof(buf), "Rak‘ah: %d", rakah);
+    // Update Rak'ah count text
+    char buf[16];
+    snprintf(buf, sizeof(buf), "rak'ah %d", rakah);
     lv_label_set_text(label_rakah, buf);
 
-    snprintf(buf, sizeof(buf), "State: %s", state_names[state]);
-    lv_label_set_text(label_state, buf);
+    // Update Rak'ah blocks
+    update_rakah_blocks(rakah);
 
-    // Update icon
-    switch (state) {
-        case STATE_QIYAM:
-            lv_img_set_src(img_posture_icon, &Qiyam);
-            break;
-        case STATE_RUKU:
-            lv_img_set_src(img_posture_icon, &ruku);
-            break;
-        case STATE_SUJOOD_1:
-        case STATE_SUJOOD_2:
-            lv_img_set_src(img_posture_icon, &sujood);
-            break;
-        case STATE_JULLOS:
-            lv_img_set_src(img_posture_icon, &juloos);
-            break;
+    // Update Posture Icon based on state
+    switch (state)
+    {
+    case STATE_QIYAM:
+        lv_img_set_src(img_posture_icon, &Qiyam);
+        break;
+    case STATE_RUKU:
+        lv_img_set_src(img_posture_icon, &ruku);
+        break;
+    case STATE_SUJOOD_1:
+    lv_img_set_src(img_posture_icon, &sujood);
+        break;
+    case STATE_SUJOOD_2:
+        lv_img_set_src(img_posture_icon, &sujood);
+        break;
+    case STATE_JULLOS:
+        lv_img_set_src(img_posture_icon, &juloos);
+        break;
+    default:
+        break;
     }
 }

@@ -28,6 +28,7 @@ idf_component_register(
                                "LVGL_UI/assets/sujood.c"
                                "LVGL_UI/assets/juloos.c"
                                "LVGL_UI/assets/Qiyam.c"
+                               "LVGL_UI/assets/battery_icon.c"
 
 
                               "PCF85063/PCF85063.c"
