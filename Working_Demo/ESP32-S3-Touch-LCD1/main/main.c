@@ -1,8 +1,18 @@
 #include <stdio.h>
+#include <string.h>
+
 #include "sdkconfig.h"
+
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "freertos/semphr.h"
+
+#include "esp_log.h"
+#include "esp_system.h"
+#include "esp_err.h"
+
+#include "nvs_flash.h"
+
+// Device drivers
 #include "TCA9554PWR.h"
 #include "PCF85063.h"
 #include "QMI8658.h"
@@ -21,26 +31,28 @@
 #include "vl53l0x_api_ranging.h"
 
 #include "counter.h"
-
 #include "LVGL_UI/LVGL_CounterPage.h"
 
+// Wi‑Fi provisioning public API
+#include "wifi.h"
 
+// ----- Timers & sensors -----
 TimerHandle_t my_timer;
 bool accel_Data_rdy = false;
 uint8_t buf[6];
+
 extern IMUdata Accel;
 VL53L0X_RangingMeasurementData_t measurement1;
-
-extern VL53L0X_Dev_t sensor ;
+extern VL53L0X_Dev_t sensor;
 extern lv_obj_t *led;
 
-
-
-prayer_state_t current_state = STATE_QIYAM;
+// ----- Prayer state tracking -----
+prayer_state_t current_state  = STATE_QIYAM;
 prayer_state_t previous_state = STATE_QIYAM;
 
 uint16_t previous_distance = 2000;
-uint8_t rakah_counter = 0;
+uint8_t rakah_counter      = 0;
+
 
 
  void process_prayer_state(uint16_t distance_mm, uint8_t status)
@@ -111,7 +123,6 @@ uint8_t rakah_counter = 0;
 
 void my_timer_callback(TimerHandle_t xTimer)
 {
-   // QMI8658_Loop();
     accel_Data_rdy = true;
 }
 
@@ -132,22 +143,10 @@ void i2c_scan()
     }
 }
 
-void gps_update()
-{
-    if(gps_has_fix()){
-        gps_get_local_time();
-        ESP_LOGI("GPS", "Local Time: %s", gps_get_local_time());
-    }
-    else {
-        ESP_LOGI("GPS", "No GPS Fix");
-    }
-}
+
 
 void app_main(void)
 { 
-    //I2C_Init();
-
-   // i2c_master_init();
 
     esp_tca9535_config_t pca_cfg = {
         .i2c_scl = GPIO_NUM_48,
@@ -155,8 +154,7 @@ void app_main(void)
         .interrupt_output = -1,
     };
     tca9535_init(&pca_cfg);
-   // QMI8658_Init();
-    // spi_bus_init();
+ 
 
     tca9535_set_output_state(TCA9535_GPIO_NUM_11, TCA9535_IO_HIGH);
 
@@ -170,35 +168,27 @@ void app_main(void)
     
     vl53l0x_init();
 
-   // gps_parser_init(0);
    
-    //gps_update();
-
     LCD_Init();
     LVGL_Init();
 /********************* Demo *********************/
-   // Lvgl_Example1();
-
-    //Lvgl_Example1_close();
-    //show_start_screen();
+   
 
     lv_obj_t *counter_screen = lv_obj_create(NULL);
     counter_page_create(counter_screen);
     lv_scr_load(counter_screen);
 
-//     lv_obj_t *label_test = lv_label_create(lv_scr_act());
-// lv_label_set_text(label_test, "Test123");
-// lv_obj_align(label_test, LV_ALIGN_CENTER, 0, 0);
 
 
-      my_timer = xTimerCreate("MyTimer", pdMS_TO_TICKS(1000), pdTRUE, NULL, my_timer_callback);
+
+    my_timer = xTimerCreate("MyTimer", pdMS_TO_TICKS(1000), pdTRUE, NULL, my_timer_callback);
 
     if (my_timer != NULL)
     {
         xTimerStart(my_timer, 0);
     } 
 
-    //lv_demo_widgets();
+    
 
     
 
@@ -218,10 +208,21 @@ void app_main(void)
             
               process_prayer_state(distance, status);
               update_prayer_ui(rakah_counter, current_state);
-
             
+            } 
 
-         } 
+            ESP_ERROR_CHECK(nvs_flash_init());
+
+    if (connect_to_saved_wifi()) {
+        ESP_LOGI(TAG, "STA connected.");
+          http_get_geolocation();
+        return;
+    }
+
+    ESP_LOGI(TAG, "Starting Captive Portal Mode...");
+    wifi_init_softap();
+    start_http_server();
+    
 
        
 }
