@@ -22,6 +22,15 @@
 #include "cJSON.h"
 #include "wifi.h"   // your header with the 5 public prototypes
 
+#include <math.h>
+
+#define KAABA_LAT 21.422487
+#define KAABA_LON 39.826206
+
+static inline double deg2rad(double d){ return d * M_PI / 180.0; }
+static inline double rad2deg(double r){ return r * 180.0 / M_PI; }
+static inline double norm360(double a){ a = fmod(a, 360.0); return (a < 0) ? a + 360.0 : a; }
+
 // -------- Private defs (local to this file) --------
 #ifndef MIN
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
@@ -52,6 +61,91 @@ static esp_err_t root_get_handler(httpd_req_t *req)
 {
     httpd_resp_send(req, wifi_form_html, HTTPD_RESP_USE_STRLEN);
     return ESP_OK;
+}
+
+static double qibla_bearing_from_north_deg(double lat_deg, double lon_deg)
+{
+    double lat1 = deg2rad(lat_deg);
+    double lon1 = deg2rad(lon_deg);
+    double lat2 = deg2rad(KAABA_LAT);
+    double lon2 = deg2rad(KAABA_LON);
+
+    double dlon = lon2 - lon1;
+    double y = sin(dlon) * cos(lat2);
+    double x = cos(lat1)*sin(lat2) - sin(lat1)*cos(lat2)*cos(dlon);
+
+    return norm360(rad2deg(atan2(y, x)));
+}
+double http_get_geolocation(void)
+{
+    esp_http_client_config_t config = {
+        .url = "http://ip-api.com/json/",
+        .method = HTTP_METHOD_GET,
+        .timeout_ms = 5000,
+    };
+
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+    if (!client) { ESP_LOGE(TAG, "Failed to init HTTP client"); return -1; }
+
+    if (esp_http_client_open(client, 0) != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to open HTTP connection");
+        esp_http_client_cleanup(client);
+        return -1;
+    }
+
+    int status = esp_http_client_fetch_headers(client);
+    if (esp_http_client_get_status_code(client) != 200) {
+        ESP_LOGE(TAG, "HTTP status not OK");
+        esp_http_client_close(client);
+        esp_http_client_cleanup(client);
+        return -1;
+    }
+
+    char json_accumulator[1024] = {0};
+    int total_read = 0;
+    char buffer[256 + 1];
+
+    while (1) {
+        int read_len = esp_http_client_read(client, buffer, 256);
+        if (read_len > 0) {
+            buffer[read_len] = '\0';
+            if ((total_read + read_len) < sizeof(json_accumulator)) {
+                memcpy(json_accumulator + total_read, buffer, read_len);
+                total_read += read_len;
+            }
+        } else if (read_len == 0) break;
+        else { ESP_LOGE(TAG, "Read error"); break; }
+    }
+
+    json_accumulator[total_read] = '\0';
+    ESP_LOGI(TAG, "Full JSON: %s", json_accumulator);
+
+    // Parse JSON for lat/lon
+    double lat = 0, lon = 0;
+    cJSON *root = cJSON_Parse(json_accumulator);
+    if (root) {
+        cJSON *lat_item = cJSON_GetObjectItem(root, "lat");
+        cJSON *lon_item = cJSON_GetObjectItem(root, "lon");
+        if (cJSON_IsNumber(lat_item) && cJSON_IsNumber(lon_item)) {
+            lat = lat_item->valuedouble;
+            lon = lon_item->valuedouble;
+            ESP_LOGI(TAG, "Parsed lat: %.6f, lon: %.6f", lat, lon);
+        }
+        cJSON_Delete(root);
+    } else {
+        ESP_LOGE(TAG, "Failed to parse JSON");
+        esp_http_client_close(client);
+        esp_http_client_cleanup(client);
+        return -1;
+    }
+
+    esp_http_client_close(client);
+    esp_http_client_cleanup(client);
+
+    // Compute and return Qibla bearing
+    double bearing = qibla_bearing_from_north_deg(lat, lon);
+    ESP_LOGI(TAG, "Qibla bearing: %.2f° from North", bearing);
+    return bearing;
 }
 
 static esp_err_t connect_post_handler(httpd_req_t *req)
@@ -199,50 +293,50 @@ void parse_geolocation_response(const char *json_str)
     cJSON_Delete(root);
 }
 
-void http_get_geolocation(void)
-{
-    esp_http_client_config_t config = {
-        .url = "http://ip-api.com/json/",
-        .method = HTTP_METHOD_GET,
-        .timeout_ms = 5000,
-    };
+// void http_get_geolocation(void)
+// {
+//     esp_http_client_config_t config = {
+//         .url = "http://ip-api.com/json/",
+//         .method = HTTP_METHOD_GET,
+//         .timeout_ms = 5000,
+//     };
 
-    esp_http_client_handle_t client = esp_http_client_init(&config);
-    if (!client) { ESP_LOGE(TAG, "Failed to init HTTP client"); return; }
+//     esp_http_client_handle_t client = esp_http_client_init(&config);
+//     if (!client) { ESP_LOGE(TAG, "Failed to init HTTP client"); return; }
 
-    esp_err_t err = esp_http_client_open(client, 0);
-    if (err != ESP_OK) {
-        ESP_LOGE(TAG, "Failed to open HTTP connection: %s", esp_err_to_name(err));
-        esp_http_client_cleanup(client);
-        return;
-    }
+//     esp_err_t err = esp_http_client_open(client, 0);
+//     if (err != ESP_OK) {
+//         ESP_LOGE(TAG, "Failed to open HTTP connection: %s", esp_err_to_name(err));
+//         esp_http_client_cleanup(client);
+//         return;
+//     }
 
-    int64_t content_length = esp_http_client_fetch_headers(client);
-    int status = esp_http_client_get_status_code(client);
-    ESP_LOGI(TAG, "HTTP Status: %d, Content-Length: %lld", status, (long long)content_length);
-    if (status != 200) { esp_http_client_close(client); esp_http_client_cleanup(client); return; }
+//     int64_t content_length = esp_http_client_fetch_headers(client);
+//     int status = esp_http_client_get_status_code(client);
+//     ESP_LOGI(TAG, "HTTP Status: %d, Content-Length: %lld", status, (long long)content_length);
+//     if (status != 200) { esp_http_client_close(client); esp_http_client_cleanup(client); return; }
 
-    const int CHUNK_SIZE = 256;
-    char buffer[CHUNK_SIZE + 1];
-    int total_read = 0;
-    char json_accumulator[1024] = {0};
+//     const int CHUNK_SIZE = 256;
+//     char buffer[CHUNK_SIZE + 1];
+//     int total_read = 0;
+//     char json_accumulator[1024] = {0};
 
-    while (1) {
-        int read_len = esp_http_client_read(client, buffer, CHUNK_SIZE);
-        if (read_len > 0) {
-            buffer[read_len] = '\0';
-            if ((total_read + read_len) < (int)sizeof(json_accumulator)) {
-                memcpy(json_accumulator + total_read, buffer, read_len);
-                total_read += read_len;
-            }
-        } else if (read_len == 0) break;
-        else { ESP_LOGE(TAG, "Read error"); break; }
-    }
+//     while (1) {
+//         int read_len = esp_http_client_read(client, buffer, CHUNK_SIZE);
+//         if (read_len > 0) {
+//             buffer[read_len] = '\0';
+//             if ((total_read + read_len) < (int)sizeof(json_accumulator)) {
+//                 memcpy(json_accumulator + total_read, buffer, read_len);
+//                 total_read += read_len;
+//             }
+//         } else if (read_len == 0) break;
+//         else { ESP_LOGE(TAG, "Read error"); break; }
+//     }
 
-    json_accumulator[total_read] = '\0';
-    ESP_LOGI(TAG, "Full JSON: %s", json_accumulator);
-    parse_geolocation_response(json_accumulator);
+//     json_accumulator[total_read] = '\0';
+//     ESP_LOGI(TAG, "Full JSON: %s", json_accumulator);
+//     parse_geolocation_response(json_accumulator);
 
-    esp_http_client_close(client);
-    esp_http_client_cleanup(client);
-}
+//     esp_http_client_close(client);
+//     esp_http_client_cleanup(client);
+// }

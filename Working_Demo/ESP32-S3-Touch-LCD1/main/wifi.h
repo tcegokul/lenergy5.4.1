@@ -14,7 +14,7 @@ void wifi_init_softap(void);
 void start_http_server(void);
 
 // ---- Geolocation ----
-void http_get_geolocation(void);
+double http_get_geolocation(void);
 void parse_geolocation_response(const char *json_str);
 
 

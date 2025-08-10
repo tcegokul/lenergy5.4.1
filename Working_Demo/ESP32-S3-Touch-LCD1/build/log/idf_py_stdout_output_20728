@@ -1,0 +1,831 @@
+[0;32mI (128) esp_image: segment 1: paddr=00049098 vaddr=3fc9f000 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200bd1d
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x170c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xec4
+load:0x403cb700,len:0x318c
+entry 0x403c8950
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 21 2025 16:49:45[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (42) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (76) boot:  2 flash_test       Unknown data     01 81 00310000 00084000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c0e0020 size=39070h (233584) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=00049098 vaddr=3fc9f000 size=05ba4h ( 23460) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0004ec44 vaddr=40374000 size=013d4h (  5076) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=dc2c8h (901832) map[0m
+[0;32mI (273) esp_image: segment 4: paddr=0012c2f0 vaddr=403753d4 size=19b78h (105336) load[0m
+[0;32mI (293) esp_image: segment 5: paddr=00145e70 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (304) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (314) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (315) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (317) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (321) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (325) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (329) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (334) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (339) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (344) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (349) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (354) MSPI Timing: PSRAM timing tuning index: 4[0m
+[0;32mI (357) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (361) esp_psram: Speed: 80MHz[0m
+[0;32mI (383) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (453) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (454) cpu_start: Multicore app[0m
+[0;32mI (820) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (828) cpu_start: Pro cpu start user code[0m
+[0;32mI (828) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (829) app_init: Application information:[0m
+[0;32mI (829) app_init: Project name:     ESP32-S3-Touch-LCD-2.1[0m
+[0;32mI (834) app_init: App version:      95f6c65-dirty[0m
+[0;32mI (838) app_init: Compile time:     Aug  9 2025 15:19:33[0m
+[0;32mI (843) app_init: ELF file SHA256:  f09f13727...[0m
+[0;32mI (847) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (852) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (856) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (860) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (863) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (870) heap_init: At 3FCA95C0 len 00040150 (256 KiB): RAM[0m
+[0;32mI (875) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (880) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (885) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (891) esp_psram: Adding pool of 7040K of PSRAM memory to heap allocator[0m
+[0;32mI (897) spi_flash: detected chip: gd[0m
+[0;32mI (900) spi_flash: flash io: qio[0m
+[0;33mW (903) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (913) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (919) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (926) coexist: coex firmware version: e727207[0m
+[0;32mI (930) coexist: coexist rom version e7ae62f[0m
+[0;32mI (935) main_task: Started on CPU0[0m
+[0;32mI (945) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (945) main_task: Calling app_main()[0m
+[0;32mI (945) TCA9535: Detected IO expander device at 0x40, name is: TCA9535[0m
+[0;32mI (1055) tca9535: State: 1[0m
+[0;32mI (1055) i2c_scan: Found device at 0x20[0m
+[0;32mI (1055) i2c_scan: Found device at 0x29[0m
+[0;32mI (1065) i2c_scan: Found device at 0x68[0m
+[0;32mI (1245) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1355) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1815) LCD: Install RGB LCD panel driver[0m
+[0;32mI (1835) LCD: Register event callbacks[0m
+[0;32mI (1835) LCD: Initialize RGB LCD panel[0m
+[0;32mI (1835) LVGL: Initialize LVGL library[0m
+[0;32mI (1835) LVGL: Use frame buffers as LVGL draw buffers[0m
+[0;32mI (1845) LVGL: Register display driver to LVGL[0m
+[0;32mI (1845) LVGL: Install LVGL tick timer[0m
+[0;32mI (1855) LVGL: Register display indev to LVGL[0m
+[0;32mI (1865) wifi_prov: Connecting to saved Wi-Fi: GVCSYS1[0m
+[0;32mI (1865) pp: pp rom version: e7ae62f[0m
+[0;32mI (1865) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1885) wifi:wifi driver task: 3fcbe5dc, prio:23, stack:6656, core=0[0m
+[0;32mI (1885) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (1885) wifi:wifi certification version: v7.0[0m
+[0;32mI (1885) wifi:config NVS flash: enabled[0m
+[0;32mI (1885) wifi:config nano formatting: disabled[0m
+[0;32mI (1895) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1895) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1905) wifi:Init management short buffer num: 32[0m
+[0;32mI (1905) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1915) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1915) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1915) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1925) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1925) wifi_init: rx ba win: 6[0m
+[0;32mI (1925) wifi_init: accept mbox: 6[0m
+[0;32mI (1935) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1935) wifi_init: udp mbox: 6[0m
+[0;32mI (1935) wifi_init: tcp mbox: 6[0m
+[0;32mI (1945) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1945) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1945) wifi_init: tcp mss: 1440[0m
+[0;32mI (1955) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1955) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1955) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1965) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (2005) wifi:mode : sta (d8:3b:da:6e:35:88)[0m
+[0;32mI (2005) wifi:enable tsf[0m
+[0;32mI (2005) wifi_prov: STA started, connecting...[0m
+[0;32mI (2015) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2015) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2105) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2185) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2225) wifi:connected with GVCSYS1, aid = 9, channel 11, BW20, bssid = 52:ae:e4:07:d5:2b[0m
+[0;32mI (2225) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (2225) wifi:pm start, type: 1[0m
+
+[0;32mI (2225) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2235) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (2245) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2245) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2265) wifi:<ba-add>idx:0 (ifx:0, 52:ae:e4:07:d5:2b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3285) esp_netif_handlers: sta ip: 10.187.192.24, mask: 255.255.255.0, gw: 10.187.192.183[0m
+[0;32mI (3285) wifi_prov: Connected! IP Address: 10.187.192.24[0m
+[0;32mI (3285) wifi_prov: STA connected.[0m
+[0;32mI (4385) wifi_prov: Full JSON: {"status":"success","country":"India","countryCode":"IN","region":"TN","regionName":"Tamil Nadu","city":"Chennai","zip":"600006","lat":13.0895,"lon":80.2739,"timezone":"Asia/Kolkata","isp":"Reliance Jio Infocomm Limited","org":"Reliance Jio Infocomm Limited","as":"AS55836 Reliance Jio Infocomm Limited","query":"49.37.220.5"}[0m
+[0;32mI (4405) wifi_prov: Parsed lat: 13.089500, lon: 80.273900[0m
+[0;32mI (4405) wifi_prov: Qibla bearing: 287.92° from North[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42015e27  PS      : 0x00060630  A0      : 0x8200ff6c  A1      : 0x3fcad160  
+A2      : 0x00000000  A3      : 0x3c0e676c  A4      : 0x00000000  A5      : 0xfffffffb  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x82015e10  A9      : 0x3fcad140  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x00000004  A13     : 0x00000000  
+A14     : 0x3c0ff02c  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000022  LBEG    : 0x400555cd  LEND    : 0x400555e1  LCOUNT  : 0xfffffff9  
+
+
+Backtrace: 0x42015e24:0x3fcad160 0x4200ff69:0x3fcad180 0x4200c3d2:0x3fcad1a0 0x420db397:0x3fcad1d0 0x40381011:0x3fcad200
+
+
+
+
+ELF file SHA256: f09f13727
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40376019
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x170c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xec4
+load:0x403cb700,len:0x318c
+entry 0x403c8950
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jun 21 2025 16:49:45[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (75) boot:  2 flash_test       Unknown data     01 81 00310000 00084000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c0e0020 size=39070h (233584) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00049098 vaddr=3fc9f000 size=05ba4h ( 23460) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0004ec44 vaddr=40374000 size=013d4h (  5076) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=dc2c8h (901832) map[0m
+[0;32mI (273) esp_image: segment 4: paddr=0012c2f0 vaddr=403753d4 size=19b78h (105336) load[0m
+[0;32mI (293) esp_image: segment 5: paddr=00145e70 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (304) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (314) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (314) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (316) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (320) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (325) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (329) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (334) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (339) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (343) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (348) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (353) MSPI Timing: PSRAM timing tuning index: 4[0m
+[0;32mI (357) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (361) esp_psram: Speed: 80MHz[0m
+[0;32mI (382) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (453) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (453) cpu_start: Multicore app[0m
+[0;32mI (819) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (828) cpu_start: Pro cpu start user code[0m
+[0;32mI (828) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (828) app_init: Application information:[0m
+[0;32mI (828) app_init: Project name:     ESP32-S3-Touch-LCD-2.1[0m
+[0;32mI (833) app_init: App version:      95f6c65-dirty[0m
+[0;32mI (838) app_init: Compile time:     Aug  9 2025 15:19:33[0m
+[0;32mI (843) app_init: ELF file SHA256:  f09f13727...[0m
+[0;32mI (847) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (851) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (855) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (859) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (863) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (869) heap_init: At 3FCA95C0 len 00040150 (256 KiB): RAM[0m
+[0;32mI (874) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (879) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (885) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (890) esp_psram: Adding pool of 7040K of PSRAM memory to heap allocator[0m
+[0;32mI (897) spi_flash: detected chip: gd[0m
+[0;32mI (900) spi_flash: flash io: qio[0m
+[0;33mW (903) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (913) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (919) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (925) coexist: coex firmware version: e727207[0m
+[0;32mI (930) coexist: coexist rom version e7ae62f[0m
+[0;32mI (934) main_task: Started on CPU0[0m
+[0;32mI (944) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (944) main_task: Calling app_main()[0m
+[0;32mI (944) TCA9535: Detected IO expander device at 0x40, name is: TCA9535[0m
+[0;32mI (1054) tca9535: State: 1[0m
+[0;32mI (1054) i2c_scan: Found device at 0x20[0m
+[0;32mI (1054) i2c_scan: Found device at 0x29[0m
+[0;32mI (1064) i2c_scan: Found device at 0x68[0m
+[0;32mI (1244) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1354) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1814) LCD: Install RGB LCD panel driver[0m
+[0;32mI (1834) LCD: Register event callbacks[0m
+[0;32mI (1834) LCD: Initialize RGB LCD panel[0m
+[0;32mI (1834) LVGL: Initialize LVGL library[0m
+[0;32mI (1834) LVGL: Use frame buffers as LVGL draw buffers[0m
+[0;32mI (1844) LVGL: Register display driver to LVGL[0m
+[0;32mI (1844) LVGL: Install LVGL tick timer[0m
+[0;32mI (1854) LVGL: Register display indev to LVGL[0m
+[0;32mI (1864) wifi_prov: Connecting to saved Wi-Fi: GVCSYS1[0m
+[0;32mI (1864) pp: pp rom version: e7ae62f[0m
+[0;32mI (1864) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1884) wifi:wifi driver task: 3fcbe5dc, prio:23, stack:6656, core=0[0m
+[0;32mI (1884) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (1884) wifi:wifi certification version: v7.0[0m
+[0;32mI (1884) wifi:config NVS flash: enabled[0m
+[0;32mI (1884) wifi:config nano formatting: disabled[0m
+[0;32mI (1894) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1894) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1904) wifi:Init management short buffer num: 32[0m
+[0;32mI (1904) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1914) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1914) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1914) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1924) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1924) wifi_init: rx ba win: 6[0m
+[0;32mI (1924) wifi_init: accept mbox: 6[0m
+[0;32mI (1934) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1934) wifi_init: udp mbox: 6[0m
+[0;32mI (1934) wifi_init: tcp mbox: 6[0m
+[0;32mI (1944) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1944) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1944) wifi_init: tcp mss: 1440[0m
+[0;32mI (1954) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1954) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1954) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1964) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (2004) wifi:mode : sta (d8:3b:da:6e:35:88)[0m
+[0;32mI (2004) wifi:enable tsf[0m
+[0;32mI (2004) wifi_prov: STA started, connecting...[0m
+[0;32mI (2014) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2014) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2024) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (2034) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (2034) wifi_prov: Failed to connect. Retrying...[0m
+[0;33mW (4434) wifi_prov: Failed to connect. Retrying...[0m
+[0;32mI (4444) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4444) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4564) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4654) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4684) wifi:connected with GVCSYS1, aid = 10, channel 11, BW20, bssid = 52:ae:e4:07:d5:2b[0m
+[0;32mI (4684) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (4684) wifi:pm start, type: 1[0m
+
+[0;32mI (4694) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4694) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (4704) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4714) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4734) wifi:<ba-add>idx:0 (ifx:0, 52:ae:e4:07:d5:2b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5754) esp_netif_handlers: sta ip: 10.187.192.24, mask: 255.255.255.0, gw: 10.187.192.183[0m
+[0;32mI (5754) wifi_prov: Connected! IP Address: 10.187.192.24[0m
+[0;32mI (5754) wifi_prov: STA connected.[0m
+[0;32mI (6864) wifi_prov: Full JSON: {"status":"success","country":"India","countryCode":"IN","region":"TN","regionName":"Tamil Nadu","city":"Chennai","zip":"600006","lat":13.0895,"lon":80.2739,"timezone":"Asia/Kolkata","isp":"Reliance Jio Infocomm Limited","org":"Reliance Jio Infocomm Limited","as":"AS55836 Reliance Jio Infocomm Limited","query":"49.37.220.5"}[0m
+[0;32mI (6884) wifi_prov: Parsed lat: 13.089500, lon: 80.273900[0m
+[0;32mI (6894) wifi_prov: Qibla bearing: 287.92° from North[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42015e27  PS      : 0x00060630  A0      : 0x8200ff6c  A1      : 0x3fcad160  
+A2      : 0x00000000  A3      : 0x3c0e676c  A4      : 0x00000000  A5      : 0xfffffffb  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x82015e10  A9      : 0x3fcad140  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x00000004  A13     : 0x00000000  
+A14     : 0x3c0ff02c  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000022  LBEG    : 0x400555cd  LEND    : 0x400555e1  LCOUNT  : 0xfffffff9  
+
+
+Backtrace: 0x42015e24:0x3fcad160 0x4200ff69:0x3fcad180 0x4200c3d2:0x3fcad1a0 0x420db397:0x3fcad1d0 0x40381011:0x3fcad200
+
+
+
+
+ELF file SHA256: f09f13727
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40376019
+[0;32mI (828) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (836) cpu_start: Pro cpu start user code[0m
+[0;32mI (836) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (836) app_init: Application information:[0m
+[0;32mI (837) app_init: Project name:     ESP32-S3-Touch-LCD-2.1[0m
+[0;32mI (842) app_init: App version:      95f6c65-dirty[0m
+[0;32mI (846) app_init: Compile time:     Aug  9 2025 15:19:33[0m
+[0;32mI (851) app_init: ELF file SHA256:  f09f13727...[0m
+[0;32mI (855) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (860) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (864) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (867) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (871) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (878) heap_init: At 3FCA95C0 len 00040150 (256 KiB): RAM[0m
+[0;32mI (883) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (888) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (893) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (899) esp_psram: Adding pool of 7040K of PSRAM memory to heap allocator[0m
+[0;32mI (905) spi_flash: detected chip: gd[0m
+[0;32mI (908) spi_flash: flash io: qio[0m
+[0;33mW (911) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (921) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (927) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (934) coexist: coex firmware version: e727207[0m
+[0;32mI (938) coexist: coexist rom version e7ae62f[0m
+[0;32mI (943) main_task: Started on CPU0[0m
+[0;32mI (953) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (953) main_task: Calling app_main()[0m
+[0;32mI (953) TCA9535: Detected IO expander device at 0x40, name is: TCA9535[0m
+[0;32mI (1063) tca9535: State: 1[0m
+[0;32mI (1063) i2c_scan: Found device at 0x20[0m
+[0;32mI (1063) i2c_scan: Found device at 0x29[0m
+[0;32mI (1073) i2c_scan: Found device at 0x68[0m
+[0;32mI (1253) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1363) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1823) LCD: Install RGB LCD panel driver[0m
+[0;32mI (1843) LCD: Register event callbacks[0m
+[0;32mI (1843) LCD: Initialize RGB LCD panel[0m
+[0;32mI (1843) LVGL: Initialize LVGL library[0m
+[0;32mI (1843) LVGL: Use frame buffers as LVGL draw buffers[0m
+[0;32mI (1853) LVGL: Register display driver to LVGL[0m
+[0;32mI (1853) LVGL: Install LVGL tick timer[0m
+[0;32mI (1863) LVGL: Register display indev to LVGL[0m
+[0;32mI (1873) wifi_prov: Connecting to saved Wi-Fi: GVCSYS1[0m
+[0;32mI (1873) pp: pp rom version: e7ae62f[0m
+[0;32mI (1873) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1893) wifi:wifi driver task: 3fcbe5dc, prio:23, stack:6656, core=0[0m
+[0;32mI (1893) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (1893) wifi:wifi certification version: v7.0[0m
+[0;32mI (1893) wifi:config NVS flash: enabled[0m
+[0;32mI (1893) wifi:config nano formatting: disabled[0m
+[0;32mI (1903) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1903) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1913) wifi:Init management short buffer num: 32[0m
+[0;32mI (1913) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1923) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1923) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1923) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1933) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1933) wifi_init: rx ba win: 6[0m
+[0;32mI (1933) wifi_init: accept mbox: 6[0m
+[0;32mI (1943) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1943) wifi_init: udp mbox: 6[0m
+[0;32mI (1943) wifi_init: tcp mbox: 6[0m
+[0;32mI (1953) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1953) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1953) wifi_init: tcp mss: 1440[0m
+[0;32mI (1963) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1963) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1963) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1973) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (2013) wifi:mode : sta (d8:3b:da:6e:35:88)[0m
+[0;32mI (2013) wifi:enable tsf[0m
+[0;32mI (2013) wifi_prov: STA started, connecting...[0m
+[0;32mI (2013) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2023) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2033) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (2043) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (2043) wifi_prov: Failed to connect. Retrying...[0m
+[0;33mW (4443) wifi_prov: Failed to connect. Retrying...[0m
+[0;32mI (4473) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4473) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4483) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4573) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4613) wifi:connected with GVCSYS1, aid = 1, channel 11, BW20, bssid = 52:ae:e4:07:d5:2b[0m
+[0;32mI (4613) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (4613) wifi:pm start, type: 1[0m
+
+[0;32mI (4613) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4623) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (4643) wifi:<ba-add>idx:0 (ifx:0, 52:ae:e4:07:d5:2b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4693) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4693) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5663) esp_netif_handlers: sta ip: 10.187.192.24, mask: 255.255.255.0, gw: 10.187.192.183[0m
+[0;32mI (5663) wifi_prov: Connected! IP Address: 10.187.192.24[0m
+[0;32mI (5663) wifi_prov: STA connected.[0m
+[0;32mI (7363) wifi_prov: Full JSON: {"status":"success","country":"India","countryCode":"IN","region":"TN","regionName":"Tamil Nadu","city":"Chennai","zip":"600006","lat":13.0895,"lon":80.2739,"timezone":"Asia/Kolkata","isp":"Reliance Jio Infocomm Limited","org":"Reliance Jio Infocomm Limited","as":"AS55836 Reliance Jio Infocomm Limited","query":"49.37.220.5"}[0m
+[0;32mI (7383) wifi_prov: Parsed lat: 13.089500, lon: 80.273900[0m
+[0;32mI (7393) wifi_prov: Qibla bearing: 287.92° from North[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42015e27  PS      : 0x00060630  A0      : 0x8200ff6c  A1      : 0x3fcad160  
+A2      : 0x00000000  A3      : 0x3c0e676c  A4      : 0x00000000  A5      : 0xfffffffb  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x82015e10  A9      : 0x3fcad140  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x00000004  A13     : 0x00000000  
+A14     : 0x3c0ff02c  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000022  LBEG    : 0x400555cd  LEND    : 0x400555e1  LCOUNT  : 0xfffffff9  
+
+
+Backtrace: 0x42015e24:0x3fcad160 0x4200ff69:0x3fcad180 0x4200c3d2:0x3fcad1a0 0x420db397:0x3fcad1d0 0x40381011:0x3fcad200
+
+
+
+
+ELF file SHA256: f09f13727
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40376019
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x170c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xec4
+load:0x403cb700,len:0x318c
+entry 0x403c8950
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jun 21 2025 16:49:45[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (75) boot:  2 flash_test       Unknown data     01 81 00310000 00084000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c0e0020 size=39070h (233584) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00049098 vaddr=3fc9f000 size=05ba4h ( 23460) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=0004ec44 vaddr=40374000 size=013d4h (  5076) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=dc2c8h (901832) map[0m
+[0;32mI (273) esp_image: segment 4: paddr=0012c2f0 vaddr=403753d4 size=19b78h (105336) load[0m
+[0;32mI (293) esp_image: segment 5: paddr=00145e70 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (304) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (314) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (314) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (316) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (320) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (325) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (329) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (334) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (339) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (343) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (348) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (353) MSPI Timing: PSRAM timing tuning index: 4[0m
+[0;32mI (357) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (361) esp_psram: Speed: 80MHz[0m
+[0;32mI (382) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (453) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (453) cpu_start: Multicore app[0m
+[0;32mI (819) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (828) cpu_start: Pro cpu start user code[0m
+[0;32mI (828) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (828) app_init: Application information:[0m
+[0;32mI (828) app_init: Project name:     ESP32-S3-Touch-LCD-2.1[0m
+[0;32mI (833) app_init: App version:      95f6c65-dirty[0m
+[0;32mI (838) app_init: Compile time:     Aug  9 2025 15:19:33[0m
+[0;32mI (843) app_init: ELF file SHA256:  f09f13727...[0m
+[0;32mI (847) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (851) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (855) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (859) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (863) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (869) heap_init: At 3FCA95C0 len 00040150 (256 KiB): RAM[0m
+[0;32mI (874) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (879) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (885) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (890) esp_psram: Adding pool of 7040K of PSRAM memory to heap allocator[0m
+[0;32mI (897) spi_flash: detected chip: gd[0m
+[0;32mI (900) spi_flash: flash io: qio[0m
+[0;33mW (903) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (913) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (919) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (925) coexist: coex firmware version: e727207[0m
+[0;32mI (930) coexist: coexist rom version e7ae62f[0m
+[0;32mI (934) main_task: Started on CPU0[0m
+[0;32mI (944) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (944) main_task: Calling app_main()[0m
+[0;32mI (944) TCA9535: Detected IO expander device at 0x40, name is: TCA9535[0m
+[0;32mI (1054) tca9535: State: 1[0m
+[0;32mI (1054) i2c_scan: Found device at 0x20[0m
+[0;32mI (1054) i2c_scan: Found device at 0x29[0m
+[0;32mI (1064) i2c_scan: Found device at 0x68[0m
+[0;32mI (1244) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1354) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1814) LCD: Install RGB LCD panel driver[0m
+[0;32mI (1834) LCD: Register event callbacks[0m
+[0;32mI (1834) LCD: Initialize RGB LCD panel[0m
+[0;32mI (1834) LVGL: Initialize LVGL library[0m
+[0;32mI (1834) LVGL: Use frame buffers as LVGL draw buffers[0m
+[0;32mI (1844) LVGL: Register display driver to LVGL[0m
+[0;32mI (1844) LVGL: Install LVGL tick timer[0m
+[0;32mI (1854) LVGL: Register display indev to LVGL[0m
+[0;32mI (1864) wifi_prov: Connecting to saved Wi-Fi: GVCSYS1[0m
+[0;32mI (1864) pp: pp rom version: e7ae62f[0m
+[0;32mI (1864) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1884) wifi:wifi driver task: 3fcbe5dc, prio:23, stack:6656, core=0[0m
+[0;32mI (1884) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (1884) wifi:wifi certification version: v7.0[0m
+[0;32mI (1884) wifi:config NVS flash: enabled[0m
+[0;32mI (1884) wifi:config nano formatting: disabled[0m
+[0;32mI (1894) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1894) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1904) wifi:Init management short buffer num: 32[0m
+[0;32mI (1904) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1914) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1914) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1914) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1924) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1924) wifi_init: rx ba win: 6[0m
+[0;32mI (1924) wifi_init: accept mbox: 6[0m
+[0;32mI (1934) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1934) wifi_init: udp mbox: 6[0m
+[0;32mI (1934) wifi_init: tcp mbox: 6[0m
+[0;32mI (1944) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1944) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1944) wifi_init: tcp mss: 1440[0m
+[0;32mI (1954) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1954) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1954) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1964) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (2004) wifi:mode : sta (d8:3b:da:6e:35:88)[0m
+[0;32mI (2004) wifi:enable tsf[0m
+[0;32mI (2004) wifi_prov: STA started, connecting...[0m
+[0;32mI (2014) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2014) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2024) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (2034) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (2034) wifi_prov: Failed to connect. Retrying...[0m
+[0;33mW (4434) wifi_prov: Failed to connect. Retrying...[0m
+[0;32mI (4444) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4444) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4594) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4644) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4664) wifi:connected with GVCSYS1, aid = 2, channel 11, BW20, bssid = 52:ae:e4:07:d5:2b[0m
+[0;32mI (4664) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (4664) wifi:pm start, type: 1[0m
+
+[0;32mI (4674) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4674) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (4694) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4694) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4704) wifi:<ba-add>idx:0 (ifx:0, 52:ae:e4:07:d5:2b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5724) esp_netif_handlers: sta ip: 10.187.192.24, mask: 255.255.255.0, gw: 10.187.192.183[0m
+[0;32mI (5724) wifi_prov: Connected! IP Address: 10.187.192.24[0m
+[0;32mI (5724) wifi_prov: STA connected.[0m
+[0;32mI (6744) wifi_prov: Full JSON: {"status":"success","country":"India","countryCode":"IN","region":"TN","regionName":"Tamil Nadu","city":"Chennai","zip":"600006","lat":13.0895,"lon":80.2739,"timezone":"Asia/Kolkata","isp":"Reliance Jio Infocomm Limited","org":"Reliance Jio Infocomm Limited","as":"AS55836 Reliance Jio Infocomm Limited","query":"49.37.220.5"}[0m
+[0;32mI (6764) wifi_prov: Parsed lat: 13.089500, lon: 80.273900[0m
+[0;32mI (6774) wifi_prov: Qibla bearing: 287.92° from North[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42015e27  PS      : 0x00060630  A0      : 0x8200ff6c  A1      : 0x3fcad160  
+A2      : 0x00000000  A3      : 0x3c0e676c  A4      : 0x00000000  A5      : 0xfffffffb  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x82015e10  A9      : 0x3fcad140  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x00000004  A13     : 0x00000000  
+A14     : 0x3c0ff02c  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000022  LBEG    : 0x400555cd  LEND    : 0x400555e1  LCOUNT  : 0xfffffff9  
+
+
+Backtrace: 0x42015e24:0x3fcad160 0x4200ff69:0x3fcad180 0x4200c3d2:0x3fcad1a0 0x420db397:0x3fcad1d0 0x40381011:0x3fcad200
+
+
+
+
+ELF file SHA256: f09f13727
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40376019
+[0;32mI (826) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (834) cpu_start: Pro cpu start user code[0m
+[0;32mI (834) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (834) app_init: Application information:[0m
+[0;32mI (834) app_init: Project name:     ESP32-S3-Touch-LCD-2.1[0m
+[0;32mI (839) app_init: App version:      95f6c65-dirty[0m
+[0;32mI (844) app_init: Compile time:     Aug  9 2025 15:19:33[0m
+[0;32mI (849) app_init: ELF file SHA256:  f09f13727...[0m
+[0;32mI (853) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (857) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (861) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (865) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (869) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (875) heap_init: At 3FCA95C0 len 00040150 (256 KiB): RAM[0m
+[0;32mI (881) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (886) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (891) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (896) esp_psram: Adding pool of 7040K of PSRAM memory to heap allocator[0m
+[0;32mI (903) spi_flash: detected chip: gd[0m
+[0;32mI (906) spi_flash: flash io: qio[0m
+[0;33mW (909) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (919) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (925) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (932) coexist: coex firmware version: e727207[0m
+[0;32mI (936) coexist: coexist rom version e7ae62f[0m
+[0;32mI (940) main_task: Started on CPU0[0m
+[0;32mI (950) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (950) main_task: Calling app_main()[0m
+[0;32mI (950) TCA9535: Detected IO expander device at 0x40, name is: TCA9535[0m
+[0;32mI (1060) tca9535: State: 1[0m
+[0;32mI (1060) i2c_scan: Found device at 0x20[0m
+[0;32mI (1060) i2c_scan: Found device at 0x29[0m
+[0;32mI (1070) i2c_scan: Found device at 0x68[0m
+[0;32mI (1250) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1360) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1820) LCD: Install RGB LCD panel driver[0m
+[0;32mI (1840) LCD: Register event callbacks[0m
+[0;32mI (1840) LCD: Initialize RGB LCD panel[0m
+[0;32mI (1840) LVGL: Initialize LVGL library[0m
+[0;32mI (1840) LVGL: Use frame buffers as LVGL draw buffers[0m
+[0;32mI (1850) LVGL: Register display driver to LVGL[0m
+[0;32mI (1850) LVGL: Install LVGL tick timer[0m
+[0;32mI (1860) LVGL: Register display indev to LVGL[0m
+[0;32mI (1870) wifi_prov: Connecting to saved Wi-Fi: GVCSYS1[0m
+[0;32mI (1870) pp: pp rom version: e7ae62f[0m
+[0;32mI (1870) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1890) wifi:wifi driver task: 3fcbe5dc, prio:23, stack:6656, core=0[0m
+[0;32mI (1890) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (1890) wifi:wifi certification version: v7.0[0m
+[0;32mI (1890) wifi:config NVS flash: enabled[0m
+[0;32mI (1890) wifi:config nano formatting: disabled[0m
+[0;32mI (1900) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1900) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1910) wifi:Init management short buffer num: 32[0m
+[0;32mI (1910) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1920) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1920) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1920) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1930) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1930) wifi_init: rx ba win: 6[0m
+[0;32mI (1930) wifi_init: accept mbox: 6[0m
+[0;32mI (1940) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1940) wifi_init: udp mbox: 6[0m
+[0;32mI (1940) wifi_init: tcp mbox: 6[0m
+[0;32mI (1950) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1950) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1950) wifi_init: tcp mss: 1440[0m
+[0;32mI (1960) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1960) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1960) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1970) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (2010) wifi:mode : sta (d8:3b:da:6e:35:88)[0m
+[0;32mI (2010) wifi:enable tsf[0m
+[0;32mI (2010) wifi_prov: STA started, connecting...[0m
+[0;32mI (2020) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2020) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2040) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (2050) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (2050) wifi_prov: Failed to connect. Retrying...[0m
+[0;33mW (4450) wifi_prov: Failed to connect. Retrying...[0m
+[0;32mI (4460) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4460) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4470) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4540) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4570) wifi:connected with GVCSYS1, aid = 3, channel 11, BW20, bssid = 52:ae:e4:07:d5:2b[0m
+[0;32mI (4570) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (4570) wifi:pm start, type: 1[0m
+
+[0;32mI (4570) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4580) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (4600) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4600) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4610) wifi:<ba-add>idx:0 (ifx:0, 52:ae:e4:07:d5:2b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5630) esp_netif_handlers: sta ip: 10.187.192.24, mask: 255.255.255.0, gw: 10.187.192.183[0m
+[0;32mI (5630) wifi_prov: Connected! IP Address: 10.187.192.24[0m
+[0;32mI (5630) wifi_prov: STA connected.[0m
+[0;32mI (6560) wifi_prov: Full JSON: {"status":"success","country":"India","countryCode":"IN","region":"TN","regionName":"Tamil Nadu","city":"Chennai","zip":"600006","lat":13.0895,"lon":80.2739,"timezone":"Asia/Kolkata","isp":"Reliance Jio Infocomm Limited","org":"Reliance Jio Infocomm Limited","as":"AS55836 Reliance Jio Infocomm Limited","query":"49.37.220.5"}[0m
+[0;32mI (6580) wifi_prov: Parsed lat: 13.089500, lon: 80.273900[0m
+[0;32mI (6590) wifi_prov: Qibla bearing: 287.92° from North[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42015e27  PS      : 0x00060630  A0      : 0x8200ff6c  A1      : 0x3fcad160  
+A2      : 0x00000000  A3      : 0x3c0e676c  A4      : 0x00000000  A5      : 0xfffffffb  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x82015e10  A9      : 0x3fcad140  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x00000004  A13     : 0x00000000  
+A14     : 0x3c0ff02c  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000022  LBEG    : 0x400555cd  LEND    : 0x400555e1  LCOUNT  : 0xfffffff9  
+
+
+Backtrace: 0x42015e24:0x3fcad160 0x4200ff69:0x3fcad180 0x4200c3d2:0x3fcad1a0 0x420db397:0x3fcad1d0 0x40381011:0x3fcad200
+
+
+
+
+ELF file SHA256: f09f13727
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40376019
+[0;32mI (826) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (834) cpu_start: Pro cpu start user code[0m
+[0;32mI (834) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (834) app_init: Application information:[0m
+[0;32mI (834) app_init: Project name:     ESP32-S3-Touch-LCD-2.1[0m
+[0;32mI (839) app_init: App version:      95f6c65-dirty[0m
+[0;32mI (844) app_init: Compile time:     Aug  9 2025 15:19:33[0m
+[0;32mI (849) app_init: ELF file SHA256:  f09f13727...[0m
+[0;32mI (853) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (857) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (861) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (865) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (869) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (875) heap_init: At 3FCA95C0 len 00040150 (256 KiB): RAM[0m
+[0;32mI (881) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (886) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (891) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (896) esp_psram: Adding pool of 7040K of PSRAM memory to heap allocator[0m
+[0;32mI (903) spi_flash: detected chip: gd[0m
+[0;32mI (906) spi_flash: flash io: qio[0m
+[0;33mW (909) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (919) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (925) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (932) coexist: coex firmware version: e727207[0m
+[0;32mI (936) coexist: coexist rom version e7ae62f[0m
+[0;32mI (940) main_task: Started on CPU0[0m
+[0;32mI (950) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (950) main_task: Calling app_main()[0m
+[0;32mI (950) TCA9535: Detected IO expander device at 0x40, name is: TCA9535[0m
+[0;32mI (1060) tca9535: State: 1[0m
+[0;32mI (1060) i2c_scan: Found device at 0x20[0m
+[0;32mI (1060) i2c_scan: Found device at 0x29[0m
+[0;32mI (1070) i2c_scan: Found device at 0x68[0m
+[0;32mI (1250) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1360) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1820) LCD: Install RGB LCD panel driver[0m
+[0;32mI (1840) LCD: Register event callbacks[0m
+[0;32mI (1840) LCD: Initialize RGB LCD panel[0m
+[0;32mI (1840) LVGL: Initialize LVGL library[0m
+[0;32mI (1840) LVGL: Use frame buffers as LVGL draw buffers[0m
+[0;32mI (1850) LVGL: Register display driver to LVGL[0m
+[0;32mI (1850) LVGL: Install LVGL tick timer[0m
+[0;32mI (1860) LVGL: Register display indev to LVGL[0m
+[0;32mI (1870) wifi_prov: Connecting to saved Wi-Fi: GVCSYS1[0m
+[0;32mI (1870) pp: pp rom version: e7ae62f[0m
+[0;32mI (1870) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1890) wifi:wifi driver task: 3fcbe5dc, prio:23, stack:6656, core=0[0m
+[0;32mI (1890) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (1890) wifi:wifi certification version: v7.0[0m
+[0;32mI (1890) wifi:config NVS flash: enabled[0m
+[0;32mI (1890) wifi:config nano formatting: disabled[0m
+[0;32mI (1900) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1900) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1910) wifi:Init management short buffer num: 32[0m
+[0;32mI (1910) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1920) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1920) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1920) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1930) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1930) wifi_init: rx ba win: 6[0m
+[0;32mI (1940) wifi_init: accept mbox: 6[0m
+[0;32mI (1940) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1940) wifi_init: udp mbox: 6[0m
+[0;32mI (1940) wifi_init: tcp mbox: 6[0m
+[0;32mI (1950) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1950) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1950) wifi_init: tcp mss: 1440[0m
+[0;32mI (1960) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1960) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1960) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1970) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (2010) wifi:mode : sta (d8:3b:da:6e:35:88)[0m
+[0;32mI (2010) wifi:enable tsf[0m
+[0;32mI (2010) wifi_prov: STA started, connecting...[0m
+[0;32mI (2020) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2020) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2030) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (2040) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (2040) wifi_prov: Failed to connect. Retrying...[0m

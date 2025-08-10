@@ -42,6 +42,7 @@ idf_component_register(
                               "tca9535.c"
                               "spi_bus.c"
                               "wifi.c"
+                              "Compass.c"
 
                         INCLUDE_DIRS "./EXIO"
                                      "./LCD_Driver"

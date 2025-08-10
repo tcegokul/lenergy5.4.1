@@ -35,6 +35,12 @@
 
 // Wi‑Fi provisioning public API
 #include "wifi.h"
+// Compass UI
+#include "Compass.h"
+
+
+lv_obj_t *compass_cont = NULL;
+
 
 // ----- Timers & sensors -----
 TimerHandle_t my_timer;
@@ -188,12 +194,40 @@ void app_main(void)
         xTimerStart(my_timer, 0);
     } 
 
+    ESP_ERROR_CHECK(nvs_flash_init());
+
+    if (connect_to_saved_wifi()) {
+        ESP_LOGI(TAG, "STA connected.");
+
+        double qibla_deg = http_get_geolocation();
+
+       lv_disp_t *d = lv_disp_get_default();
+       int dia = LV_MIN(lv_disp_get_hor_res(d), lv_disp_get_ver_res(d)) - lv_dpx(24);
+
+        compass_ui_create(lv_scr_act(), dia);
+     
+
+        if (qibla_deg >= 0){
+
+            compass_set_bearing_deg(qibla_deg);
+            //compass_set_bearing_deg(287.92f);
+            printf("QIBLA: %.2f° from North\n", qibla_deg);
+        }
+
+        else{
+            ESP_LOGI(TAG, "Starting Captive Portal Mode...");
+             wifi_init_softap();
+             start_http_server();
+        }
+    }
     
 
     
 
     while (1) {
+
         vTaskDelay(pdMS_TO_TICKS(10));
+
         lv_timer_handler();
 
         if (accel_Data_rdy)
@@ -211,19 +245,9 @@ void app_main(void)
             
             } 
 
-            ESP_ERROR_CHECK(nvs_flash_init());
+           
 
-    if (connect_to_saved_wifi()) {
-        ESP_LOGI(TAG, "STA connected.");
-          http_get_geolocation();
-        return;
+   
     }
 
-    ESP_LOGI(TAG, "Starting Captive Portal Mode...");
-    wifi_init_softap();
-    start_http_server();
-    
-
-       
-}
 }

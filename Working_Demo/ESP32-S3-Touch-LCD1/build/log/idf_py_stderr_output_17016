@@ -1,0 +1,66 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200bd3b: s_test_psram at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_psram/esp_psram.c:472
+[0m
+[0;33m--- 0x403760d9: panic_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40380505: esp_system_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40389a85: __assert_func at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x42045e93: esp_netif_create_default_wifi_sta at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/src/wifi_default.c:388 (discriminator 1)
+--- 0x4200fcc3: connect_to_saved_wifi at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/wifi.c:212
+--- 0x4200c526: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:218
+--- 0x420db43b: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x40381011: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40376019: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403760d9: panic_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40380505: esp_system_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40389a85: __assert_func at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x42045e93: esp_netif_create_default_wifi_sta at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/src/wifi_default.c:388 (discriminator 1)
+--- 0x4200fcc3: connect_to_saved_wifi at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/wifi.c:212
+--- 0x4200c526: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:218
+--- 0x420db43b: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x40381011: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40376019: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403760d9: panic_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40380505: esp_system_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40389a85: __assert_func at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x42045e93: esp_netif_create_default_wifi_sta at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/src/wifi_default.c:388 (discriminator 1)
+--- 0x4200fcc3: connect_to_saved_wifi at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/wifi.c:212
+--- 0x4200c526: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:218
+--- 0x420db43b: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x40381011: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m--- 0x40376019: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m[0m
+[0;33m--- 0x403760d9: panic_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40380505: esp_system_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40389a85: __assert_func at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x42045e93: esp_netif_create_default_wifi_sta at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_wifi/src/wifi_default.c:388 (discriminator 1)
+--- 0x4200fcc3: connect_to_saved_wifi at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/wifi.c:212
+--- 0x4200c526: app_main at E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:218
+--- 0x420db43b: main_task at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/app_startup.c:208
+--- 0x40381011: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40376019: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40376019: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- Warning: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.[0m
+[0m
+Traceback (most recent call last):
+  File "E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt
