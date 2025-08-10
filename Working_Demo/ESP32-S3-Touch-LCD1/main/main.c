@@ -39,7 +39,7 @@
 #include "Compass.h"
 
 
-lv_obj_t *compass_cont = NULL;
+//lv_obj_t *compass_cont = NULL;
 
 
 // ----- Timers & sensors -----
@@ -210,7 +210,8 @@ void app_main(void)
         if (qibla_deg >= 0){
 
             compass_set_bearing_deg(qibla_deg);
-            //compass_set_bearing_deg(287.92f);
+            
+            compass_hide();
             printf("QIBLA: %.2f° from North\n", qibla_deg);
         }
 
@@ -239,7 +240,7 @@ void app_main(void)
              uint8_t status = measurement1.RangeStatus;
 
 
-            
+            //void compass_hide(void);
               process_prayer_state(distance, status);
               update_prayer_ui(rakah_counter, current_state);
             

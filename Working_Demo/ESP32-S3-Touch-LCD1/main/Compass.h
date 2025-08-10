@@ -2,7 +2,7 @@
 #define COMPASS_H
 
 #include "lvgl.h"   // LVGL core header
-extern lv_obj_t *compass_cont;
+//extern lv_obj_t *compass_cont;
 
 
 #ifdef __cplusplus
@@ -24,6 +24,8 @@ void compass_ui_create(lv_obj_t *parent, int diameter_px);
  */
 void compass_set_bearing_deg(double bearing_deg);
 
+void compass_hide(void);
+void compass_show(void);
 
 
 #ifdef __cplusplus

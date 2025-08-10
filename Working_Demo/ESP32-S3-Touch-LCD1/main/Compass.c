@@ -7,7 +7,7 @@
 //static lv_obj_t *compass_cont = NULL;
 static lv_obj_t *needle_line  = NULL;
 static lv_obj_t *lbl_bearing  = NULL;
-
+static lv_obj_t *compass_cont = NULL;
 // NSEW labels (now explicitly kept)
 static lv_obj_t *label_N = NULL;
 static lv_obj_t *label_E = NULL;
@@ -158,4 +158,14 @@ void compass_ui_create(lv_obj_t *parent, int diameter_px)
     lv_line_set_points(needle_line, g_pts, 2);
 
     //compass_set_bearing_deg(287.92f);
+}
+
+void compass_hide(void)
+{
+    if (compass_cont) lv_obj_add_flag(compass_cont, LV_OBJ_FLAG_HIDDEN);
+}
+
+void compass_show(void)
+{
+    if (compass_cont) lv_obj_clear_flag(compass_cont, LV_OBJ_FLAG_HIDDEN);
 }
