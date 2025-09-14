@@ -1,0 +1,1 @@
+ninja: error: 'E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/Squarelinestudio/ui_img_needle_transparent_png.c', needed by 'esp-idf/main/CMakeFiles/__idf_main.dir/Squarelinestudio/ui_img_needle_transparent_png.c.obj', missing and no known rule to make it

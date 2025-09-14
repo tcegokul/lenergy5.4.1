@@ -43,6 +43,21 @@ idf_component_register(
                               "spi_bus.c"
                               "wifi.c"
                               "Compass.c"
+                              "System.c"
+                              "screen_manager.c"
+                              
+                              "Squarelinestudio/ui_Screen1.c"
+                               "Squarelinestudio/ui_Screen2.c"
+                               "Squarelinestudio/ui.c"
+                               "Squarelinestudio/ui_comp_hook.c"
+                               "Squarelinestudio/ui_helpers.c"
+                               "Squarelinestudio/ui_comp.c"
+                              "Squarelinestudio/ui_comp_image4.c"
+                              "Squarelinestudio/ui_img_compass_needle_240x360_indexed16_png.c"
+                         
+
+
+
 
                         INCLUDE_DIRS "./EXIO"
                                      "./LCD_Driver"
@@ -60,5 +75,6 @@ idf_component_register(
                                      "./BAT_Driver"
                                      "./VI53I0x"
                                      "./GPS"
+                                     "./Squarelinestudio"
                                      "."
                         )

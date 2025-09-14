@@ -1,35 +1,24 @@
-#ifndef COMPASS_H
-#define COMPASS_H
-
-#include "lvgl.h"   // LVGL core header
-//extern lv_obj_t *compass_cont;
-
+#pragma once
+#include "lvgl.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/**
- * @brief Create the compass UI inside a given parent object.
- * 
- * @param parent       LVGL parent object (usually lv_scr_act()).
- * @param diameter_px  Compass diameter in pixels.
- */
-void compass_ui_create(lv_obj_t *parent, int diameter_px);
+// Build the screen object tree (does NOT show it)
+lv_obj_t* loc_screen_create(const char *city_initial); 
 
-/**
- * @brief Set the needle to a given bearing (degrees from True North).
- * 
- * @param bearing_deg  Angle 0..360°, clockwise from North.
- */
-void compass_set_bearing_deg(double bearing_deg);
+// Show this screen (loads the built screen)
+void ui_show_loc_screen(const char *city_initial);
 
-void compass_hide(void);
-void compass_show(void);
+// One-shot: set final bearing and city, then leave it static
+void loc_screen_lock(float bearing_deg, const char *city);
 
+// Optional: remove/free everything (use if RAM is tight)
+void loc_screen_destroy(void);
+
+const char* http_get_city(void);
 
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
-
-#endif // COMPASS_H

@@ -1,171 +1,119 @@
 #include "Compass.h"
-#include <math.h>
-#include <stdio.h>
-#include "lvgl.h"
+//#include "compass_assets.h"  // your assets header
+extern const lv_img_dsc_t ring_glow_420;   // your PNG (with alpha), any size
 
-// ------- Persistent UI elements -------
-//static lv_obj_t *compass_cont = NULL;
-static lv_obj_t *needle_line  = NULL;
-static lv_obj_t *lbl_bearing  = NULL;
-static lv_obj_t *compass_cont = NULL;
-// NSEW labels (now explicitly kept)
-static lv_obj_t *label_N = NULL;
-static lv_obj_t *label_E = NULL;
-static lv_obj_t *label_S = NULL;
-static lv_obj_t *label_W = NULL;
+static lv_obj_t *s_img_ring = NULL;
 
-// If you draw the needle as a line, keep points persistent
-static lv_point_t g_pts[2] = {{0,0},{0,0}};
+// ---- Assets generated via LVGL Image Converter ----
+// Place your converted C descriptors in a common header, e.g. assets_images.h
+// and include it here. For clarity, we declare them extern:
+extern const lv_img_dsc_t bg_ring_N_480x480;   // background + ring + "N"
+extern const lv_img_dsc_t arrow_96x240;        // transparent needle
+#define COL_CITY_YELLOW 0xFFD700  // gold/yellow
+// ---- Optional fonts (if you converted custom fonts) ----
+// extern const lv_font_t ui_font_Mont_20;
+// extern const lv_font_t ui_font_Mont_48;
 
-// Shared style for big font (init once)
-static lv_style_t style_big_font;
-static bool style_big_font_inited = false;
+// ---- Persistent UI handles for this screen ----
+static lv_obj_t *s_root = NULL;
+static lv_obj_t *s_img_bg = NULL;
+static lv_obj_t *s_img_needle = NULL;
+static lv_obj_t *s_lbl_status = NULL;
+static lv_obj_t *s_lbl_city = NULL;
 
-// ---------- API: set bigger font on NSEW ----------
-static void compass_labels_set_big_font(void)
+// ---- Simple colors (or centralize in colors.h) ----
+#define COL_BG_DARK    0x0B2430
+#define COL_TEXT       0xE9F1E8
+
+// ---- Layout constants (tune once) ----
+#define SCR_W                480
+#define SCR_H                480
+#define COMPASS_SIZE         420
+#define BOTTOM_TEXT_ZONE_H   140   // reserved space for labels
+
+// Needle image is 96x240; pivot at tail (slightly above bottom)
+#define NEEDLE_W             96
+#define NEEDLE_H             240
+#define NEEDLE_PIVOT_X       (NEEDLE_W/2)
+#define NEEDLE_PIVOT_Y       (NEEDLE_H - 8)   // nudge to the tail
+
+lv_obj_t*loc_screen_create(const char *city_initial)
 {
-    if (!style_big_font_inited) {
-        lv_style_init(&style_big_font);
-        // Ensure LV_FONT_MONTSERRAT_28 (or 24) is enabled in lv_conf.h:
-        // #define LV_FONT_MONTSERRAT_28 1
-        lv_style_set_text_font(&style_big_font, &lv_font_montserrat_28);
-        // Optional: slightly tighter letter spacing for small TFTs
-        // lv_style_set_text_letter_space(&style_big_font, -1);
-        style_big_font_inited = true;
+     /* ---------- Root screen ---------- */
+    s_root = lv_obj_create(NULL);
+    lv_obj_clear_flag(s_root, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_set_size(s_root, SCR_W, SCR_H);
+    lv_obj_set_style_bg_color(s_root, lv_color_hex(COL_BG_DARK), 0);
+    lv_obj_set_style_bg_opa(s_root, LV_OPA_COVER, 0);
+
+    /* ---------- Compass Ring Image ---------- */
+    s_img_ring = lv_img_create(s_root);
+    lv_img_set_src(s_img_ring, &ring_glow_420);
+    lv_obj_align(s_img_ring, LV_ALIGN_CENTER, 0, -60);  // adjust as needed
+    lv_obj_move_background(s_img_ring);
+
+    /* ---------- Needle (transparent PNG) ---------- */
+    s_img_needle = lv_img_create(s_root);
+    // lv_img_set_src(s_img_needle, &arrow_96x240);
+    lv_obj_center(s_img_needle);
+    lv_img_set_pivot(s_img_needle, NEEDLE_PIVOT_X, NEEDLE_PIVOT_Y);
+    lv_img_set_angle(s_img_needle, 0);  // 0° = pointing up
+
+    /* ---------- Status label ---------- */
+    s_lbl_status = lv_label_create(s_root);
+    lv_label_set_text(s_lbl_status, "Localisation en cours...");
+    lv_obj_set_style_text_color(s_lbl_status, lv_color_hex(COL_TEXT), 0);
+    lv_obj_set_style_text_align(s_lbl_status, LV_TEXT_ALIGN_CENTER, 0);
+    #if LV_FONT_MONTSERRAT_14
+      lv_obj_set_style_text_font(s_lbl_status, &lv_font_montserrat_14, 0);
+    #endif
+    lv_obj_align(s_lbl_status, LV_ALIGN_CENTER, 0, 180);
+
+    /* ---------- City label ---------- */
+    s_lbl_city = lv_label_create(s_root);
+    const char *city = (city_initial && city_initial[0]) ? city_initial : "LYON";
+    lv_label_set_text(s_lbl_city, city);
+    lv_obj_set_style_text_color(s_lbl_city, lv_color_hex(0xFFD700), 0);
+    lv_obj_set_style_text_align(s_lbl_city, LV_TEXT_ALIGN_CENTER, 0);
+    #if LV_FONT_MONTSERRAT_28
+      lv_obj_set_style_text_font(s_lbl_city, &lv_font_montserrat_28, 0);
+    #endif
+    lv_obj_align_to(s_lbl_city, s_lbl_status, LV_ALIGN_OUT_BOTTOM_MID, 0, 16);
+
+    return s_root;
+}
+
+void ui_show_loc_screen(const char *city_initial)
+{
+    if (!s_root) loc_screen_create(city_initial);
+    lv_scr_load_anim(s_root, LV_SCR_LOAD_ANIM_FADE_ON, 200, 0, false);
+}
+
+void loc_screen_lock(float bearing_deg, const char *city)
+{
+    if (!s_root) return;
+
+    // Rotate needle once; LVGL angle is in 0.1 degrees
+    int16_t angle10 = (int16_t)(bearing_deg * 10.0f);
+    lv_img_set_angle(s_img_needle, angle10);
+
+    if (city && city[0] != '\0') {
+        lv_label_set_text(s_lbl_city, city);
     }
 
-    if (label_N) lv_obj_add_style(label_N, &style_big_font, LV_PART_MAIN);
-    if (label_E) lv_obj_add_style(label_E, &style_big_font, LV_PART_MAIN);
-    if (label_S) lv_obj_add_style(label_S, &style_big_font, LV_PART_MAIN);
-    if (label_W) lv_obj_add_style(label_W, &style_big_font, LV_PART_MAIN);
+    // No timers/animations here -> screen stays static
 }
 
-
-void compass_set_bearing_deg(double bearing_deg)
+void loc_screen_destroy(void)
 {
-   if (!compass_cont || !needle_line) return;
+    if (!s_root) return;
 
-    // Ensure we have real sizes (in case this runs right after creation)
-    int w = lv_obj_get_width(compass_cont);
-    int h = lv_obj_get_height(compass_cont);
-    if (w == 0 || h == 0) {
-        lv_obj_update_layout(compass_cont);
-        w = lv_obj_get_width(compass_cont);
-        h = lv_obj_get_height(compass_cont);
+    // If this is the active screen, load a blank before deleting
+    if (lv_scr_act() == s_root) {
+        lv_obj_t *blank = lv_obj_create(NULL);
+        lv_scr_load(blank);
     }
-    int diameter = LV_MIN(w, h);
-    if (diameter <= 2) return;
 
-    // Center of the dial
-    const int cx = diameter / 2;
-    const int cy = diameter / 2;
-
-    // Margin: clamp so it never eats the whole radius
-    int margin = lv_dpx(14);
-    int max_safe = diameter / 5;                 // ~20% of diameter
-    if (margin > max_safe) margin = max_safe;
-    if (margin < 2) margin = 2;
-
-    int radius = (diameter / 2) - margin;
-    if (radius < 2) radius = 2;                  // keep visible length
-
-    // Convert compass bearing (0°=North, CW+) -> math angle (0°=East, CCW+)
-    float theta = (90.0f - bearing_deg) * (float)M_PI / 180.0f;
-
-    // Tip point
-    int x_tip = cx + (int)lrintf(radius * cosf(theta));
-    int y_tip = cy - (int)lrintf(radius * sinf(theta));
-
-    // Update points in the needle's local coordinate space
-    g_pts[0].x = cx;   g_pts[0].y = cy;
-    g_pts[1].x = x_tip; g_pts[1].y = y_tip;
-
-    // Make the line object use the same coordinate space as the container
-    lv_obj_set_size(needle_line, diameter, diameter);
-    lv_obj_align(needle_line, LV_ALIGN_CENTER, 0, 0);
-
-    lv_line_set_points(needle_line, g_pts, 2);
-}
-
-
-// ---------- Create once ----------
-void compass_ui_create(lv_obj_t *parent, int diameter_px)
-{
-    // Container
-    compass_cont = lv_obj_create(parent);
-    lv_obj_remove_style_all(compass_cont);
-    lv_obj_set_size(compass_cont, diameter_px, diameter_px);
-    lv_obj_center(compass_cont);
-    lv_obj_clear_flag(compass_cont, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_style_radius(compass_cont, LV_RADIUS_CIRCLE, 0);
-
-    // Dial (white bg + black border)
-    lv_obj_set_style_bg_opa(compass_cont, LV_OPA_COVER, 0);
-    lv_obj_set_style_bg_color(compass_cont, lv_color_white(), 0);
-    lv_obj_set_style_border_width(compass_cont, 10, 0);
-    lv_obj_set_style_border_color(compass_cont, lv_color_black(), 0);
-    lv_obj_set_style_shadow_width(compass_cont, 18, 0);
-
-    lv_obj_move_foreground(compass_cont);
-
-    // --- NSEW labels (now explicit handles) ---
-    label_N = lv_label_create(compass_cont);
-    lv_label_set_text(label_N, "N");
-    lv_obj_set_style_text_color(label_N, lv_palette_main(LV_PALETTE_RED), 0);
-    lv_obj_align(label_N, LV_ALIGN_TOP_MID, 0, lv_dpx(6));
-
-    label_E = lv_label_create(compass_cont);
-    lv_label_set_text(label_E, "E");
-    lv_obj_set_style_text_color(label_E, lv_color_black(), 0);
-    lv_obj_align(label_E, LV_ALIGN_RIGHT_MID, -lv_dpx(6), 0);
-
-    label_S = lv_label_create(compass_cont);
-    lv_label_set_text(label_S, "S");
-    lv_obj_set_style_text_color(label_S, lv_color_black(), 0);
-    lv_obj_align(label_S, LV_ALIGN_BOTTOM_MID, 0, -lv_dpx(6));
-
-    label_W = lv_label_create(compass_cont);
-    lv_label_set_text(label_W, "W");
-    lv_obj_set_style_text_color(label_W, lv_color_black(), 0);
-    lv_obj_align(label_W, LV_ALIGN_LEFT_MID, lv_dpx(6), 0);
-
-    // Apply bigger font to all four
-    compass_labels_set_big_font();
-
-    // Optional center cap
-    lv_obj_t *cap = lv_obj_create(compass_cont);
-    lv_obj_remove_style_all(cap);
-    int cap_d = lv_dpx(10);
-    lv_obj_set_size(cap, cap_d, cap_d);
-    lv_obj_center(cap);
-    lv_obj_set_style_radius(cap, LV_RADIUS_CIRCLE, 0);
-    lv_obj_set_style_bg_opa(cap, LV_OPA_COVER, 0);
-    lv_obj_set_style_bg_color(cap, lv_color_black(), 0);
-
-  
-
-    // Needle (line)
-    needle_line = lv_line_create(compass_cont);
-    lv_obj_set_size(needle_line, diameter_px, diameter_px);
-    lv_obj_align(needle_line, LV_ALIGN_CENTER, 0, 0);
-    lv_obj_set_style_line_width(needle_line, 8, 0);
-    lv_obj_set_style_line_rounded(needle_line, true, 0);
-    lv_obj_set_style_line_color(needle_line, lv_palette_main(LV_PALETTE_RED), 0);
-
-    // Initialize points (optional; will be overwritten by setter)
-    g_pts[0].x = diameter_px/2; g_pts[0].y = diameter_px/2;
-    g_pts[1].x = diameter_px/2; g_pts[1].y = lv_dpx(10);
-    lv_line_set_points(needle_line, g_pts, 2);
-
-    //compass_set_bearing_deg(287.92f);
-}
-
-void compass_hide(void)
-{
-    if (compass_cont) lv_obj_add_flag(compass_cont, LV_OBJ_FLAG_HIDDEN);
-}
-
-void compass_show(void)
-{
-    if (compass_cont) lv_obj_clear_flag(compass_cont, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_del(s_root);
+    s_root = s_img_bg = s_img_needle = s_lbl_status = s_lbl_city = NULL;
 }

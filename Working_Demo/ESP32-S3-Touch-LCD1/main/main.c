@@ -1,43 +1,9 @@
-#include <stdio.h>
-#include <string.h>
-
-#include "sdkconfig.h"
-
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-
-#include "esp_log.h"
-#include "esp_system.h"
-#include "esp_err.h"
-
-#include "nvs_flash.h"
-
-// Device drivers
-#include "TCA9554PWR.h"
-#include "PCF85063.h"
-#include "QMI8658.h"
-#include "ST7701S.h"
-#include "CST820.h"
-#include "LVGL_Driver.h"
-#include "LVGL_Example.h"
-#include "Wireless.h"
-#include "i2c_bus.h"
-#include "tca9535.h"
-#include "spi_bus.h"
-#include "gps_parser.h"
-
-#include "vl53l0x_sensor.h"
-#include "vl53l0x_platform.h"
-#include "vl53l0x_api_ranging.h"
-
-#include "counter.h"
-#include "LVGL_UI/LVGL_CounterPage.h"
-
-// Wi‑Fi provisioning public API
-#include "wifi.h"
-// Compass UI
-#include "Compass.h"
-
+#include"defintions.h"
+#include <time.h>
+#include <sys/time.h>
+#include "esp_sntp.h"
+#include "screen_manager.h"
+#include "Squarelinestudio/ui.h"
 
 //lv_obj_t *compass_cont = NULL;
 
@@ -58,10 +24,57 @@ prayer_state_t previous_state = STATE_QIYAM;
 
 uint16_t previous_distance = 2000;
 uint8_t rakah_counter      = 0;
+time_t last_print_epoch = 0;  
+
+bool wifi_connected = false;
 
 
+// ----- SNTP / Time (no UI) -----
+static volatile bool g_time_synced = false;
 
- void process_prayer_state(uint16_t distance_mm, uint8_t status)
+static void sntp_sync_cb(struct timeval *tv)
+{
+    (void)tv;
+    g_time_synced = true;
+    ESP_LOGI("TIME", "SNTP sync complete");
+}
+
+static void time_start_sntp(void)
+{
+    // Set your local time zone.
+    // IST example (UTC+5:30, no DST): "IST-5:30"
+    // UTC: "UTC0"
+    // Paris with DST: "CET-1CEST,M3.5.0/2,M10.5.0/3"
+    setenv("TZ", "IST-5:30", 1);
+    tzset();
+
+    sntp_setoperatingmode(SNTP_OPMODE_POLL);
+    sntp_setservername(0, "pool.ntp.org");
+    sntp_set_time_sync_notification_cb(sntp_sync_cb);
+    sntp_init();
+}
+
+static bool time_is_valid(void)
+{
+    // After first sync, time() should be well past epoch.
+    return time(NULL) > 100000;
+}
+
+static void print_current_time_uart(void)
+{
+    if (!time_is_valid()) return;
+
+    time_t now = time(NULL);
+    struct tm lt;
+    localtime_r(&now, &lt);
+
+    char buf[32];
+    // 2025-08-15 14:23:07
+    strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M:%S", &lt);
+    printf("TIME: %s\n", buf);
+}
+
+void process_prayer_state(uint16_t distance_mm, uint8_t status)
 {
     ESP_LOGI("DEBUG", "Distance: %u mm, Status: %u", distance_mm, status);
 
@@ -134,100 +147,78 @@ void my_timer_callback(TimerHandle_t xTimer)
 
 uint16_t xshut_state = 0;
 
-void i2c_scan()
+void start_timer()
 {
-    for (uint8_t addr = 1; addr < 127; addr++) {
-        i2c_cmd_handle_t cmd = i2c_cmd_link_create();
-        i2c_master_start(cmd);
-        i2c_master_write_byte(cmd, (addr << 1) | I2C_MASTER_WRITE, true);
-        i2c_master_stop(cmd);
-        esp_err_t ret = i2c_master_cmd_begin(I2C_NUM_0, cmd, 100 / portTICK_PERIOD_MS);
-        i2c_cmd_link_delete(cmd);
-        if (ret == ESP_OK) {
-            ESP_LOGI("i2c_scan", "Found device at 0x%02X", addr);
-        }
-    }
-}
-
-
-
-void app_main(void)
-{ 
-
-    esp_tca9535_config_t pca_cfg = {
-        .i2c_scl = GPIO_NUM_48,
-        .i2c_sda = GPIO_NUM_47,
-        .interrupt_output = -1,
-    };
-    tca9535_init(&pca_cfg);
- 
-
-    tca9535_set_output_state(TCA9535_GPIO_NUM_11, TCA9535_IO_HIGH);
-
-    vTaskDelay(pdMS_TO_TICKS(100));  // Wait at least 10ms
-
-    xshut_state = tca9535_get_output_state(TCA9535_GPIO_NUM_11);
-
-    ESP_LOGI("tca9535", "State: %u", xshut_state);
-
-    i2c_scan();
-    
-    vl53l0x_init();
-
-   
-    LCD_Init();
-    LVGL_Init();
-/********************* Demo *********************/
-   
-
-    lv_obj_t *counter_screen = lv_obj_create(NULL);
-    counter_page_create(counter_screen);
-    lv_scr_load(counter_screen);
-
-
-
-
     my_timer = xTimerCreate("MyTimer", pdMS_TO_TICKS(1000), pdTRUE, NULL, my_timer_callback);
 
     if (my_timer != NULL)
     {
         xTimerStart(my_timer, 0);
     } 
+}
+
+// One-shot LVGL timer to switch from Location -> Counter
+static void switch_to_counter_cb(lv_timer_t *t)
+{
+    (void)t;
+    screens_switch(SCR_COUNTER, true);   // animate to counter
+    // Timer is one-shot; no need to delete explicitly if created with period>0 and not reused.
+    // If you want to be explicit: lv_timer_del(t);
+}
+
+
+const char *city;
+void app_main(void)
+{ 
+
+    system_initalise();
+    
+    //intialise timer
+    start_timer();
+    
 
     ESP_ERROR_CHECK(nvs_flash_init());
+    wifi_connected = connect_to_saved_wifi();
 
-    if (connect_to_saved_wifi()) {
+    if (wifi_connected) {
+        
         ESP_LOGI(TAG, "STA connected.");
-
+        time_start_sntp();
         double qibla_deg = http_get_geolocation();
-
-       lv_disp_t *d = lv_disp_get_default();
-       int dia = LV_MIN(lv_disp_get_hor_res(d), lv_disp_get_ver_res(d)) - lv_dpx(24);
-
-        compass_ui_create(lv_scr_act(), dia);
-     
-
+        city = http_get_city();
+        
         if (qibla_deg >= 0){
 
-            compass_set_bearing_deg(qibla_deg);
-            
-            compass_hide();
             printf("QIBLA: %.2f° from North\n", qibla_deg);
         }
 
+        
         else{
             ESP_LOGI(TAG, "Starting Captive Portal Mode...");
-             wifi_init_softap();
-             start_http_server();
+            wifi_init_softap();
+            start_http_server();
+             
         }
     }
-    
+   
 
+   //working part 
+
+    // lv_obj_t *counter_screen = lv_obj_create(NULL);
+    // counter_page_create(counter_screen);
+    // lv_scr_load(counter_screen);
+
+   
+    //Squareline studio part
+    ui_init();
     
 
     while (1) {
 
+
         vTaskDelay(pdMS_TO_TICKS(10));
+
+    
 
         lv_timer_handler();
 
@@ -240,9 +231,9 @@ void app_main(void)
              uint8_t status = measurement1.RangeStatus;
 
 
-            //void compass_hide(void);
-              process_prayer_state(distance, status);
-              update_prayer_ui(rakah_counter, current_state);
+              
+                //  process_prayer_state(distance, status);
+                //  update_prayer_ui(rakah_counter, current_state);
             
             } 
 

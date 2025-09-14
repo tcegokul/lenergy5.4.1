@@ -4,6 +4,13 @@
         "math.h": "c",
         "lvgl.h": "c",
         "lv_font.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "cst820.h": "c",
+        "i2c_bus.h": "c",
+        "tca9554pwr.h": "c",
+        "st7701s.h": "c",
+        "compass_assets.h": "c",
+        "defintions.h": "c",
+        "ui.h": "c"
     }
 }

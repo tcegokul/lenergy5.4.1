@@ -204,3 +204,13 @@ esp_err_t tca9535_deinit()
     i2c_bus_delete(i2c_handle);
     return ESP_OK;
 }
+
+void tca9535_pinconfig_()
+{
+    esp_tca9535_config_t pca_cfg = {
+        .i2c_scl = GPIO_NUM_48,
+        .i2c_sda = GPIO_NUM_47,
+        .interrupt_output = -1,
+    };
+     tca9535_init(&pca_cfg);
+}

@@ -1,147 +1,262 @@
-[0;32mI (128) esp_image: segment 1: paddr=00049108 vaddr=3fc9f000 sizeESP-ROM:esp32s3-20210327[0m
-Build:Mar 27 2021
-rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
-Saved PC:0x4200bd43
-SPIWP:0xee
-mode:DIO, clock div:1
-load:0x3fce2820,len:0x170c
-load:0x403c8700,len:0x4
-load:0x403c8704,len:0xec4
-load:0x403cb700,len:0x318c
-entry 0x403c8950
-[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
-[0;32mI (27) boot: compile time Jun 21 2025 16:49:45[0m
-[0;32mI (27) boot: Multicore bootloader[0m
-[0;32mI (27) boot: chip revision: v0.2[0m
-[0;32mI (30) boot: efuse block revision: v1.3[0m
-[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
-[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
-[0;32mI (42) boot.esp32s3: SPI Mode       : QIO[0m
-[0;32mI (46) boot.esp32s3: SPI Flash Size : 8MB[0m
-[0;32mI (49) boot: Enabling RNG early entropy source...[0m
-[0;32mI (54) boot: Partition Table:[0m
-[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
-[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
-[0;32mI (69) boot:  1 factory          factory app      00 00 00010000 00300000[0m
-[0;32mI (76) boot:  2 flash_test       Unknown data     01 81 00310000 00084000[0m
-[0;32mI (82) boot: End of partition table[0m
-[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c0e0020 size=390e0h (233696) map[0m
-[0;32mI (128) esp_image: segment 1: paddr=00049108 vaddr=3fc9f000 size=05ba4h ( 23460) load[0m
-[0;32mI (132) esp_image: segment 2: paddr=0004ecb4 vaddr=40374000 size=01364h (  4964) load[0m
-[0;32mI (134) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=dc4a0h (902304) map[0m
-[0;32mI (273) esp_image: segment 4: paddr=0012c4c8 vaddr=40375364 size=19be8h (105448) load[0m
-[0;32mI (293) esp_image: segment 5: paddr=001460b8 vaddr=600fe100 size=0001ch (    28) load[0m
-[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
-[0;32mI (304) boot: Disabling RNG early entropy source...[0m
-[0;32mI (315) octal_psram: vendor id    : 0x0d (AP)[0m
-[0;32mI (315) octal_psram: dev id       : 0x02 (generation 3)[0m
-[0;32mI (315) octal_psram: density      : 0x03 (64 Mbit)[0m
-[0;32mI (317) octal_psram: good-die     : 0x01 (Pass)[0m
-[0;32mI (321) octal_psram: Latency      : 0x01 (Fixed)[0m
-[0;32mI (325) octal_psram: VCC          : 0x01 (3V)[0m
-[0;32mI (330) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
-[0;32mI (334) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
-[0;32mI (339) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
-[0;32mI (344) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
-[0;32mI (349) octal_psram: DriveStrength: 0x00 (1/1)[0m
-[0;32mI (354) MSPI Timing: PSRAM timing tuning index: 4[0m
-[0;32mI (358) esp_psram: Found 8MB PSRAM device[0m
-[0;32mI (361) esp_psram: Speed: 80MHz[0m
-[0;32mI (383) mmu_psram: Read only data copied and mapped to SPIRAM[0m
-[0;32mI (454) mmu_psram: Instructions copied and mapped to SPIRAM[0m
-[0;32mI (454) cpu_start: Multicore app[0m
-[0;32mI (820) esp_psram: SPI SRAM memory test OK[0m
-[0;32mI (828) cpu_start: Pro cpu start user code[0m
-[0;32mI (829) cpu_start: cpu freq: 160000000 Hz[0m
-[0;32mI (829) app_init: Application information:[0m
-[0;32mI (829) app_init: Project name:     ESP32-S3-Touch-LCD-2.1[0m
-[0;32mI (834) app_init: App version:      95f6c65-dirty[0m
-[0;32mI (838) app_init: Compile time:     Aug  9 2025 15:19:33[0m
-[0;32mI (843) app_init: ELF file SHA256:  f5462e09a...[0m
-[0;32mI (848) app_init: ESP-IDF:          v5.4.1-dirty[0m
-[0;32mI (852) efuse_init: Min chip rev:     v0.0[0m
-[0;32mI (856) efuse_init: Max chip rev:     v0.99 [0m
-[0;32mI (860) efuse_init: Chip rev:         v0.2[0m
-[0;32mI (864) heap_init: Initializing. RAM available for dynamic allocation:[0m
-[0;32mI (870) heap_init: At 3FCA95C8 len 00040148 (256 KiB): RAM[0m
-[0;32mI (875) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
-[0;32mI (880) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
-[0;32mI (885) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
-[0;32mI (891) esp_psram: Adding pool of 7040K of PSRAM memory to heap allocator[0m
-[0;32mI (898) spi_flash: detected chip: gd[0m
-[0;32mI (901) spi_flash: flash io: qio[0m
-[0;33mW (904) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
-[0;32mI (913) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
-[0;32mI (920) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
-[0;32mI (926) coexist: coex firmware version: e727207[0m
-[0;32mI (930) coexist: coexist rom version e7ae62f[0m
-[0;32mI (935) main_task: Started on CPU0[0m
-[0;32mI (945) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
-[0;32mI (945) main_task: Calling app_main()[0m
-[0;32mI (945) TCA9535: Detected IO expander device at 0x40, name is: TCA9535[0m
-[0;32mI (1055) tca9535: State: 1[0m
-[0;32mI (1055) i2c_scan: Found device at 0x20[0m
-[0;32mI (1055) i2c_scan: Found device at 0x29[0m
-[0;32mI (1065) i2c_scan: Found device at 0x68[0m
-[0;32mI (1245) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
-[0;32mI (1355) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
-[0;32mI (1815) LCD: Install RGB LCD panel driver[0m
-[0;32mI (1835) LCD: Register event callbacks[0m
-[0;32mI (1835) LCD: Initialize RGB LCD panel[0m
-[0;32mI (1835) LVGL: Initialize LVGL library[0m
-[0;32mI (1835) LVGL: Use frame buffers as LVGL draw buffers[0m
-[0;32mI (1845) LVGL: Register display driver to LVGL[0m
-[0;32mI (1845) LVGL: Install LVGL tick timer[0m
-[0;32mI (1855) LVGL: Register display indev to LVGL[0m
-[0;32mI (1905) wifi_prov: Connecting to saved Wi-Fi: GVCSYS1[0m
-[0;32mI (1905) pp: pp rom version: e7ae62f[0m
-[0;32mI (1905) net80211: net80211 rom version: e7ae62f[0m
-[0;32mI (1915) wifi:wifi driver task: 3fcbe658, prio:23, stack:6656, core=0[0m
-[0;32mI (1915) wifi:wifi firmware version: 79fa3f41ba[0m
-[0;32mI (1915) wifi:wifi certification version: v7.0[0m
-[0;32mI (1915) wifi:config NVS flash: enabled[0m
-[0;32mI (1925) wifi:config nano formatting: disabled[0m
-[0;32mI (1925) wifi:Init data frame dynamic rx buffer num: 32[0m
-[0;32mI (1935) wifi:Init static rx mgmt buffer num: 5[0m
-[0;32mI (1935) wifi:Init management short buffer num: 32[0m
-[0;32mI (1945) wifi:Init dynamic tx buffer num: 32[0m
-[0;32mI (1945) wifi:Init static tx FG buffer num: 2[0m
-[0;32mI (1945) wifi:Init static rx buffer size: 1600[0m
-[0;32mI (1955) wifi:Init static rx buffer num: 10[0m
-[0;32mI (1955) wifi:Init dynamic rx buffer num: 32[0m
-[0;32mI (1965) wifi_init: rx ba win: 6[0m
-[0;32mI (1965) wifi_init: accept mbox: 6[0m
-[0;32mI (1965) wifi_init: tcpip mbox: 32[0m
-[0;32mI (1965) wifi_init: udp mbox: 6[0m
-[0;32mI (1975) wifi_init: tcp mbox: 6[0m
-[0;32mI (1975) wifi_init: tcp tx win: 5760[0m
-[0;32mI (1975) wifi_init: tcp rx win: 5760[0m
-[0;32mI (1985) wifi_init: tcp mss: 1440[0m
-[0;32mI (1985) wifi_init: WiFi IRAM OP enabled[0m
-[0;32mI (1985) wifi_init: WiFi RX IRAM OP enabled[0m
-[0;33mW (1995) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
-[0;32mI (2005) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
-[0;32mI (2035) wifi:mode : sta (d8:3b:da:6e:35:88)[0m
-[0;32mI (2035) wifi:enable tsf[0m
-[0;32mI (2035) wifi_prov: STA started, connecting...[0m
-[0;32mI (2045) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
-[0;32mI (2045) wifi:state: init -> auth (0xb0)[0m
-[0;32mI (2175) wifi:state: auth -> assoc (0x0)[0m
-[0;32mI (2225) wifi:state: assoc -> run (0x10)[0m
-[0;32mI (2255) wifi:connected with GVCSYS1, aid = 5, channel 11, BW20, bssid = 52:ae:e4:07:d5:2b[0m
-[0;32mI (2255) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
-[0;32mI (2255) wifi:pm start, type: 1[0m
-
-[0;32mI (2255) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
-[0;32mI (2265) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
-[0;32mI (2285) wifi:<ba-add>idx:0 (ifx:0, 52:ae:e4:07:d5:2b), tid:0, ssn:0, winSize:64[0m
-[0;32mI (2345) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
-[0;32mI (2355) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
-[0;32mI (3305) esp_netif_handlers: sta ip: 10.187.192.24, mask: 255.255.255.0, gw: 10.187.192.183[0m
-[0;32mI (3305) wifi_prov: Connected! IP Address: 10.187.192.24[0m
-[0;32mI (3305) wifi_prov: STA connected.[0m
-[0;32mI (4205) wifi_prov: Full JSON: {"status":"success","country":"India","countryCode":"IN","region":"TN","regionName":"Tamil Nadu","city":"Chennai","zip":"600006","lat":13.0895,"lon":80.2739,"timezone":"Asia/Kolkata","isp":"Reliance Jio Infocomm Limited","org":"Reliance Jio Infocomm Limited","as":"AS55836 Reliance Jio Infocomm Limited","query":"49.37.220.5"}[0m
-[0;32mI (4225) wifi_prov: Parsed lat: 13.089500, lon: 80.273900[0m
-[0;32mI (4225) wifi_prov: Qibla bearing: 287.92° from North[0m
-QIBLA: 287.92° from North
-[0;32mI (4235) main_task: Returned from app_main()[0m
+[1/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_disp.c.obj
+[2/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_event.c.obj
+[3/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_group.c.obj
+[4/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_indev.c.obj
+[5/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_indev_scroll.c.obj
+[6/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_obj.c.obj
+[7/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_obj_class.c.obj
+[8/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_obj_draw.c.obj
+[9/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_obj_pos.c.obj
+[10/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_obj_scroll.c.obj
+[11/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_obj_style.c.obj
+[12/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_obj_style_gen.c.obj
+[13/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_obj_tree.c.obj
+[14/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_refr.c.obj
+[15/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/core/lv_theme.c.obj
+[16/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_draw.c.obj
+[17/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_draw_arc.c.obj
+[18/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_draw_img.c.obj
+[19/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_draw_label.c.obj
+[20/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_draw_line.c.obj
+[21/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_draw_mask.c.obj
+[22/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_draw_rect.c.obj
+[23/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_draw_triangle.c.obj
+[24/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_img_buf.c.obj
+[25/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_img_cache.c.obj
+[26/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/lv_img_decoder.c.obj
+[27/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.obj
+[28/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw.c.obj
+[29/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw_arc.c.obj
+[30/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw_blend.c.obj
+[31/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw_dither.c.obj
+[32/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw_gradient.c.obj
+[33/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw_img.c.obj
+[34/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw_letter.c.obj
+[35/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw_line.c.obj
+[36/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw_polygon.c.obj
+[37/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/draw/sw/lv_draw_sw_rect.c.obj
+[38/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/layouts/flex/lv_flex.c.obj
+[39/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/layouts/grid/lv_grid.c.obj
+[40/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/bmp/lv_bmp.c.obj
+[41/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/ffmpeg/lv_ffmpeg.c.obj
+[42/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/freetype/lv_freetype.c.obj
+[43/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/fsdrv/lv_fs_fatfs.c.obj
+[44/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/fsdrv/lv_fs_posix.c.obj
+[45/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/fsdrv/lv_fs_stdio.c.obj
+[46/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/fsdrv/lv_fs_win32.c.obj
+[47/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/gif/lv_gif.c.obj
+[48/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/png/lodepng.c.obj
+[49/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/png/lv_png.c.obj
+[50/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/qrcode/lv_qrcode.c.obj
+[51/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/rlottie/lv_rlottie.c.obj
+[52/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/libs/sjpg/lv_sjpg.c.obj
+[53/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/lv_extra.c.obj
+[54/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/others/gridnav/lv_gridnav.c.obj
+[55/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/others/monkey/lv_monkey.c.obj
+[56/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/others/snapshot/lv_snapshot.c.obj
+[57/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/themes/basic/lv_theme_basic.c.obj
+[58/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/themes/default/lv_theme_default.c.obj
+[59/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/themes/mono/lv_theme_mono.c.obj
+[60/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/animimg/lv_animimg.c.obj
+[61/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/calendar/lv_calendar.c.obj
+[62/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_arrow.c.obj
+[63/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.obj
+[64/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/chart/lv_chart.c.obj
+[65/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/colorwheel/lv_colorwheel.c.obj
+[66/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/imgbtn/lv_imgbtn.c.obj
+[67/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/keyboard/lv_keyboard.c.obj
+[68/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/led/lv_led.c.obj
+[69/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/list/lv_list.c.obj
+[70/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/menu/lv_menu.c.obj
+[71/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/meter/lv_meter.c.obj
+[72/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/msgbox/lv_msgbox.c.obj
+[73/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/span/lv_span.c.obj
+[74/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/spinbox/lv_spinbox.c.obj
+[75/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/spinner/lv_spinner.c.obj
+[76/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/tabview/lv_tabview.c.obj
+[77/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/tileview/lv_tileview.c.obj
+[78/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/extra/widgets/win/lv_win.c.obj
+[79/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font.c.obj
+[80/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_dejavu_16_persian_hebrew.c.obj
+[81/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_fmt_txt.c.obj
+[82/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_loader.c.obj
+[83/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_10.c.obj
+[84/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_12.c.obj
+[85/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_12_subpx.c.obj
+[86/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_14.c.obj
+[87/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_16.c.obj
+[88/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_18.c.obj
+[89/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_20.c.obj
+[90/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_22.c.obj
+[91/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_24.c.obj
+[92/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_26.c.obj
+[93/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_28.c.obj
+[94/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_28_compressed.c.obj
+[95/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_30.c.obj
+[96/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_32.c.obj
+[97/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_34.c.obj
+[98/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_36.c.obj
+[99/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_38.c.obj
+[100/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_40.c.obj
+[101/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_42.c.obj
+[102/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_44.c.obj
+[103/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_46.c.obj
+[104/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_48.c.obj
+[105/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_8.c.obj
+[106/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_simsun_16_cjk.c.obj
+[107/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_unscii_16.c.obj
+[108/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_unscii_8.c.obj
+[109/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/hal/lv_hal_disp.c.obj
+[110/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/hal/lv_hal_indev.c.obj
+[111/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_anim.c.obj
+[112/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_area.c.obj
+[113/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_bidi.c.obj
+[114/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_fs.c.obj
+[115/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_gc.c.obj
+[116/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_mem.c.obj
+[117/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_style.c.obj
+[118/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_style_gen.c.obj
+[119/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_timer.c.obj
+[120/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_txt.c.obj
+[121/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_txt_ap.c.obj
+[122/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_arc.c.obj
+[123/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_bar.c.obj
+[124/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_btn.c.obj
+[125/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_btnmatrix.c.obj
+[126/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_canvas.c.obj
+[127/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_checkbox.c.obj
+[128/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_dropdown.c.obj
+[129/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_img.c.obj
+[130/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_label.c.obj
+[131/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_line.c.obj
+[132/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_roller.c.obj
+[133/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_slider.c.obj
+[134/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_switch.c.obj
+[135/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_table.c.obj
+[136/167] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lv_textarea.c.obj
+[137/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Touch_Driver/CST820.c.obj
+[138/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LVGL_UI/assets/ruku.c.obj
+[139/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LVGL_UI/assets/sujood.c.obj
+[140/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LVGL_UI/assets/juloos.c.obj
+[141/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LVGL_UI/assets/Qiyam.c.obj
+[142/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c: In function 'time_start_sntp':
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:51:5: warning: 'sntp_setoperatingmode' is deprecated: use esp_sntp_setoperatingmode() instead [-Wdeprecated-declarations]
+   51 |     sntp_setoperatingmode(SNTP_OPMODE_POLL);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+In file included from E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:4:
+E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/esp_sntp.h:249:6: note: declared here
+  249 | void sntp_setoperatingmode(u8_t operating_mode)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:52:5: warning: 'sntp_setservername' is deprecated: use esp_sntp_setservername() instead [-Wdeprecated-declarations]
+   52 |     sntp_setservername(0, "pool.ntp.org");
+      |     ^~~~~~~~~~~~~~~~~~
+E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/esp_sntp.h:263:6: note: declared here
+  263 | void sntp_setservername(u8_t idx, const char *server)
+      |      ^~~~~~~~~~~~~~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:54:5: warning: 'sntp_init' is deprecated: use esp_sntp_init() instead [-Wdeprecated-declarations]
+   54 |     sntp_init();
+      |     ^~~~~~~~~
+E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/esp_sntp.h:269:6: note: declared here
+  269 | void sntp_init(void)
+      |      ^~~~~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c: In function 'app_main':
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:234:22: warning: unused variable 'status' [-Wunused-variable]
+  234 |              uint8_t status = measurement1.RangeStatus;
+      |                      ^~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:233:23: warning: unused variable 'distance' [-Wunused-variable]
+  233 |              uint16_t distance = measurement1.RangeMilliMeter;
+      |                       ^~~~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c: At top level:
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:161:13: warning: 'switch_to_counter_cb' defined but not used [-Wunused-function]
+  161 | static void switch_to_counter_cb(lv_timer_t *t)
+      |             ^~~~~~~~~~~~~~~~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:63:13: warning: 'print_current_time_uart' defined but not used [-Wunused-function]
+   63 | static void print_current_time_uart(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+[143/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LCD_Driver/ST7701S.c.obj
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LCD_Driver/ST7701S.c:448:30: warning: 'ledc_channel' defined but not used [-Wunused-variable]
+  448 | static ledc_channel_config_t ledc_channel;
+      |                              ^~~~~~~~~~~~
+[144/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LVGL_UI/assets/battery_icon.c.obj
+[145/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LVGL_Driver/LVGL_Driver.c.obj
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_Driver/LVGL_Driver.c: In function 'LVGL_Init':
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_Driver/LVGL_Driver.c:92:16: warning: unused variable 'disp' [-Wunused-variable]
+   92 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+[146/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LVGL_UI/LVGL_CounterPage.c.obj
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_CounterPage.c:19:18: warning: 'label_time' defined but not used [-Wunused-variable]
+   19 | static lv_obj_t *label_time;
+      |                  ^~~~~~~~~~
+[147/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Compass.c.obj
+[148/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/screen_manager.c.obj
+[149/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Squarelinestudio/ui_Screen2.c.obj
+[150/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Squarelinestudio/ui.c.obj
+[151/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Squarelinestudio/ui_comp_hook.c.obj
+[152/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Squarelinestudio/ui_helpers.c.obj
+[153/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/LVGL_UI/LVGL_Example.c.obj
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_Example.c:521:13: warning: 'Onboard_create' defined but not used [-Wunused-function]
+  521 | static void Onboard_create(lv_obj_t * parent)
+      |             ^~~~~~~~~~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/LVGL_UI/LVGL_Example.c:392:13: warning: 'move_led_cb' defined but not used [-Wunused-function]
+  392 | static void move_led_cb(lv_timer_t * timer) {
+      |             ^~~~~~~~~~~
+[154/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/System.c.obj
+In file included from E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/defintions.h:50,
+                 from E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/System.c:1:
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/wifi.h:25:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   25 | static const char *TAG = "wifi_prov";
+      |                    ^~~
+[155/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Squarelinestudio/ui_comp_image4.c.obj
+[156/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Squarelinestudio/ui_comp.c.obj
+[157/167] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\build\bootloader\esp-idf\esptool_py && E:\Espressif_5.4.1\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader/bootloader.bin"
+Bootloader binary size 0x57c0 bytes. 0x2840 bytes (31%) free.
+[158/167] No install step for 'bootloader'
+[159/167] Completed 'bootloader'
+[160/167] Linking C static library esp-idf\lvgl__lvgl\liblvgl__lvgl.a
+[161/167] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Squarelinestudio/ui_Screen1.c.obj
+[162/167] Linking C static library esp-idf\main\libmain.a
+[163/167] Generating ld/sections.ld
+info: INFO: Symbol LV_USE_DEMO_WIDGETS defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:986
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:22
+info: INFO: Symbol LV_DEMO_WIDGETS_SLIDESHOW defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:26
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:989
+info: INFO: Symbol LV_USE_DEMO_KEYPAD_AND_ENCODER defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:994
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:31
+info: INFO: Symbol LV_USE_DEMO_BENCHMARK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:35
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:998
+info: INFO: Symbol LV_USE_DEMO_STRESS defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:39
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:1002
+info: INFO: Symbol LV_USE_DEMO_MUSIC defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:43
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:1006
+info: INFO: Symbol LV_FONT_MONTSERRAT_12 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:462
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:48
+info: INFO: Symbol LV_FONT_MONTSERRAT_14 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:464
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:52
+info: INFO: Symbol LV_FONT_MONTSERRAT_16 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:56
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:467
+info: INFO: Symbol BT_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\bt\Kconfig:3
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:62
+info: INFO: Symbol BT_BLE_50_FEATURES_SUPPORTED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:66
+    E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\bt\host\bluedroid\Kconfig.in:1227
+info: INFO: Symbol BT_BLE_42_FEATURES_SUPPORTED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\bt\host\bluedroid\Kconfig.in:1237
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:70
+[164/167] Linking CXX executable ESP32-S3-Touch-LCD-2.1.elf
+FAILED: ESP32-S3-Touch-LCD-2.1.elf 
+C:\WINDOWS\system32\cmd.exe /C "cd . && E:\Espressif_5.4.1\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32S3=0 -Wl,--Map=E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/ESP32-S3-Touch-LCD-2.1.map -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=warn -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32s3.peripherals.ld -T esp32s3.rom.ld -T esp32s3.rom.api.ld -T esp32s3.rom.bt_funcs.ld -T esp32s3.rom.libgcc.ld -T esp32s3.rom.wdt.ld -T esp32s3.rom.version.ld -T esp32s3.rom.newlib.ld -T memory.ld -T sections.ld @CMakeFiles\ESP32-S3-Touch-LCD-2.1.elf.rsp -o ESP32-S3-Touch-LCD-2.1.elf && cd ."
+E:/Espressif_5.4.1/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(ui_Screen1.c.obj):(.literal.ui_Screen1_screen_init+0x38): undefined reference to `ui_img_needle_transparent_png'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

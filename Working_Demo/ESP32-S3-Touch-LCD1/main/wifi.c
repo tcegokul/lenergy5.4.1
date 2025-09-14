@@ -148,6 +148,87 @@ double http_get_geolocation(void)
     return bearing;
 }
 
+const char* http_get_city(void)
+{
+    static char city_buf[64] = {0}; // static so it persists after return
+
+    esp_http_client_config_t config = {
+        .url = "http://ip-api.com/json/",
+        .method = HTTP_METHOD_GET,
+        .timeout_ms = 5000,
+    };
+
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+    if (!client) { 
+        ESP_LOGE(TAG, "Failed to init HTTP client"); 
+        return ""; 
+    }
+
+    if (esp_http_client_open(client, 0) != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to open HTTP connection");
+        esp_http_client_cleanup(client);
+        return "";
+    }
+
+    (void)esp_http_client_fetch_headers(client);
+    if (esp_http_client_get_status_code(client) != 200) {
+        ESP_LOGE(TAG, "HTTP status not OK");
+        esp_http_client_close(client);
+        esp_http_client_cleanup(client);
+        return "";
+    }
+
+    char json_accumulator[1024] = {0};
+    int total_read = 0;
+    char buffer[257];
+
+    while (1) {
+        int read_len = esp_http_client_read(client, buffer, 256);
+        if (read_len > 0) {
+            buffer[read_len] = '\0';
+            if ((total_read + read_len) < (int)sizeof(json_accumulator)) {
+                memcpy(json_accumulator + total_read, buffer, read_len);
+                total_read += read_len;
+            } else {
+                ESP_LOGE(TAG, "Response too large");
+                break;
+            }
+        } else if (read_len == 0) {
+            break; // done
+        } else {
+            ESP_LOGE(TAG, "Read error");
+            break;
+        }
+    }
+
+    esp_http_client_close(client);
+    esp_http_client_cleanup(client);
+
+    json_accumulator[total_read] = '\0';
+    ESP_LOGI(TAG, "Geo JSON: %s", json_accumulator);
+
+    cJSON *root = cJSON_Parse(json_accumulator);
+    if (root) {
+        cJSON *status_item = cJSON_GetObjectItem(root, "status");
+        if (cJSON_IsString(status_item) && strcmp(status_item->valuestring, "success") == 0) {
+            cJSON *city_item = cJSON_GetObjectItem(root, "city");
+            if (cJSON_IsString(city_item) && city_item->valuestring) {
+                strlcpy(city_buf, city_item->valuestring, sizeof(city_buf));
+            } else {
+                ESP_LOGW(TAG, "City not found");
+                city_buf[0] = '\0';
+            }
+        }
+        cJSON_Delete(root);
+    } else {
+        ESP_LOGE(TAG, "Failed to parse JSON");
+        city_buf[0] = '\0';
+    }
+
+    return city_buf; // pointer to static buffer
+}
+
+
 static esp_err_t connect_post_handler(httpd_req_t *req)
 {
     char buf[200];

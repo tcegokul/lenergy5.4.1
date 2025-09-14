@@ -163,6 +163,8 @@ esp_err_t tca9535_set_io_config(esp_tca9535_gpio_num_t gpio_num, esp_tca9535_io_
  */
 void tca9535_read_all();
 
+void tca9535_pinconfig_();
+
 #ifdef __cplusplus
 }
 #endif
