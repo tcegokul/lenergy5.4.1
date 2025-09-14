@@ -5,6 +5,9 @@
 
 #include "ui.h"
 
+
+extern int qibla_deg;
+
 lv_obj_t * ui_Screen1 = NULL;
 lv_obj_t * ui_Label1 = NULL;
 lv_obj_t * ui_Label2 = NULL;
@@ -84,9 +87,9 @@ void ui_Screen1_screen_init(void)
     lv_obj_set_align(ui_Image8, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image8, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image8, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_img_set_angle(ui_Image8, 3000);
+    lv_img_set_angle(ui_Image8, qibla_deg);
     lv_img_set_zoom(ui_Image8, 250);
-    lv_obj_add_event_cb(ui_Image8, compass_event_cb, LV_EVENT_COMPASS_UPDATE, NULL);
+    //lv_obj_add_event_cb(ui_Image8, compass_event_cb, LV_EVENT_COMPASS_UPDATE, NULL);
 }
 
 void ui_Screen1_screen_destroy(void)

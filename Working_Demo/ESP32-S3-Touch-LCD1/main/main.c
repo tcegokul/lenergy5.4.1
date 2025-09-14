@@ -28,6 +28,7 @@ time_t last_print_epoch = 0;
 
 bool wifi_connected = false;
 
+int qibla_deg;
 
 // ----- SNTP / Time (no UI) -----
 static volatile bool g_time_synced = false;
@@ -184,15 +185,16 @@ void app_main(void)
         
         ESP_LOGI(TAG, "STA connected.");
         time_start_sntp();
-        double qibla_deg = http_get_geolocation();
+        qibla_deg = http_get_geolocation();
         city = http_get_city();
         
         if (qibla_deg >= 0){
-
-            printf("QIBLA: %.2f° from North\n", qibla_deg);
+             qibla_deg = (int)(qibla_deg * 10);
+            //printf("QIBLA: %.2f° from North\n", qibla_deg);
         }
 
-        
+       
+
         else{
             ESP_LOGI(TAG, "Starting Captive Portal Mode...");
             wifi_init_softap();
