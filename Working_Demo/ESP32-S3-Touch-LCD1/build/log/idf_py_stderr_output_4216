@@ -1,0 +1,67 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4037c7b2: esp_cpu_wait_for_intr at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_hw_support/cpu.c:64
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m--- 0x403760d9: panic_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40380505: esp_system_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40389a85: __assert_func at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x4204498d: sntp_setoperatingmode at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/apps/sntp/sntp.c:748 (discriminator 1)
+--- 0x420441da: do_setoperatingmode at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/apps/sntp/sntp.c:163
+--- 0x420443f9: tcpip_thread_handle_msg at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/api/tcpip.c:201
+--- 0x42044460: tcpip_thread at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/api/tcpip.c:148
+--- 0x40381011: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40376019: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403760d9: panic_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40380505: esp_system_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40389a85: __assert_func at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x4204498d: sntp_setoperatingmode at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/apps/sntp/sntp.c:748 (discriminator 1)
+--- 0x420441da: do_setoperatingmode at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/apps/sntp/sntp.c:163
+--- 0x420443f9: tcpip_thread_handle_msg at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/api/tcpip.c:201
+--- 0x42044460: tcpip_thread at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/api/tcpip.c:148
+--- 0x40381011: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40376019: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m--- 0x403760d9: panic_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40380505: esp_system_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40389a85: __assert_func at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x4204498d: sntp_setoperatingmode at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/apps/sntp/sntp.c:748 (discriminator 1)
+--- 0x420441da: do_setoperatingmode at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/apps/sntp/sntp.c:163
+--- 0x420443f9: tcpip_thread_handle_msg at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/api/tcpip.c:201
+--- 0x42044460: tcpip_thread at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/api/tcpip.c:148
+--- 0x40381011: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40376019: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m--- 0x403760d9: panic_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/panic.c:454
+--- 0x40380505: esp_system_abort at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/esp_system_chip.c:87
+--- 0x40389a85: __assert_func at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/newlib/assert.c:80
+--- 0x4204498d: sntp_setoperatingmode at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/apps/sntp/sntp.c:748 (discriminator 1)
+--- 0x420441da: do_setoperatingmode at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/apps/sntp/sntp.c:163
+--- 0x420443f9: tcpip_thread_handle_msg at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/api/tcpip.c:201
+--- 0x42044460: tcpip_thread at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/lwip/src/api/tcpip.c:148
+--- 0x40381011: vPortTaskWrapper at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40376019: esp_restart_noos at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

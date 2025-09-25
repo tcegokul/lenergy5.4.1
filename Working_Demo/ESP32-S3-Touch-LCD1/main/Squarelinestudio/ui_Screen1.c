@@ -5,17 +5,21 @@
 
 #include "ui.h"
 
-
-extern int qibla_deg;
-
 lv_obj_t * ui_Screen1 = NULL;
 lv_obj_t * ui_Label1 = NULL;
 lv_obj_t * ui_Label2 = NULL;
 lv_obj_t * ui_Label3 = NULL;
 lv_obj_t * ui_Arc2 = NULL;
 lv_obj_t * ui_Image8 = NULL;
+lv_obj_t * ui_Image4 = NULL;
+lv_obj_t * ui_Image5 = NULL;
+lv_obj_t * ui_Label4 = NULL;
 // event funtions
 
+extern int qibla_deg;
+extern int hour;
+extern int minute;
+extern const char *city;
 // build funtions
 
 void ui_Screen1_screen_init(void)
@@ -36,8 +40,8 @@ void ui_Screen1_screen_init(void)
     ui_Label2 = lv_label_create(ui_Screen1);
     lv_obj_set_width(ui_Label2, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label2, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label2, -2);
-    lv_obj_set_y(ui_Label2, -223);
+    lv_obj_set_x(ui_Label2, -4);
+    lv_obj_set_y(ui_Label2, -177);
     lv_obj_set_align(ui_Label2, LV_ALIGN_CENTER);
     lv_label_set_text(ui_Label2, "N");
     lv_obj_set_style_text_font(ui_Label2, &lv_font_montserrat_28, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -48,14 +52,14 @@ void ui_Screen1_screen_init(void)
     lv_obj_set_x(ui_Label3, 9);
     lv_obj_set_y(ui_Label3, 220);
     lv_obj_set_align(ui_Label3, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label3, "Loading...");
+    lv_label_set_text(ui_Label3, city);
     lv_obj_set_style_text_font(ui_Label3, &lv_font_montserrat_28, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Arc2 = lv_arc_create(ui_Screen1);
-    lv_obj_set_width(ui_Arc2, 375);
+    lv_obj_set_width(ui_Arc2, 325);
     lv_obj_set_height(ui_Arc2, 375);
-    lv_obj_set_x(ui_Arc2, -2);
-    lv_obj_set_y(ui_Arc2, -16);
+    lv_obj_set_x(ui_Arc2, -4);
+    lv_obj_set_y(ui_Arc2, 36);
     lv_obj_set_align(ui_Arc2, LV_ALIGN_CENTER);
     lv_obj_clear_flag(ui_Arc2, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_PRESS_LOCK | LV_OBJ_FLAG_CLICK_FOCUSABLE |
                       LV_OBJ_FLAG_GESTURE_BUBBLE | LV_OBJ_FLAG_SNAPPABLE | LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_SCROLL_ELASTIC |
@@ -82,14 +86,43 @@ void ui_Screen1_screen_init(void)
     lv_img_set_src(ui_Image8, &ui_img_compass_needle_240x360_indexed16_png);
     lv_obj_set_width(ui_Image8, LV_SIZE_CONTENT);   /// 240
     lv_obj_set_height(ui_Image8, LV_SIZE_CONTENT);    /// 360
-    lv_obj_set_x(ui_Image8, -1);
-    lv_obj_set_y(ui_Image8, -26);
+    lv_obj_set_x(ui_Image8, -5);
+    lv_obj_set_y(ui_Image8, 23);
     lv_obj_set_align(ui_Image8, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image8, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image8, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_img_set_angle(ui_Image8, qibla_deg);
-    lv_img_set_zoom(ui_Image8, 250);
-    //lv_obj_add_event_cb(ui_Image8, compass_event_cb, LV_EVENT_COMPASS_UPDATE, NULL);
+    lv_img_set_zoom(ui_Image8, 200);
+
+    ui_Image4 = lv_img_create(ui_Screen1);
+    lv_img_set_src(ui_Image4, &ui_img_wifi_icon_ring_white_on_black_8bit_png);
+    lv_obj_set_width(ui_Image4, LV_SIZE_CONTENT);   /// 64
+    lv_obj_set_height(ui_Image4, LV_SIZE_CONTENT);    /// 64
+    lv_obj_set_x(ui_Image4, -5);
+    lv_obj_set_y(ui_Image4, -218);
+    lv_obj_set_align(ui_Image4, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_Image4, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
+    lv_obj_clear_flag(ui_Image4, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_img_set_zoom(ui_Image4, 200);
+
+    ui_Image5 = lv_img_create(ui_Screen1);
+    lv_img_set_src(ui_Image5, &ui_img_battery_icon_half_white_on_black_8bit_png);
+    lv_obj_set_width(ui_Image5, LV_SIZE_CONTENT);   /// 64
+    lv_obj_set_height(ui_Image5, LV_SIZE_CONTENT);    /// 64
+    lv_obj_set_x(ui_Image5, 81);
+    lv_obj_set_y(ui_Image5, -174);
+    lv_obj_set_align(ui_Image5, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_Image5, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
+    lv_obj_clear_flag(ui_Image5, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_Label4 = lv_label_create(ui_Screen1);
+    lv_obj_set_width(ui_Label4, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Label4, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Label4, -89);
+    lv_obj_set_y(ui_Label4, -175);
+    lv_obj_set_align(ui_Label4, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_Label4, "08:14");
+
 }
 
 void ui_Screen1_screen_destroy(void)
@@ -103,5 +136,8 @@ void ui_Screen1_screen_destroy(void)
     ui_Label3 = NULL;
     ui_Arc2 = NULL;
     ui_Image8 = NULL;
+    ui_Image4 = NULL;
+    ui_Image5 = NULL;
+    ui_Label4 = NULL;
 
 }

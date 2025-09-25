@@ -29,6 +29,8 @@ time_t last_print_epoch = 0;
 bool wifi_connected = false;
 
 int qibla_deg;
+int hour = 0;
+int minute = 0;
 
 // ----- SNTP / Time (no UI) -----
 static volatile bool g_time_synced = false;
@@ -69,11 +71,20 @@ static void print_current_time_uart(void)
     struct tm lt;
     localtime_r(&now, &lt);
 
+    // Extract hour and minute
+     hour = lt.tm_hour;
+     minute = lt.tm_min;
+
+    // Optional: formatted time string
     char buf[32];
-    // 2025-08-15 14:23:07
     strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M:%S", &lt);
     printf("TIME: %s\n", buf);
+
+    // Print extracted hour and minute
+    printf("Hour: %02d\n", hour);
+    printf("Minute: %02d\n", minute);
 }
+
 
 void process_prayer_state(uint16_t distance_mm, uint8_t status)
 {
@@ -158,14 +169,14 @@ void start_timer()
     } 
 }
 
-// One-shot LVGL timer to switch from Location -> Counter
-static void switch_to_counter_cb(lv_timer_t *t)
-{
-    (void)t;
-    screens_switch(SCR_COUNTER, true);   // animate to counter
-    // Timer is one-shot; no need to delete explicitly if created with period>0 and not reused.
-    // If you want to be explicit: lv_timer_del(t);
-}
+// // One-shot LVGL timer to switch from Location -> Counter
+// static void switch_to_counter_cb(lv_timer_t *t)
+// {
+//     (void)t;
+//     screens_switch(SCR_COUNTER, true);   // animate to counter
+//     // Timer is one-shot; no need to delete explicitly if created with period>0 and not reused.
+//     // If you want to be explicit: lv_timer_del(t);
+// }
 
 
 const char *city;
@@ -204,12 +215,6 @@ void app_main(void)
     }
    
 
-   //working part 
-
-    // lv_obj_t *counter_screen = lv_obj_create(NULL);
-    // counter_page_create(counter_screen);
-    // lv_scr_load(counter_screen);
-
    
     //Squareline studio part
     ui_init();
@@ -219,6 +224,9 @@ void app_main(void)
 
 
         vTaskDelay(pdMS_TO_TICKS(10));
+    
+        //time_start_sntp();
+        //print_current_time_uart();
 
     
 

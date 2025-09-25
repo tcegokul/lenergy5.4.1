@@ -54,6 +54,9 @@ idf_component_register(
                                "Squarelinestudio/ui_comp.c"
                               "Squarelinestudio/ui_comp_image4.c"
                               "Squarelinestudio/ui_img_compass_needle_240x360_indexed16_png.c"
+                              "Squarelinestudio/ui_img_wifi_icon_ring_white_on_black_8bit_png.c"
+                              "Squarelinestudio/ui_img_battery_icon_half_white_on_black_8bit_png.c"
+                              
                          
 
 

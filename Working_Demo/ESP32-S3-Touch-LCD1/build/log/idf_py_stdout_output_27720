@@ -1,0 +1,9 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] lvgl/lvgl (8.2.0)
+NOTICE: [2/2] idf (5.4.1)
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+E:\Espressif_5.4.1\Espressif\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SE:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1 -BE:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\build

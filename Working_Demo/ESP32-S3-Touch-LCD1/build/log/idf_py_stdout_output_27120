@@ -1,0 +1,161 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\build\bootloader\esp-idf\esptool_py && E:\Espressif_5.4.1\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/bootloader/bootloader.bin"
+Bootloader binary size 0x57c0 bytes. 0x2840 bytes (31%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c: In function 'time_start_sntp':
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:52:5: warning: 'sntp_setoperatingmode' is deprecated: use esp_sntp_setoperatingmode() instead [-Wdeprecated-declarations]
+   52 |     sntp_setoperatingmode(SNTP_OPMODE_POLL);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+In file included from E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:4:
+E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/esp_sntp.h:249:6: note: declared here
+  249 | void sntp_setoperatingmode(u8_t operating_mode)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:53:5: warning: 'sntp_setservername' is deprecated: use esp_sntp_setservername() instead [-Wdeprecated-declarations]
+   53 |     sntp_setservername(0, "pool.ntp.org");
+      |     ^~~~~~~~~~~~~~~~~~
+E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/esp_sntp.h:263:6: note: declared here
+  263 | void sntp_setservername(u8_t idx, const char *server)
+      |      ^~~~~~~~~~~~~~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:55:5: warning: 'sntp_init' is deprecated: use esp_sntp_init() instead [-Wdeprecated-declarations]
+   55 |     sntp_init();
+      |     ^~~~~~~~~
+E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/lwip/include/apps/esp_sntp.h:269:6: note: declared here
+  269 | void sntp_init(void)
+      |      ^~~~~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c: In function 'app_main':
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:229:22: warning: unused variable 'status' [-Wunused-variable]
+  229 |              uint8_t status = measurement1.RangeStatus;
+      |                      ^~~~~~
+E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/main.c:228:23: warning: unused variable 'distance' [-Wunused-variable]
+  228 |              uint16_t distance = measurement1.RangeMilliMeter;
+      |                       ^~~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+info: INFO: Symbol LV_USE_DEMO_WIDGETS defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:22
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:986
+info: INFO: Symbol LV_DEMO_WIDGETS_SLIDESHOW defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:989
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:26
+info: INFO: Symbol LV_USE_DEMO_KEYPAD_AND_ENCODER defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:31
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:994
+info: INFO: Symbol LV_USE_DEMO_BENCHMARK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:998
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:35
+info: INFO: Symbol LV_USE_DEMO_STRESS defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:1002
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:39
+info: INFO: Symbol LV_USE_DEMO_MUSIC defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:1006
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:43
+info: INFO: Symbol LV_FONT_MONTSERRAT_12 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:462
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:48
+info: INFO: Symbol LV_FONT_MONTSERRAT_14 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:52
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:464
+info: INFO: Symbol LV_FONT_MONTSERRAT_16 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\managed_components\lvgl__lvgl\Kconfig:467
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:56
+info: INFO: Symbol BT_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:62
+    E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\bt\Kconfig:3
+info: INFO: Symbol BT_BLE_50_FEATURES_SUPPORTED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:66
+    E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\bt\host\bluedroid\Kconfig.in:1227
+info: INFO: Symbol BT_BLE_42_FEATURES_SUPPORTED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\bt\host\bluedroid\Kconfig.in:1237
+    E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\main\Kconfig.projbuild:70
+[7/10] Linking CXX executable ESP32-S3-Touch-LCD-2.1.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/ESP32-S3-Touch-LCD-2.1.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\fiverr\lenergy2023\LCD_TOF\lenergy5.4.1\Working_Demo\ESP32-S3-Touch-LCD1\build\esp-idf\esptool_py && E:\Espressif_5.4.1\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/partition_table/partition-table.bin E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build/ESP32-S3-Touch-LCD-2.1.bin"
+ESP32-S3-Touch-LCD-2.1.bin binary size 0x17ab80 bytes. Smallest app partition is 0x500000 bytes. 0x385480 bytes (70%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\Espressif_5.4.1\Espressif\frameworks\esp-idf-v5.4.1\components\esptool_py && E:\Espressif_5.4.1\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1 -D SERIAL_TOOL=E:/Espressif_5.4.1/Espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/build -P E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM9 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 ESP32-S3-Touch-LCD-2.1.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM9
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: d8:3b:da:6e:35:88
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0018afff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22464 bytes to 14264...
+Writing at 0x00000000... (100 %)
+Wrote 22464 bytes (14264 compressed) at 0x00000000 in 0.4 seconds (effective 448.0 kbit/s)...
+Hash of data verified.
+Compressed 1551232 bytes to 782660...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001cc7d... (4 %)
+Writing at 0x00049b30... (6 %)
+Writing at 0x000739b9... (8 %)
+Writing at 0x0007e259... (10 %)
+Writing at 0x000865d7... (12 %)
+Writing at 0x00091c26... (14 %)
+Writing at 0x00097d66... (16 %)
+Writing at 0x0009e331... (18 %)
+Writing at 0x000a4557... (20 %)
+Writing at 0x000aa7df... (22 %)
+Writing at 0x000b0a77... (25 %)
+Writing at 0x000b6518... (27 %)
+Writing at 0x000bc4e1... (29 %)
+Writing at 0x000c266d... (31 %)
+Writing at 0x000c8878... (33 %)
+Writing at 0x000ce9e1... (35 %)
+Writing at 0x000d4ab5... (37 %)
+Writing at 0x000da45b... (39 %)
+Writing at 0x000e030b... (41 %)
+Writing at 0x000e6178... (43 %)
+Writing at 0x000ebd8b... (45 %)
+Writing at 0x000f1c1e... (47 %)
+Writing at 0x000f7cf4... (50 %)
+Writing at 0x000fda33... (52 %)
+Writing at 0x00103653... (54 %)
+Writing at 0x001084f1... (56 %)
+Writing at 0x0010d82e... (58 %)
+Writing at 0x00112c2d... (60 %)
+Writing at 0x00117dd1... (62 %)
+Writing at 0x0011d036... (64 %)
+Writing at 0x00122650... (66 %)
+Writing at 0x00128488... (68 %)
+Writing at 0x0012de14... (70 %)
+Writing at 0x00133bff... (72 %)
+Writing at 0x00139d85... (75 %)
+Writing at 0x0013f8d4... (77 %)
+Writing at 0x00145524... (79 %)
+Writing at 0x0014abb0... (81 %)
+Writing at 0x001504e2... (83 %)
+Writing at 0x00156a78... (85 %)
+Writing at 0x0016161b... (87 %)
+Writing at 0x00167aeb... (89 %)
+Writing at 0x0016dd19... (91 %)
+Writing at 0x001743fd... (93 %)
+Writing at 0x0017a40b... (95 %)
+Writing at 0x00180591... (97 %)
+Writing at 0x00186491... (100 %)
+Wrote 1551232 bytes (782660 compressed) at 0x00010000 in 11.8 seconds (effective 1052.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 108...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (108 compressed) at 0x00008000 in 0.1 seconds (effective 459.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

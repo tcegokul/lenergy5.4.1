@@ -1,0 +1,39 @@
+CMake Error at E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/tools/cmake/component.cmake:228 (message):
+  CMake Warning (dev) at build_properties.temp.cmake:8:
+
+    Syntax Warning in cmake code at column 106
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/tools/cmake/scripts/component_get_requirements.cmake:3 (include)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+
+  CMake Error at
+  E:/fiverr/lenergy2023/LCD_TOF/lenergy5.4.1/Working_Demo/ESP32-S3-Touch-LCD1/main/CMakeLists.txt:65:
+
+
+    Parse error.  Expected "(", got quoted argument with text "./EXIO".
+
+  Call Stack (most recent call first):
+
+    E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/tools/cmake/scripts/component_get_requirements.cmake:160 (__component_get_requirements)
+
+  
+
+
+
+Call Stack (most recent call first):
+  E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/tools/cmake/build.cmake:644 (__component_get_requirements)
+  E:/Espressif_5.4.1/Espressif/frameworks/esp-idf-v5.4.1/tools/cmake/project.cmake:717 (idf_build_process)
+  CMakeLists.txt:4 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

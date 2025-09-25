@@ -41,6 +41,8 @@ extern lv_obj_t * ui____initial_actions0;
 
 // IMAGES AND IMAGE SETS
 LV_IMG_DECLARE(ui_img_compass_needle_240x360_indexed16_png);    // assets/Compass_needle_240x360_indexed16.png
+LV_IMG_DECLARE(ui_img_wifi_icon_ring_white_on_black_8bit_png);    // assets/wifi_icon_ring_white_on_black_8bit.png
+LV_IMG_DECLARE(ui_img_battery_icon_half_white_on_black_8bit_png);    // assets/battery_icon_half_white_on_black_8bit.png
 
 // UI INIT
 void ui_init(void);
